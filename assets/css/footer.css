@@ -1,0 +1,55 @@
+footer {
+  background: #EFF2F4; }
+  footer .footer {
+    padding: 60px 32px 40px;
+    display: flex; }
+    footer .footer .column {
+      width: 20%;
+      flex: 0 0 20%; }
+    footer .footer .footer-logo {
+      width: 93px;
+      height: 93px; }
+      footer .footer .footer-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    footer .footer .links .title {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1F1F1F; }
+    footer .footer .links ul {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px; }
+      footer .footer .links ul li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1F1F1F;
+        cursor: pointer;
+        transition: all 150ms ease-in-out; }
+        footer .footer .links ul li:hover {
+          color: #D2C6A5; }
+  footer .all-rights-reserved {
+    padding: 16px 0 26px;
+    margin: 0 32px;
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    footer .all-rights-reserved > div {
+      display: flex;
+      align-items: center;
+      gap: 24px; }
+    footer .all-rights-reserved p {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: #1F1F1F;
+      margin: 0; }

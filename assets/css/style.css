@@ -1,0 +1,695 @@
+@import url("http://fonts.cdnfonts.com/css/canela-text-trial");
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-Thin.ttf);
+  font-weight: 100; }
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-ExtraLight.ttf);
+  font-weight: 200; }
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-Light.ttf);
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-Regular.ttf);
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-Medium.ttf);
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-SemiBold.ttf);
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-Bold.ttf);
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-ExtraBold.ttf);
+  font-weight: 800; }
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-Black.ttf);
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'Canela';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Canela-Regular.ttf); }
+
+@font-face {
+  font-family: 'Canela-Trial';
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/Canela-Light-Trial.otf); }
+
+@font-face {
+  font-family: 'Canela-Trial';
+  font-weight: 300;
+  font-style: italic;
+  src: url(../fonts/Canela-LightItalic-Trial.otf); }
+
+@font-face {
+  font-family: 'Canela-Trial';
+  font-weight: 100;
+  font-style: italic;
+  src: url(../fonts/Canela-Thin-Trial.otf); }
+
+@font-face {
+  font-family: 'Canela-Trial';
+  font-weight: 100;
+  font-style: italic;
+  src: url(../fonts/Canela-ThinItalic-Trial.otf); }
+
+header .nav {
+  height: 82px;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px; }
+  header .nav > .nav-header {
+    display: block; }
+    header .nav > .nav-header > .nav-title {
+      width: 60px;
+      height: 54px; }
+      header .nav > .nav-header > .nav-title img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+  header .nav > .nav-btn {
+    display: none; }
+  header .nav > .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; }
+    header .nav > .nav-links > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #1F1F1F;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400; }
+      header .nav > .nav-links > a.active {
+        font-weight: 600; }
+      header .nav > .nav-links > a img {
+        margin-bottom: 3px;
+        margin-left: 4px; }
+  header .nav > #nav-check {
+    display: none; }
+  header .nav .nav-links-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    /* Remove IE arrow */
+    /* Custom Select wrapper */
+    /* Arrow */
+    /* Transition */ }
+    header .nav .nav-links-right > div a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      color: #1F1F1F;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      text-decoration: none; }
+      header .nav .nav-links-right > div a p {
+        margin: 0; }
+    header .nav .nav-links-right > div.message-cart {
+      position: relative; }
+      header .nav .nav-links-right > div.message-cart:after {
+        content: "2";
+        position: absolute;
+        top: -3px;
+        right: -5px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #1F1F1F;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      @media (max-width: 991px) {
+        header .nav .nav-links-right > div.message-cart a p {
+          display: none; } }
+    @media (max-width: 991px) {
+      header .nav .nav-links-right > div.sign-in {
+        display: none; } }
+    header .nav .nav-links-right select {
+      /* Reset Select */
+      appearance: none;
+      outline: 0;
+      border: 0;
+      box-shadow: none;
+      /* Personalize */
+      flex: 1;
+      padding: 0 12px;
+      color: #1F1F1F;
+      background-image: none;
+      cursor: pointer; }
+    header .nav .nav-links-right select::-ms-expand {
+      display: none; }
+    header .nav .nav-links-right .select {
+      position: relative;
+      display: flex;
+      overflow: hidden; }
+    header .nav .nav-links-right .select::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background-image: url("../images/icons/arrow-down.svg");
+      transition: .25s all ease;
+      pointer-events: none;
+      width: 8px;
+      height: 5px;
+      background-repeat: no-repeat; }
+    header .nav .nav-links-right .select:hover::after {
+      color: #f39c12; }
+
+@media (max-width: 1200px) {
+  header .nav .nav-links {
+    gap: 20px; }
+  header .nav .nav-links-right {
+    gap: 20px; } }
+
+@media (max-width: 991px) {
+  header .nav {
+    padding: 0 24px; }
+    header .nav .nav-links-right {
+      flex-direction: row-reverse; }
+    header .nav .nav-links {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      height: 0;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 82px;
+      left: 0;
+      padding: 0 25px;
+      gap: 0; }
+      header .nav .nav-links a {
+        display: block;
+        width: 100%;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 32px; }
+        header .nav .nav-links a:nth-last-child(-n+2) {
+          font-size: 24px;
+          line-height: 29px;
+          margin-bottom: 24px; }
+      header .nav .nav-links.opened {
+        height: calc(100vh - 82px);
+        overflow-y: auto; }
+      header .nav .nav-links .shop img {
+        transform: rotate(-90deg);
+        height: 12px;
+        width: 12px;
+        margin-bottom: 6px; }
+    header .nav .nav-btn {
+      width: 64px;
+      height: 64px;
+      border: 1px solid #D2C6A5;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      header .nav .nav-btn .menu-icon {
+        display: block;
+        width: 40px;
+        transform: translate3d(0, 0, 0); }
+        header .nav .nav-btn .menu-icon:before, header .nav .nav-btn .menu-icon:after,
+        header .nav .nav-btn .menu-icon .menu-icon__text {
+          background: #000;
+          border-radius: 3px;
+          content: '';
+          display: block;
+          height: 2px;
+          margin: 6px auto;
+          transition: all .2s ease-out;
+          width: 24px; }
+        header .nav .nav-btn .menu-icon .menu-icon__text {
+          text-indent: -9999px; }
+        header .nav .nav-btn .menu-icon.opened:before {
+          transform: rotate(45deg) translate3d(4.5px, 4.5px, 0); }
+        header .nav .nav-btn .menu-icon.opened .menu-icon__text {
+          opacity: 0; }
+        header .nav .nav-btn .menu-icon.opened:after {
+          transform: rotate(-45deg) translate3d(7px, -6.5px, 0); } }
+
+main {
+  padding: 80px 0 0; }
+  main .body-title {
+    text-align: center;
+    margin: 0 auto; }
+    main .body-title h1 {
+      text-align: center;
+      font-family: 'Canela-Trial';
+      font-weight: 100;
+      font-size: 64px;
+      line-height: 77px;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 16px; }
+      main .body-title h1:nth-child(2) {
+        color: #D2C6A5;
+        margin-bottom: 56px;
+        font-style: italic; }
+    main .body-title p {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      color: #1F1F1F; }
+  main .home-section1 {
+    position: relative;
+    padding: 120px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+    main .home-section1 .small-column {
+      width: 19%;
+      flex: 0 0 19%;
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main .home-section1 .small-column .image {
+        max-width: 17.5vw;
+        width: 100%;
+        overflow: hidden; }
+        main .home-section1 .small-column .image img {
+          width: 100%;
+          object-fit: cover;
+          object-position: center; }
+    main .home-section1 .big-column {
+      width: 24%;
+      flex: 0 0 24%;
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main .home-section1 .big-column .image {
+        max-width: 22vw;
+        width: 100%;
+        height: 35vw;
+        transition: all 300ms ease-in-out;
+        position: absolute;
+        overflow: hidden; }
+        main .home-section1 .big-column .image .image-text {
+          position: absolute;
+          z-index: 2;
+          left: -500px;
+          top: 80px;
+          transition: all 400ms ease-in-out;
+          transition-delay: 0ms;
+          display: flex;
+          flex-direction: column; }
+          main .home-section1 .big-column .image .image-text .small-title {
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #1F1F1F; }
+          main .home-section1 .big-column .image .image-text .big-title span {
+            font-family: 'Canela Trial';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 64px;
+            line-height: 77px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: #1F1F1F;
+            text-transform: uppercase; }
+          main .home-section1 .big-column .image .image-text .big-title > div {
+            display: flex; }
+          main .home-section1 .big-column .image .image-text .description {
+            max-width: 350px;
+            margin-left: 90px; }
+          main .home-section1 .big-column .image .image-text .more-about-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: 120px;
+            margin-top: 70px; }
+            main .home-section1 .big-column .image .image-text .more-about-btn:after {
+              content: '';
+              position: absolute;
+              top: -25px;
+              left: -35px;
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              border: 1px solid #1F1F1F;
+              opacity: 0.3;
+              clip-path: ellipse(71px 80px at 10% 50%); }
+            main .home-section1 .big-column .image .image-text .more-about-btn span {
+              font-family: 'Canela Trial';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 24px;
+              display: flex;
+              align-items: center;
+              letter-spacing: 0.05em;
+              color: #1F1F1F; }
+            main .home-section1 .big-column .image .image-text .more-about-btn img {
+              width: 15px;
+              height: 12px;
+              margin-left: 9px;
+              margin-top: 2px; }
+        main .home-section1 .big-column .image:hover {
+          max-width: 100vw;
+          height: 813px;
+          object-fit: contain; }
+          @media (max-width: 1400px) {
+            main .home-section1 .big-column .image:hover {
+              height: 700px; } }
+          main .home-section1 .big-column .image:hover .image-text {
+            left: 100px;
+            transition-delay: 400ms; }
+        main .home-section1 .big-column .image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center; }
+    main .home-section1 .image2-3, main .home-section1 .image5-6 {
+      display: flex;
+      flex-direction: column;
+      gap: 24px; }
+  main .home-section2 {
+    width: 100%;
+    height: 650px; }
+    main .home-section2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  main .home-section3 {
+    padding: 56px 150px 100px;
+    background-color: #F3EAE4;
+    height: 720px; }
+    main .home-section3 .title {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 42px; }
+    main .home-section3 .links .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      main .home-section3 .links .link .text {
+        cursor: pointer;
+        font-weight: 100;
+        font-size: 64px;
+        line-height: 77px;
+        font-family: 'Canela Trial';
+        letter-spacing: 0.02em;
+        color: #1F1F1F;
+        margin-bottom: 40px;
+        margin-top: 0;
+        transition: all 0.5s ease-in-out; }
+    main .home-section3 .links .link:hover ~ .right-photos {
+      opacity: 0; }
+    main .home-section3 .links {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      main .home-section3 .links .link .hovered-images img {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out; }
+        main .home-section3 .links .link .hovered-images img:first-child {
+          top: -20px;
+          left: 0; }
+        main .home-section3 .links .link .hovered-images img:last-child {
+          right: 0;
+          bottom: 60px; }
+      main .home-section3 .links .link .text:hover + .hovered-images img {
+        opacity: 1; }
+      main .home-section3 .links .link .text:hover {
+        color: #D2C6A5;
+        font-style: italic; }
+      main .home-section3 .links .link:first-child .hovered-images img {
+        opacity: 1; }
+  main .home-section4 {
+    background: #EDF6F9;
+    padding: 0 32px 86px; }
+    main .home-section4 .shop-slider {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      main .home-section4 .shop-slider .slide {
+        flex: 0 0 25%;
+        width: 25%;
+        padding: 0 12px; }
+        main .home-section4 .shop-slider .slide img {
+          width: 100%;
+          object-fit: contain; }
+        main .home-section4 .shop-slider .slide.active {
+          flex: 0 0 50%;
+          width: 50%; }
+    main .home-section4 .information {
+      width: 100%;
+      padding: 60px 0;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 4px solid #D2C6A5;
+      margin-top: 54px;
+      position: relative; }
+      main .home-section4 .information .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 0;
+        opacity: .5;
+        width: 45%; }
+        main .home-section4 .information .background img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        main .home-section4 .information .background:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 188px;
+          height: 100%;
+          background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+          transform: matrix(-1, 0, 0, 1, 0, 0); }
+        main .home-section4 .information .background:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 188px;
+          height: 100%;
+          background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); }
+      main .home-section4 .information .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 33%;
+        flex: 0 0 33%;
+        z-index: 1; }
+        main .home-section4 .information .info img {
+          margin: 0 auto; }
+        main .home-section4 .information .info p {
+          margin: 16px 0 0;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #1F1F1F; }
+      main .home-section4 .information .line {
+        height: 58px;
+        width: 1px;
+        background-color: #D2C6A5; }
+  main .home-section5 {
+    background: #1F1F1F;
+    padding: 146px 32px 146px 125px;
+    position: relative;
+    overflow: hidden; }
+    main .home-section5 .repeat-text {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: 0;
+      z-index: 1; }
+      main .home-section5 .repeat-text span {
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 136px;
+        line-height: 163px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #282828; }
+        main .home-section5 .repeat-text span:nth-child(2n) {
+          color: #D2C6A5; }
+    main .home-section5 .row {
+      display: flex; }
+      main .home-section5 .row .column {
+        width: 50%;
+        flex: 0 0 50%; }
+      main .home-section5 .row.right {
+        align-items: center; }
+    main .home-section5 .content {
+      align-items: flex-end; }
+    main .home-section5 .left {
+      display: flex;
+      flex-direction: column; }
+      main .home-section5 .left .title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #D2C6A5;
+        margin: 0 0 28px; }
+      main .home-section5 .left .description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #565656;
+        margin: 0 0 59px;
+        max-width: 466px;
+        width: 100%; }
+      main .home-section5 .left .link {
+        margin: 0;
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        cursor: pointer; }
+        main .home-section5 .left .link span {
+          margin: 0 9px 0 0;
+          display: inline-block; }
+
+footer {
+  background: #EFF2F4; }
+  footer .footer {
+    padding: 60px 32px 40px;
+    display: flex; }
+    footer .footer .column {
+      width: 20%;
+      flex: 0 0 20%; }
+    footer .footer .footer-logo {
+      width: 93px;
+      height: 93px; }
+      footer .footer .footer-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    footer .footer .links .title {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1F1F1F; }
+    footer .footer .links ul {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px; }
+      footer .footer .links ul li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1F1F1F;
+        cursor: pointer;
+        transition: all 150ms ease-in-out; }
+        footer .footer .links ul li:hover {
+          color: #D2C6A5; }
+  footer .all-rights-reserved {
+    padding: 16px 0 26px;
+    margin: 0 32px;
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    footer .all-rights-reserved > div {
+      display: flex;
+      align-items: center;
+      gap: 24px; }
+    footer .all-rights-reserved p {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: #1F1F1F;
+      margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #1F1F1F; }

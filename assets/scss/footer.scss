@@ -1,0 +1,69 @@
+footer{
+  background: #EFF2F4;
+  .footer{
+    padding: 60px 32px 40px;
+    display: flex;
+    .column{
+      width: 20%;
+      flex: 0 0 20%;
+    }
+    .footer-logo{
+      width: 93px;
+      height: 93px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .links{
+      .title{
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1F1F1F;
+      }
+      ul{
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        li{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #1F1F1F;
+          cursor: pointer;
+          transition: all 150ms ease-in-out;
+          &:hover{
+            color: #D2C6A5;
+          }
+        }
+      }
+    }
+  }
+  .all-rights-reserved{
+    padding: 16px 0 26px;
+    margin: 0 32px;
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &>div{
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    p{
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: #1F1F1F;
+      margin: 0;
+    }
+  }
+}
