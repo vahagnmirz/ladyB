@@ -1,4 +1,10 @@
-header{
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
   .nav {
     height: 82px;
     width: 100%;
@@ -117,51 +123,113 @@ header{
         }
       }
 
-      select {
-        /* Reset Select */
-        appearance: none;
-        outline: 0;
-        border: 0;
-        box-shadow: none;
-        /* Personalize */
-        flex: 1;
-        padding: 0 12px;
-        color: #1F1F1F;
-        background-image: none;
-        cursor: pointer;
+
+      .dropdown {
+        width: 45px;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+
+        .dropdown--switch:checked + .dropdown--options-filter .dropdown--select {
+          transform: scaleY(1);
+        }
+
+        .dropdown--switch:checked + .dropdown--options-filter .dropdown--filter:after {
+          transform: rotate(-135deg);
+          top: 6px;
+        }
+
+        .dropdown--options-filter {
+          width: 100%;
+          cursor: pointer;
+        }
+
+        .dropdown--filter {
+          position: relative;
+          display: flex;
+          color: #1F1F1F;
+          background-color: #fff;
+          border-radius: 30px;
+          font-size: 14px;
+          text-transform: uppercase;
+          transition: .3s;
+          margin: 0;
+          list-style-type: none;
+          padding: 0;
+
+          .dropdown--filter-selected {
+            font-size: 14px;
+            line-height: 17px;
+            color: #1F1F1F;
+          }
+
+          &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+          }
+
+          &::after {
+            position: absolute;
+            top: 3px;
+            right: 0;
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-right: 2px solid #1F1F1F;
+            border-bottom: 2px solid #1F1F1F;
+            border-radius: 0.5px;
+            transform: rotate(45deg);
+            transition: .2s ease-in-out;
+          }
+        }
+
+        .dropdown--select {
+          position: absolute;
+          top: 100%;
+          left: -20px;
+          width: 78px;
+          margin-top: 8px;
+          //overflow: hidden;
+          border: 1px solid #D2C6A5;
+          transform: scaleY(0);
+          transform-origin: top;
+          font-weight: 300;
+          transition: .2s ease-in-out;
+          list-style-type: none;
+          padding: 11px 0;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-left: 1px solid #D2C6A5;
+            border-top: 1px solid #D2C6A5;
+            background: #fff;
+            top: -4px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+          }
+        }
+
+        .dropdown-select-option {
+          padding: 11px;
+          background-color: #fff;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          color: #1F1F1F;
+          transition: all 200ms ease-in-out;
+
+          &:hover {
+            color: #D2C6A5;
+          }
+        }
       }
 
-      /* Remove IE arrow */
-      select::-ms-expand {
-        display: none;
-      }
 
-      /* Custom Select wrapper */
-      .select {
-        position: relative;
-        display: flex;
-        overflow: hidden;
-      }
-
-      /* Arrow */
-      .select::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-        background-image: url("../images/icons/arrow-down.svg");
-        transition: .25s all ease;
-        pointer-events: none;
-        width: 8px;
-        height: 5px;
-        background-repeat: no-repeat;
-      }
-
-      /* Transition */
-      .select:hover::after {
-        color: #f39c12;
-      }
     }
   }
 
@@ -193,7 +261,7 @@ header{
         align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba(255, 255, 255, 0.79);
         height: 0;
         transition: all 0.3s ease-in;
         overflow-y: hidden;

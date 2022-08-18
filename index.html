@@ -49,11 +49,25 @@
                     <img src="./assets/images/user.png" alt="icon" width="24" height="24">
                 </a>
             </div>
-            <div class="select">
-                <select>
-                    <option value="1">ENG</option>
-                    <option value="2">RU</option>
-                </select>
+            <div class="dropdown">
+                <input type="checkbox" class="dropdown--switch" id="filter-switch" hidden/>
+                <label for="filter-switch" class="dropdown--options-filter">
+                    <ul class="dropdown--filter" role="listbox" tabindex="-1">
+                        <li class="dropdown--filter-selected" aria-selected="true">
+                            ENG
+                        </li>
+                        <li>
+                            <ul class="dropdown--select">
+                                <li class="dropdown-select-option" role="option">
+                                    ENG
+                                </li>
+                                <li class="dropdown-select-option" role="option">
+                                    SR
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </label>
             </div>
         </div>
     </div>
@@ -85,12 +99,14 @@
                 <div class="image-text">
                     <p class="small-title">OUR GUIDING PRINciples</p>
                     <div class="big-title">
-                        <div><span>Live</span> <span style="text-transform: lowercase; color: #D2C6A5;">your own</span></div>
+                        <div><span>Live</span> <span style="text-transform: lowercase; color: #D2C6A5;">your own</span>
+                        </div>
                         <span>UNIQUE</span>
                         <span>ADVENTURE.</span>
                     </div>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna.
                     </p>
                     <div class="more-about-btn">
                         <span>More About us</span>
@@ -117,7 +133,16 @@
         </div>
     </section>
     <section class="home-section2">
-        <img src="assets/images/video-image.png" alt="image">
+        <div class="play-btn">
+            <img src="assets/images/icons/play-icon.svg" alt="" width="24px" height="24px">
+        </div>
+        <video width="100%" height="650px" class="video" poster="assets/images/video-image.png">
+
+            <source src="assets/videos/video.mp4"
+                    type="video/mp4">
+
+            Sorry, your browser doesn't support embedded videos.
+        </video>
     </section>
     <section class="home-section3">
         <p class="title">browse categories</p>
