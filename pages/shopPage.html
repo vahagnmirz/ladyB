@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>LadyB</title>
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <img src="../assets/images/logo.png" alt="logo" width="60" height="54">
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html" target="_blank" class="active">Home</a>
+            <a href="javascript:void(0)" class="header-shop">
+                <span>Shop</span>
+                <img src="../assets/images/icons/arrow-down.svg" alt="icon" width="8" height="6">
+            </a>
+            <a href="/" target="_blank">Explore Products</a>
+            <a href="/" target="_blank">About Us</a>
+            <a href="/" target="_blank">Media</a>
+            <a href="/" target="_blank">Lookbook</a>
+            <a href="/" target="_blank">Contact</a>
+        </div>
+
+        <div class="shop-dropdown-background">
+            <div class="shop-dropdown-container">
+                <div class="row">
+                    <div class="left-part">
+                        <div class="shop-image">
+                            <img src="../assets/images/shop-dropdown-image.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="row">
+                            <div class="column">
+                                <ul>
+                                    <li><p class="number">01</p><p class="text">Celebrity</p></li>
+                                    <li><p class="number">02</p><p class="text">Elegant</p></li>
+                                    <li><p class="number">03</p><p class="text">LadyB Lite</p></li>
+                                    <li><p class="number">04</p><p class="text">Men Socks</p></li>
+                                </ul>
+                                <div class="link-to-shop-page">
+                                    <a href="pages/shopPage.html" target="_blank">See All</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="row close-button-part">
+                                    <div class="right-image">
+                                        <img src="../assets/images/shop-dropdown-image2.png" alt="image">
+                                        <p>LadyB Lite</p>
+                                    </div>
+                                    <div class="close-button" id="shop-dd-close-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
+                                            <line y1="-0.5" x2="11.5333" y2="-0.5" transform="matrix(-0.72032 -0.693642 0.72032 -0.693642 10.0001 8)" stroke="#1F1F1F"/>
+                                            <line y1="-0.5" x2="11.5333" y2="-0.5" transform="matrix(0.72032 -0.693642 -0.72032 -0.693642 1 8)" stroke="#1F1F1F"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-links-right">
+            <div class="nav-btn">
+                <a href="javascript:void(0)" class="menu-icon indent">
+                    <span class="menu-icon__text"></span>
+                </a>
+            </div>
+            <div class="message-cart">
+                <a href="/">
+                    <p>Your Cart</p>
+                    <img src="../assets/images/message-icon.png" alt="icon" width="24" height="24">
+                </a>
+            </div>
+            <div class="sign-in">
+                <a href="/">
+                    <p>Sign In</p>
+                    <img src="../assets/images/user.png" alt="icon" width="24" height="24">
+                </a>
+            </div>
+            <div class="dropdown">
+                <input type="checkbox" class="dropdown--switch" id="filter-switch" hidden/>
+                <label for="filter-switch" class="dropdown--options-filter">
+                    <ul class="dropdown--filter" role="listbox" tabindex="-1">
+                        <li class="dropdown--filter-selected" aria-selected="true">
+                            ENG
+                        </li>
+                        <li>
+                            <ul class="dropdown--select">
+                                <li class="dropdown-select-option" role="option">
+                                    ENG
+                                </li>
+                                <li class="dropdown-select-option" role="option">
+                                    SR
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </label>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+   <div class="shop-page">
+       <div class="shop-page-filters-container">
+            <div class="left-sorts">
+                <div class="dropdown lite">
+                    <input type="checkbox" class="dropdown--switch" id="lite-switch" hidden/>
+                    <label for="lite-switch" class="dropdown--options-filter">
+                        <ul class="dropdown--filter" id="liteFilter" role="listbox" tabindex="-1">
+                            <li class="dropdown--filter-selected" id="lite" aria-selected="true">
+                                LadyB Lite
+                            </li>
+                            <li>
+                                <ul class="dropdown--select">
+                                    <li class="dropdown-select-option lite-option" role="option">
+                                        LadyB Lite
+                                    </li>
+                                    <li class="dropdown-select-option lite-option" role="option">
+                                        LadyB Dark
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="dropdown size">
+                    <input type="checkbox" class="dropdown--switch" id="size-switch" hidden/>
+                    <label for="size-switch" class="dropdown--options-filter">
+                        <ul class="dropdown--filter" id="sizeFilter" role="listbox" tabindex="-1">
+                            <li class="dropdown--filter-selected" id="size" aria-selected="true">
+                                Size
+                            </li>
+                            <li>
+                                <ul class="dropdown--select">
+                                    <li class="dropdown-select-option size-option" role="option">
+                                        XS
+                                    </li>
+                                    <li class="dropdown-select-option size-option" role="option">
+                                        S
+                                    </li>
+                                    <li class="dropdown-select-option size-option" role="option">
+                                        M
+                                    </li>
+                                    <li class="dropdown-select-option size-option" role="option">
+                                        L
+                                    </li>
+                                    <li class="dropdown-select-option size-option" role="option">
+                                        XL
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+                <div class="dropdown color">
+                    <input type="checkbox" class="dropdown--switch" id="color-switch" hidden/>
+                    <label for="color-switch" class="dropdown--options-filter">
+                        <ul class="dropdown--filter" id="colorFilter" role="listbox" tabindex="-1">
+                            <li class="dropdown--filter-selected" id="color" aria-selected="true">
+                                Color
+                            </li>
+                            <li>
+                                <ul class="dropdown--select">
+                                    <li class="dropdown-select-option color-option" role="option">
+                                        Black
+                                    </li>
+                                    <li class="dropdown-select-option color-option" role="option">
+                                        White
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+           <div class="dropdown sortBy">
+               <input type="checkbox" class="dropdown--switch" id="sortBy-switch" hidden/>
+               <label for="sortBy-switch" class="dropdown--options-filter">
+                   <ul class="dropdown--filter" id="sortByFilter" role="listbox" tabindex="-1">
+                       <li class="dropdown--filter-selected" id="sortBy" aria-selected="true">
+                           Sort By
+                       </li>
+                       <li>
+                           <ul class="dropdown--select">
+                               <li class="dropdown-select-option sortBy-option" role="option">
+                                   Size
+                               </li>
+                               <li class="dropdown-select-option sortBy-option" role="option">
+                                   Color
+                               </li>
+                           </ul>
+                       </li>
+                   </ul>
+               </label>
+           </div>
+       </div>
+       <div class="shop-grid">
+            <div class="grid-item big">
+                <div class="image">
+                    <img src="../assets/images/slide1.png" alt="image">
+                </div>
+                <p class="name">20 Denier Sheer Tights</p>
+                <p class="price">$39.00</p>
+            </div>
+           <div class="grid-item">
+               <div class="image">
+                   <img src="../assets/images/slide2.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+           <div class="grid-item">
+               <div class="image">
+                   <img src="../assets/images/slide3.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+           <div class="grid-item">
+               <div class="image">
+                   <img src="../assets/images/slide2.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+           <div class="grid-item">
+               <div class="image">
+                   <img src="../assets/images/slide3.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+           <div class="grid-item">
+               <div class="image">
+                   <img src="../assets/images/slide2.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+           <div class="grid-item">
+               <div class="image">
+                   <img src="../assets/images/slide3.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+           <div class="grid-item">
+               <div class="image">
+                   <img src="../assets/images/slide2.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+           <div class="grid-item">
+               <div class="image">
+                   <img src="../assets/images/slide3.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+           <div class="grid-item big">
+               <div class="image">
+                   <img src="../assets/images/slide1.png" alt="image">
+               </div>
+               <p class="name">20 Denier Sheer Tights</p>
+               <p class="price">$39.00</p>
+           </div>
+       </div>
+       <div class="shop-pagination">
+            <p class="pagination-item">01</p>
+            <p class="pagination-item active">02</p>
+            <p class="pagination-item">03</p>
+       </div>
+   </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="column">
+            <div class="footer-logo">
+                <img src="../assets/images/footer-logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="column">
+            <div class="links">
+                <p class="title">Pages</p>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About us</li>
+                    <li>Media</li>
+                    <li>Lookbook</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="links">
+                <p class="title">Customer Service</p>
+                <ul>
+                    <li>Orders</li>
+                    <li>Transport</li>
+                    <li>Return & Money</li>
+                    <li>Payment options</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="links">
+                <p class="title">Guide Products</p>
+                <ul>
+                    <li>Size guide</li>
+                    <li>Style guide</li>
+                    <li>Materials</li>
+                    <li>Garment care</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="links">
+                <p class="title">Do You Need Help?</p>
+                <ul>
+                    <li>Send us an email</li>
+                    <li>Call us: 0880 - 14278</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="all-rights-reserved">
+        <p>© Lady B, all rights reserved 2022</p>
+        <div>
+            <p>Privacy Policy</p>
+            <p>FAQ</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="../js/homepage-slider.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/shopPage.js"></script>
+</body>
+</html>

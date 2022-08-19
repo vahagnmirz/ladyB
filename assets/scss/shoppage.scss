@@ -1,0 +1,196 @@
+.shop-page{
+  padding: 0 32px 80px;
+  .shop-page-filters-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .left-sorts{
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .dropdown {
+      width: 45px;
+      margin: 0;
+      padding: 0;
+
+      .dropdown--switch:checked + .dropdown--options-filter .dropdown--select {
+        transform: scaleY(1);
+      }
+
+      .dropdown--switch:checked + .dropdown--options-filter .dropdown--filter:after {
+        transform: rotate(-135deg);
+        top: 6px;
+      }
+
+      .dropdown--options-filter {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .dropdown--filter {
+        position: relative;
+        display: flex;
+        color: #1F1F1F;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        transition: .3s;
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+
+        .dropdown--filter-selected {
+          font-size: 16px;
+          line-height: 19px;
+          color: #1F1F1F;
+        }
+
+        &:focus {
+          border: none;
+          outline: none;
+          box-shadow: none;
+        }
+
+        &::after {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          content: '';
+          width: 5px;
+          height: 5px;
+          border-right: 2px solid #1F1F1F;
+          border-bottom: 2px solid #1F1F1F;
+          border-radius: 0.5px;
+          transform: rotate(45deg);
+          transition: .2s ease-in-out;
+        }
+      }
+
+      .dropdown--select {
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        width: 120px;
+        margin-top: 8px;
+        border: 1px solid #D2C6A5;
+        transform: scaleY(0);
+        transform-origin: top;
+        font-weight: 300;
+        transition: .2s ease-in-out;
+        list-style-type: none;
+        padding: 11px 0;
+        background: #fff;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-left: 1px solid #D2C6A5;
+          border-top: 1px solid #D2C6A5;
+          background: #fff;
+          top: -4px;
+          left: 50%;
+          transform: translateX(-50%) rotate(45deg);
+        }
+      }
+
+     .dropdown-select-option {
+        padding: 11px;
+        background-color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #1F1F1F;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+          color: #D2C6A5;
+        }
+      }
+
+      &.sortBy{
+        width: 85px;
+      }
+      &.lite{
+        width: 100px;
+      }
+      &.size{
+        width: 45px;
+      }
+      &.color{
+        width: 60px;
+      }
+    }
+  }
+  .shop-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    .grid-item{
+      width: 25%;
+      flex: 0 0 25%;
+      padding: 0 12px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 48px;
+      .image{
+        width: 100%;
+        height: 474px;
+        margin-bottom: 16px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      &.big{
+        width: 50%;
+        flex: 0 0 50%;
+      }
+      .name, .price{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #1F1F1F;
+        margin: 0;
+      }
+      .price{
+        font-weight: 600;
+      }
+      .name{
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .shop-pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 1px solid #EFF2F4;
+    margin-bottom: -1px;
+    .pagination-item{
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      color: #C5C5C5;
+      padding-bottom: 16px;
+      margin: 0 0 -1px;
+      &.active{
+        color: #1F1F1F;
+        border-bottom: 1px solid #1F1F1F;
+      }
+    }
+  }
+}
