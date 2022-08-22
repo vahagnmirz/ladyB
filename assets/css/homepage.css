@@ -1,6 +1,7 @@
 main {
-  padding: 80px 0 0;
   margin-top: 82px; }
+  main.homepage {
+    padding: 80px 0 0; }
   main .body-title {
     text-align: center;
     margin: 0 auto; }
@@ -110,7 +111,7 @@ main {
               border-radius: 50%;
               border: 1px solid #1F1F1F;
               opacity: 0.3;
-              clip-path: ellipse(71px 80px at 10% 50%); }
+              -path: ellipse(71px 80px at 10% 50%); }
             main .home-section1 .big-column .image .image-text .more-about-btn span {
               font-family: 'Canela Trial';
               font-style: normal;

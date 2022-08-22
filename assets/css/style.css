@@ -307,7 +307,7 @@ header {
                 border-radius: 50%;
                 border: 1px solid #D2C6A5;
                 opacity: 0.3;
-                clip-path: ellipse(71px 80px at 10% 50%); }
+                -path: ellipse(71px 80px at 10% 50%); }
             header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .column {
               width: 50%;
               flex: 0 0 50%; }
@@ -454,8 +454,9 @@ header {
             transform: rotate(-45deg) translate3d(7px, -6.5px, 0); } }
 
 main {
-  padding: 80px 0 0;
   margin-top: 82px; }
+  main.homepage {
+    padding: 80px 0 0; }
   main .body-title {
     text-align: center;
     margin: 0 auto; }
@@ -942,9 +943,11 @@ main {
       width: 25%;
       flex: 0 0 25%;
       padding: 0 12px;
-      display: flex;
-      flex-direction: column;
       margin-bottom: 48px; }
+      .shop-page .shop-grid .grid-item a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none; }
       .shop-page .shop-grid .grid-item .image {
         width: 100%;
         height: 474px;
@@ -990,6 +993,590 @@ main {
       .shop-page .shop-pagination .pagination-item.active {
         color: #1F1F1F;
         border-bottom: 1px solid #1F1F1F; }
+
+.product-detail-page {
+  padding: 0 32px; }
+  .product-detail-page .backToShop {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 150ms ease-in-out; }
+    .product-detail-page .backToShop img {
+      width: 15px;
+      transform: rotate(180deg);
+      margin-right: 16px; }
+    .product-detail-page .backToShop span {
+      margin: 0;
+      font-size: 12px;
+      color: #1F1F1F; }
+    .product-detail-page .backToShop:hover {
+      transform: scale(1.01); }
+  .product-detail-page .detail-section1 {
+    margin-top: 32px;
+    margin-bottom: 40px; }
+    .product-detail-page .detail-section1 .row {
+      display: flex;
+      gap: 24px;
+      justify-content: center; }
+    .product-detail-page .detail-section1 .product-slide-left {
+      margin-right: 23px; }
+      .product-detail-page .detail-section1 .product-slide-left .slide-items {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; }
+        .product-detail-page .detail-section1 .product-slide-left .slide-items .slide-item {
+          width: 93px;
+          min-width: 93px;
+          height: 136px;
+          overflow: hidden;
+          background-color: #282828;
+          cursor: pointer;
+          position: relative; }
+          .product-detail-page .detail-section1 .product-slide-left .slide-items .slide-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          .product-detail-page .detail-section1 .product-slide-left .slide-items .slide-item.active {
+            border: 1px solid #D2C6A5; }
+            .product-detail-page .detail-section1 .product-slide-left .slide-items .slide-item.active:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(255, 255, 255, 0.59); }
+    .product-detail-page .detail-section1 .product-slide-right {
+      width: 80%;
+      flex: 0 0 80%; }
+      .product-detail-page .detail-section1 .product-slide-right .big-slide-item {
+        width: 560px;
+        height: 823px;
+        overflow: hidden; }
+        .product-detail-page .detail-section1 .product-slide-right .big-slide-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .product-detail-page .detail-section1 .information {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%; }
+      .product-detail-page .detail-section1 .information .title {
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        color: #1F1F1F;
+        margin-top: 0;
+        margin-bottom: 16px; }
+      .product-detail-page .detail-section1 .information .product-code {
+        font-size: 12px;
+        line-height: 15px;
+        color: #C5C5C5;
+        margin: 0; }
+      .product-detail-page .detail-section1 .information .price {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 18px;
+        color: #1F1F1F;
+        margin: 24px 0;
+        padding: 24px 0;
+        border-top: 1px solid #EFF2F4;
+        border-bottom: 1px solid #EFF2F4; }
+      .product-detail-page .detail-section1 .information .color {
+        font-size: 12px;
+        line-height: 15px;
+        color: #1F1F1F;
+        margin-top: 0;
+        margin-bottom: 16px; }
+      .product-detail-page .detail-section1 .information .colors {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px; }
+        .product-detail-page .detail-section1 .information .colors .color-item {
+          position: relative;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: all 200ms ease-in-out; }
+          .product-detail-page .detail-section1 .information .colors .color-item:hover:after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            border: 0.5px solid #1F1F1F;
+            border-radius: 50%; }
+          .product-detail-page .detail-section1 .information .colors .color-item.active:after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            border: 0.5px solid #1F1F1F;
+            border-radius: 50%; }
+          .product-detail-page .detail-section1 .information .colors .color-item.item1 {
+            background-color: #C29677; }
+          .product-detail-page .detail-section1 .information .colors .color-item.item2 {
+            background-color: #8A5F43; }
+          .product-detail-page .detail-section1 .information .colors .color-item.item3 {
+            background-color: #593D35; }
+          .product-detail-page .detail-section1 .information .colors .color-item.item4 {
+            background-color: #3B312C; }
+          .product-detail-page .detail-section1 .information .colors .color-item.item5 {
+            background-color: #382721; }
+          .product-detail-page .detail-section1 .information .colors .color-item.item6 {
+            background-color: #1A1515; }
+      .product-detail-page .detail-section1 .information .sizeAndCount {
+        display: flex;
+        align-items: center;
+        margin: 0 -12px; }
+        .product-detail-page .detail-section1 .information .sizeAndCount .column4 {
+          width: 30%;
+          flex: 0 0 30%;
+          padding: 0 12px; }
+        .product-detail-page .detail-section1 .information .sizeAndCount .column8 {
+          width: 70%;
+          flex: 0 0 70%;
+          padding: 0 12px; }
+        .product-detail-page .detail-section1 .information .sizeAndCount .dropdown {
+          max-width: 443px;
+          width: 100%;
+          margin: 0;
+          padding: 19px 24px;
+          border: 1px solid #EAE6D8; }
+          .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--switch:checked + .dropdown--options-filter .dropdown--select {
+            transform: scaleY(1); }
+          .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--switch:checked + .dropdown--options-filter .dropdown--filter:after {
+            transform: rotate(-135deg);
+            top: 6px; }
+          .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--options-filter {
+            width: 100%;
+            cursor: pointer; }
+          .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--filter {
+            position: relative;
+            display: flex;
+            color: #1F1F1F;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            transition: .3s;
+            margin: 0;
+            list-style-type: none;
+            padding: 0; }
+            .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--filter .dropdown--filter-selected {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 16px;
+              color: #1F1F1F; }
+            .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--filter:focus {
+              border: none;
+              outline: none;
+              box-shadow: none; }
+            .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--filter::after {
+              position: absolute;
+              top: 3px;
+              right: 0;
+              content: '';
+              width: 5px;
+              height: 5px;
+              border-right: 2px solid #1F1F1F;
+              border-bottom: 2px solid #1F1F1F;
+              border-radius: 0.5px;
+              transform: rotate(45deg);
+              transition: .2s ease-in-out; }
+          .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--select {
+            position: absolute;
+            top: 100%;
+            left: -25px;
+            width: calc(100% + 50px);
+            margin-top: 25px;
+            border: 1px solid #D2C6A5;
+            transform: scaleY(0);
+            transform-origin: top;
+            font-weight: 300;
+            transition: .2s ease-in-out;
+            list-style-type: none;
+            padding: 11px 0;
+            background: #fff; }
+            .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown--select:after {
+              content: '';
+              position: absolute;
+              width: 5px;
+              height: 5px;
+              border-left: 1px solid #D2C6A5;
+              border-top: 1px solid #D2C6A5;
+              background: #fff;
+              top: -4px;
+              left: 50%;
+              transform: translateX(-50%) rotate(45deg); }
+          .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown-select-option {
+            padding: 11px;
+            background-color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            color: #1F1F1F;
+            transition: all 200ms ease-in-out; }
+            .product-detail-page .detail-section1 .information .sizeAndCount .dropdown .dropdown-select-option:hover {
+              color: #D2C6A5; }
+        .product-detail-page .detail-section1 .information .sizeAndCount .counter {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin: 0;
+          padding: 19px 24px;
+          border: 1px solid #EAE6D8; }
+          .product-detail-page .detail-section1 .information .sizeAndCount .counter p {
+            margin: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #1F1F1F; }
+            .product-detail-page .detail-section1 .information .sizeAndCount .counter p.decrease {
+              cursor: pointer;
+              transform: rotate(90deg);
+              opacity: 0.4; }
+            .product-detail-page .detail-section1 .information .sizeAndCount .counter p.increase {
+              cursor: pointer;
+              transform: rotate(-90deg); }
+      .product-detail-page .detail-section1 .information .size-guide-modal-btn {
+        display: block;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #6981FF;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+        cursor: pointer; }
+        .product-detail-page .detail-section1 .information .size-guide-modal-btn:hover {
+          transform: scale(1.05); }
+      .product-detail-page .detail-section1 .information .buttons {
+        margin: 24px 0;
+        gap: 16px;
+        display: flex;
+        flex-direction: column; }
+        .product-detail-page .detail-section1 .information .buttons .button {
+          width: 100%; }
+      .product-detail-page .detail-section1 .information .accordion .tabs {
+        overflow: hidden; }
+      .product-detail-page .detail-section1 .information .accordion .tab {
+        width: 100%;
+        color: white;
+        overflow: hidden;
+        border-bottom: 1px solid #EFF2F4; }
+        .product-detail-page .detail-section1 .information .accordion .tab-label {
+          display: flex;
+          justify-content: space-between;
+          padding: 1em;
+          background: #fff;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          color: #1F1F1F;
+          cursor: pointer;
+          /* Icon */ }
+          .product-detail-page .detail-section1 .information .accordion .tab-label:hover {
+            color: #D2C6A5; }
+          .product-detail-page .detail-section1 .information .accordion .tab-label::after {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all .35s;
+            transform: rotate(90deg); }
+        .product-detail-page .detail-section1 .information .accordion .tab-content {
+          max-height: 0;
+          padding: 0 1em;
+          color: #2c3e50;
+          background: white;
+          transition: all .35s; }
+      .product-detail-page .detail-section1 .information .accordion input:checked + .tab-label::after {
+        transform: rotate(270deg); }
+      .product-detail-page .detail-section1 .information .accordion input:checked ~ .tab-content {
+        max-height: 100vh;
+        padding: 1em; }
+      .product-detail-page .detail-section1 .information .bluePart {
+        background: #EDF6F9;
+        padding: 32px;
+        margin-top: 45px; }
+        .product-detail-page .detail-section1 .information .bluePart .text {
+          display: flex;
+          align-items: center; }
+          .product-detail-page .detail-section1 .information .bluePart .text img {
+            width: 17px;
+            height: 17px;
+            margin-right: 8px; }
+          .product-detail-page .detail-section1 .information .bluePart .text .text {
+            font-size: 12px;
+            line-height: 15px;
+            color: #1F1F1F; }
+
+.detail-section2 {
+  background: #EFF2F4;
+  padding: 60px 32px; }
+  .detail-section2 .row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    position: relative; }
+    .detail-section2 .row .image {
+      width: 100%;
+      height: 663px; }
+      .detail-section2 .row .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    .detail-section2 .row .text-part {
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .detail-section2 .row .text-part h2 {
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 64px;
+        line-height: 77px;
+        letter-spacing: 0.02em;
+        color: #1F1F1F;
+        margin-top: 0;
+        margin-bottom: 16px; }
+      .detail-section2 .row .text-part .header-text {
+        font-family: 'Canela Trial';
+        font-style: italic;
+        font-weight: 100;
+        font-size: 64px;
+        line-height: 77px;
+        letter-spacing: 0.02em;
+        color: #D2C6A5;
+        margin-top: 0;
+        margin-bottom: 80px; }
+      .detail-section2 .row .text-part .description {
+        max-width: 210px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #1F1F1F;
+        margin: 0 0 0 120px; }
+      .detail-section2 .row .text-part .dicoverladyb {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 70px;
+        cursor: pointer; }
+        .detail-section2 .row .text-part .dicoverladyb:after {
+          content: '';
+          position: absolute;
+          top: -25px;
+          left: -35px;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 1px solid #D2C6A5;
+          clip-path: ellipse(71px 80px at 10% 50%); }
+        .detail-section2 .row .text-part .dicoverladyb span {
+          font-family: 'Canela Trial';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.05em;
+          color: #1F1F1F; }
+        .detail-section2 .row .text-part .dicoverladyb img {
+          width: 15px;
+          height: 12px;
+          margin-left: 9px;
+          margin-top: 2px; }
+
+.detail-section3 .testimonials {
+  padding: 100px 32px; }
+  .detail-section3 .testimonials .row {
+    display: flex;
+    margin: 0 -12px; }
+    .detail-section3 .testimonials .row .col {
+      width: 33.3%;
+      flex: 0 0 33.3%;
+      padding: 0 12px; }
+  .detail-section3 .testimonials .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #282828;
+    margin-top: 0;
+    margin-bottom: 32px; }
+  .detail-section3 .testimonials .cart {
+    padding: 32px;
+    background: #F3EAE4;
+    border-bottom: 4px solid #D2C6A5;
+    box-shadow: 0 3px 6px -1px #1f1f1f7a; }
+    .detail-section3 .testimonials .cart .cart-number {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 64px;
+      line-height: 77px;
+      letter-spacing: 0.02em;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 32px; }
+    .detail-section3 .testimonials .cart .cart-description {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 68px; }
+    .detail-section3 .testimonials .cart .cart-image {
+      display: flex;
+      width: 85%;
+      justify-content: space-between;
+      margin-bottom: 50px; }
+      .detail-section3 .testimonials .cart .cart-image .slashs {
+        width: 75px;
+        height: 50px; }
+        .detail-section3 .testimonials .cart .cart-image .slashs img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+      .detail-section3 .testimonials .cart .cart-image .user-image {
+        display: flex;
+        flex-direction: column; }
+        .detail-section3 .testimonials .cart .cart-image .user-image .img {
+          width: 117px;
+          height: 139px;
+          overflow: hidden;
+          margin-bottom: 16px; }
+          .detail-section3 .testimonials .cart .cart-image .user-image .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .detail-section3 .testimonials .cart .cart-image .user-image .fullname {
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #1F1F1F; }
+    .detail-section3 .testimonials .cart .cart-footer {
+      font-family: 'Canela Trial';
+      font-style: italic;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #D2C6A5; }
+
+.size-guide-modal .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+  .size-guide-modal .modal .modal-content {
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    margin: 25% auto;
+    max-width: 724px;
+    width: 90%;
+    border-radius: 4px;
+    padding: 24px; }
+    .size-guide-modal .modal .modal-content .modal-header {
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .size-guide-modal .modal .modal-content .modal-header h3 {
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        color: #1F1F1F;
+        margin: 0; }
+      .size-guide-modal .modal .modal-content .modal-header .close {
+        float: right;
+        cursor: pointer;
+        width: 56px;
+        height: 56px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        border: 1px solid #D2C6A5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; }
+        .size-guide-modal .modal .modal-content .modal-header .close span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 20px;
+          line-height: normal; }
+    .size-guide-modal .modal .modal-content .modal-body .size-gide-modal-table {
+      width: 100%;
+      margin-bottom: 40px; }
+      .size-guide-modal .modal .modal-content .modal-body .size-gide-modal-table thead th {
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #D2C6A5;
+        padding: 16px;
+        border-top: 1px solid #EFF2F4; }
+      .size-guide-modal .modal .modal-content .modal-body .size-gide-modal-table tbody tr td {
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid #EFF2F4;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #1F1F1F;
+        text-transform: uppercase; }
+      .size-guide-modal .modal .modal-content .modal-body .size-gide-modal-table tbody tr:last-child td {
+        border-bottom: 1px solid #EFF2F4; }
+
+.size-guide-modal .show {
+  animation: show 500ms forwards ease-in-out; }
+
+@keyframes show {
+  to {
+    top: 0; } }
+
+@media screen and (max-width: 638px) {
+  .size-guide-modal .modal-content {
+    margin: 50% auto !important; } }
 
 footer {
   background: #EFF2F4; }
@@ -1055,3 +1642,23 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: #1F1F1F; }
+
+.button {
+  background: #D2C6A5;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #1F1F1F;
+  border: 1px solid transparent; }
+  .button.outlined {
+    background-color: transparent;
+    border: 1px solid #D2C6A5; }

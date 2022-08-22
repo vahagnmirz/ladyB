@@ -2,6 +2,7 @@
 @import "header";
 @import "homepage";
 @import "shoppage";
+@import "productDetailPage";
 @import "footer";
 
 * {
@@ -13,6 +14,27 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: #1F1F1F;
+}
+.button{
+  background: #D2C6A5;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  box-shadow: none;
+  cursor:pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #1F1F1F;
+  border: 1px solid transparent;
+  &.outlined{
+    background-color: transparent;
+    border: 1px solid #D2C6A5;
+  }
 }
 
 
