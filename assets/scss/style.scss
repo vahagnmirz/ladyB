@@ -3,6 +3,11 @@
 @import "homepage";
 @import "shoppage";
 @import "productDetailPage";
+@import "aboutUsPage";
+@import "contactUsPage";
+@import "exploreProductsPage";
+@import "lookbookPage";
+@import "mediaPage";
 @import "footer";
 
 * {
@@ -15,7 +20,8 @@ body {
   font-weight: 400;
   color: #1F1F1F;
 }
-.button{
+
+.button {
   background: #D2C6A5;
   padding: 15px;
   display: flex;
@@ -23,7 +29,7 @@ body {
   justify-content: center;
   outline: none;
   box-shadow: none;
-  cursor:pointer;
+  cursor: pointer;
   font-weight: 600;
   font-size: 12px;
   line-height: 24px;
@@ -31,12 +37,17 @@ body {
   letter-spacing: 0.05em;
   color: #1F1F1F;
   border: 1px solid transparent;
-  &.outlined{
+
+  &.outlined {
     background-color: transparent;
     border: 1px solid #D2C6A5;
   }
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 
 

@@ -1488,6 +1488,70 @@ main {
       line-height: 24px;
       color: #D2C6A5; }
 
+.detail-section4 {
+  padding: 0 32px; }
+  .detail-section4 .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 32px; }
+  .detail-section4 .slider-content {
+    height: 540px;
+    margin-bottom: 90px; }
+    .detail-section4 .slider-content .swiper {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%; }
+      .detail-section4 .slider-content .swiper .swiper-button-prev, .detail-section4 .slider-content .swiper .swiper-button-next {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #D2C6A5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 150ms ease-in-out;
+        top: 44%; }
+        .detail-section4 .slider-content .swiper .swiper-button-prev:after, .detail-section4 .slider-content .swiper .swiper-button-next:after {
+          display: none; }
+        .detail-section4 .slider-content .swiper .swiper-button-prev:hover, .detail-section4 .slider-content .swiper .swiper-button-next:hover {
+          transform: scale(1.1); }
+      .detail-section4 .slider-content .swiper .swiper-button-prev {
+        left: 32px; }
+        .detail-section4 .slider-content .swiper .swiper-button-prev img {
+          transform: rotate(180deg); }
+      .detail-section4 .slider-content .swiper .swiper-button-next {
+        right: 32px; }
+    .detail-section4 .slider-content .swiper-slide .img-wrapper {
+      width: 100%;
+      height: calc(100% - 60px);
+      margin-bottom: 16px; }
+      .detail-section4 .slider-content .swiper-slide .img-wrapper img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .detail-section4 .slider-content .swiper-slide .description, .detail-section4 .slider-content .swiper-slide .price {
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      color: #1F1F1F;
+      margin: 0; }
+    .detail-section4 .slider-content .swiper-slide .description {
+      margin-bottom: 8px; }
+    .detail-section4 .slider-content .swiper-slide .price {
+      font-weight: 600; }
+
 .size-guide-modal .modal {
   display: none;
   position: fixed;
@@ -1578,6 +1642,464 @@ main {
   .size-guide-modal .modal-content {
     margin: 50% auto !important; } }
 
+.explore-section1 {
+  padding: 0 32px;
+  margin-bottom: 100px; }
+  .explore-section1 .row {
+    display: flex;
+    align-items: flex-end; }
+    .explore-section1 .row .column {
+      width: 50%;
+      flex: 0 0 50%; }
+  .explore-section1 .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 16px; }
+    .explore-section1 .title.gold {
+      color: #D2C6A5;
+      margin-bottom: 80px;
+      font-style: italic; }
+  .explore-section1 .description {
+    max-width: 209px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F1F1F;
+    margin-left: 127px; }
+  .explore-section1 .scroll-to {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    cursor: pointer; }
+    .explore-section1 .scroll-to:after {
+      content: '';
+      position: absolute;
+      top: -28px;
+      left: -35px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1px solid #D2C6A5;
+      opacity: 0.3;
+      clip-path: ellipse(71px 80px at 10% 50%); }
+    .explore-section1 .scroll-to span {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      color: #1F1F1F; }
+    .explore-section1 .scroll-to img {
+      width: 15px;
+      height: 12px;
+      margin-left: 9px;
+      margin-top: 2px;
+      transform: rotate(90deg); }
+  .explore-section1 .slider-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px; }
+    .explore-section1 .slider-wrapper .sliding-items {
+      display: flex;
+      flex-direction: column; }
+      .explore-section1 .slider-wrapper .sliding-items .slide-item {
+        width: 233px;
+        height: 347px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+      .explore-section1 .slider-wrapper .sliding-items .slider-buttons {
+        display: flex;
+        align-items: center; }
+        .explore-section1 .slider-wrapper .sliding-items .slider-buttons > div {
+          width: 117px;
+          height: 117px;
+          border-radius: 50%;
+          border: 1px solid transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer; }
+          .explore-section1 .slider-wrapper .sliding-items .slider-buttons > div:hover {
+            border-color: #D2C6A5; }
+          .explore-section1 .slider-wrapper .sliding-items .slider-buttons > div.prev-slide {
+            transform: rotate(180deg); }
+    .explore-section1 .slider-wrapper .active-slide {
+      width: 443px;
+      height: 654px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+
+.explore-section2 {
+  padding: 0 32px; }
+  .explore-section2 .row {
+    display: flex;
+    align-items: center;
+    margin: 0 -12px; }
+    .explore-section2 .row .col {
+      padding: 0 12px;
+      width: 33.3%;
+      flex: 0 0 33.3%; }
+  .explore-section2 .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 55px; }
+  .explore-section2 .description {
+    max-width: 330px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #1F1F1F;
+    margin: 0 0 0 90px; }
+  .explore-section2 .img-wrapper {
+    width: 100%;
+    height: 663px; }
+    .explore-section2 .img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+
+.explore-section3 {
+  padding-left: 32px;
+  margin-top: 150px; }
+  .explore-section3 .row {
+    display: flex; }
+    @media (max-width: 720px) {
+      .explore-section3 .row {
+        flex-wrap: wrap; } }
+    .explore-section3 .row .image {
+      width: 30%;
+      flex: 0 0 30%;
+      max-height: 900px; }
+      @media (max-width: 720px) {
+        .explore-section3 .row .image {
+          width: 100%;
+          flex: 0 0 100%; } }
+      .explore-section3 .row .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .explore-section3 .row .slider-wrapper {
+      width: 70%;
+      flex: 0 0 70%;
+      padding-left: 120px; }
+      @media (max-width: 1100px) {
+        .explore-section3 .row .slider-wrapper {
+          padding-left: 60px; } }
+      @media (max-width: 720px) {
+        .explore-section3 .row .slider-wrapper {
+          padding-left: 0px;
+          width: 100%;
+          flex: 0 0 100%; } }
+      .explore-section3 .row .slider-wrapper h3 {
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 64px;
+        line-height: 77px;
+        letter-spacing: 0.02em;
+        color: #1F1F1F;
+        margin-top: 0;
+        margin-bottom: 16px; }
+      .explore-section3 .row .slider-wrapper .description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1F;
+        margin: 0;
+        max-width: 320px;
+        width: 100%; }
+      .explore-section3 .row .slider-wrapper .slider-item {
+        width: 210px;
+        height: 348px; }
+        .explore-section3 .row .slider-wrapper .slider-item .title {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: #1F1F1F;
+          margin-top: 0;
+          margin-bottom: 8px; }
+        .explore-section3 .row .slider-wrapper .slider-item .price {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          color: #1F1F1F;
+          margin-top: 0;
+          margin-bottom: 16px; }
+        .explore-section3 .row .slider-wrapper .slider-item .add-to-cart {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #1F1F1F;
+          margin: 0; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper {
+          width: 100%;
+          height: 100%;
+          padding-bottom: 40px; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-slide {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-bullet {
+          width: 8px;
+          height: 8px;
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.2);
+          position: relative; }
+          .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-bullet:first-child {
+            background-color: #C2916C; }
+          .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-bullet:nth-child(2) {
+            background-color: #1A1515; }
+          .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-bullet:nth-child(3) {
+            background-color: #593D35; }
+          .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-bullet:nth-child(4) {
+            background-color: #3B312C; }
+          .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-bullet:last-child {
+            background-color: #382721; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-bullet-active:after {
+          content: '';
+          position: absolute;
+          top: -3px;
+          left: -3px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: transparent;
+          border: 0.5px solid; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-button-next-small, .explore-section3 .row .slider-wrapper .slider-item .swiper-button-prev-small {
+          bottom: -4px;
+          top: auto; }
+          .explore-section3 .row .slider-wrapper .slider-item .swiper-button-next-small:after, .explore-section3 .row .slider-wrapper .slider-item .swiper-button-prev-small:after {
+            font-size: 12px;
+            font-weight: bold;
+            color: #1F1F1F; }
+      .explore-section3 .row .slider-wrapper .big-slider .bigSwiper {
+        width: 100%;
+        height: 500px;
+        padding-top: 70px; }
+        .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-button-prev-big {
+          top: 10px;
+          left: auto;
+          right: 250px; }
+          .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-button-prev-big:after {
+            display: none; }
+          .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-button-prev-big img {
+            transform: rotate(180deg); }
+        .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-button-next-big {
+          top: 10px;
+          right: 150px; }
+          .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-button-next-big:after {
+            display: none; }
+        .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-pagination-big {
+          top: 2px;
+          left: auto;
+          right: 160px;
+          width: 100px; }
+
+.explore-section4 .testimonials {
+  padding: 100px 32px; }
+  .explore-section4 .testimonials .row {
+    display: flex;
+    margin: 0 -12px; }
+    .explore-section4 .testimonials .row .col {
+      width: 33.3%;
+      flex: 0 0 33.3%;
+      padding: 0 12px; }
+  .explore-section4 .testimonials .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #282828;
+    margin-top: 0;
+    margin-bottom: 32px; }
+  .explore-section4 .testimonials .cart {
+    padding: 32px;
+    background: #F3EAE4;
+    border-bottom: 4px solid #D2C6A5;
+    box-shadow: 0 3px 6px -1px #1f1f1f7a; }
+    .explore-section4 .testimonials .cart .cart-number {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 64px;
+      line-height: 77px;
+      letter-spacing: 0.02em;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 32px; }
+    .explore-section4 .testimonials .cart .cart-description {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 68px; }
+    .explore-section4 .testimonials .cart .cart-image {
+      display: flex;
+      width: 85%;
+      justify-content: space-between;
+      margin-bottom: 50px; }
+      .explore-section4 .testimonials .cart .cart-image .slashs {
+        width: 75px;
+        height: 50px; }
+        .explore-section4 .testimonials .cart .cart-image .slashs img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+      .explore-section4 .testimonials .cart .cart-image .user-image {
+        display: flex;
+        flex-direction: column; }
+        .explore-section4 .testimonials .cart .cart-image .user-image .img {
+          width: 117px;
+          height: 139px;
+          overflow: hidden;
+          margin-bottom: 16px; }
+          .explore-section4 .testimonials .cart .cart-image .user-image .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .explore-section4 .testimonials .cart .cart-image .user-image .fullname {
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: #1F1F1F; }
+    .explore-section4 .testimonials .cart .cart-footer {
+      font-family: 'Canela Trial';
+      font-style: italic;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #D2C6A5; }
+
+.explore-section5 .lookbook {
+  background: #1F1F1F;
+  padding: 146px 32px 146px 125px;
+  position: relative;
+  overflow: hidden; }
+  .explore-section5 .lookbook .repeat-text {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    z-index: 1; }
+    .explore-section5 .lookbook .repeat-text span {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 136px;
+      line-height: 163px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+      color: #282828; }
+      .explore-section5 .lookbook .repeat-text span:nth-child(2n) {
+        color: #D2C6A5; }
+  .explore-section5 .lookbook .row {
+    display: flex; }
+    .explore-section5 .lookbook .row .column {
+      width: 50%;
+      flex: 0 0 50%; }
+    .explore-section5 .lookbook .row.right {
+      align-items: center; }
+  .explore-section5 .lookbook .content {
+    align-items: flex-end; }
+  .explore-section5 .lookbook .left {
+    display: flex;
+    flex-direction: column; }
+    .explore-section5 .lookbook .left .title {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #D2C6A5;
+      margin: 0 0 28px; }
+    .explore-section5 .lookbook .left .description {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #565656;
+      margin: 0 0 59px;
+      max-width: 466px;
+      width: 100%; }
+    .explore-section5 .lookbook .left .link {
+      margin: 0;
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      cursor: pointer; }
+      .explore-section5 .lookbook .left .link span {
+        margin: 0 9px 0 0;
+        display: inline-block; }
+
 footer {
   background: #EFF2F4; }
   footer .footer {
@@ -1662,3 +2184,7 @@ body {
   .button.outlined {
     background-color: transparent;
     border: 1px solid #D2C6A5; }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto; }

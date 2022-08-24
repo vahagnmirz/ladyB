@@ -89,3 +89,36 @@ window.onclick = e => {
         modalContent.classList.remove("show");
     }
 };
+
+
+let swiper = new Swiper(".productDetailSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+        },
+        991: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        },
+        1600: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+    },
+});

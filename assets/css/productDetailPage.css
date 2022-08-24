@@ -492,6 +492,70 @@
       line-height: 24px;
       color: #D2C6A5; }
 
+.detail-section4 {
+  padding: 0 32px; }
+  .detail-section4 .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 32px; }
+  .detail-section4 .slider-content {
+    height: 540px;
+    margin-bottom: 90px; }
+    .detail-section4 .slider-content .swiper {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%; }
+      .detail-section4 .slider-content .swiper .swiper-button-prev, .detail-section4 .slider-content .swiper .swiper-button-next {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #D2C6A5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 150ms ease-in-out;
+        top: 44%; }
+        .detail-section4 .slider-content .swiper .swiper-button-prev:after, .detail-section4 .slider-content .swiper .swiper-button-next:after {
+          display: none; }
+        .detail-section4 .slider-content .swiper .swiper-button-prev:hover, .detail-section4 .slider-content .swiper .swiper-button-next:hover {
+          transform: scale(1.1); }
+      .detail-section4 .slider-content .swiper .swiper-button-prev {
+        left: 32px; }
+        .detail-section4 .slider-content .swiper .swiper-button-prev img {
+          transform: rotate(180deg); }
+      .detail-section4 .slider-content .swiper .swiper-button-next {
+        right: 32px; }
+    .detail-section4 .slider-content .swiper-slide .img-wrapper {
+      width: 100%;
+      height: calc(100% - 60px);
+      margin-bottom: 16px; }
+      .detail-section4 .slider-content .swiper-slide .img-wrapper img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .detail-section4 .slider-content .swiper-slide .description, .detail-section4 .slider-content .swiper-slide .price {
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      color: #1F1F1F;
+      margin: 0; }
+    .detail-section4 .slider-content .swiper-slide .description {
+      margin-bottom: 8px; }
+    .detail-section4 .slider-content .swiper-slide .price {
+      font-weight: 600; }
+
 .size-guide-modal .modal {
   display: none;
   position: fixed;
