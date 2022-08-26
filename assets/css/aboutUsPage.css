@@ -1,0 +1,278 @@
+.aboutUs-section1 {
+  background: #EDF6F9; }
+  .aboutUs-section1 .aboutUs-section1-wrapper {
+    padding: 56px 32px; }
+    .aboutUs-section1 .aboutUs-section1-wrapper .row {
+      display: flex;
+      margin: 0 -12px; }
+      .aboutUs-section1 .aboutUs-section1-wrapper .row.justify-between {
+        justify-content: space-between; }
+      .aboutUs-section1 .aboutUs-section1-wrapper .row .column {
+        width: 50%;
+        flex: 0 0 50%;
+        padding: 0 12px; }
+    .aboutUs-section1 .aboutUs-section1-wrapper .title {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 64px;
+      line-height: 77px;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 12px; }
+      .aboutUs-section1 .aboutUs-section1-wrapper .title.gold {
+        color: #D2C6A5;
+        margin: 0;
+        text-transform: lowercase;
+        font-style: italic; }
+    .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper {
+      gap: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%; }
+      .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper {
+        width: 210px;
+        height: 280px; }
+        .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%; }
+        .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .img-wrapper {
+          width: 210px;
+          height: 140px; }
+          .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .more-about-btn {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-top: 30px;
+          margin-left: 30px;
+          margin-bottom: 30px; }
+          .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .more-about-btn:after {
+            content: '';
+            position: absolute;
+            top: -25px;
+            left: -35px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid #D2C6A5;
+            opacity: 0.3;
+            clip-path: ellipse(71px 80px at 10% 50%); }
+          .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .more-about-btn span {
+            font-family: 'Canela Trial';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+            color: #1F1F1F; }
+          .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .more-about-btn img {
+            width: 15px;
+            height: 12px;
+            margin-left: 9px;
+            margin-top: 2px; }
+
+.aboutUs-section2 {
+  padding: 90px 0; }
+  .aboutUs-section2 .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .aboutUs-section2 .row .image-wrapper {
+      width: 233px;
+      height: 334px; }
+      .aboutUs-section2 .row .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .aboutUs-section2 .row .text-wrapper h2 {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 64px;
+      line-height: 77px;
+      text-align: center;
+      margin: 0 auto 24px;
+      letter-spacing: 0.02em;
+      color: #1F1F1F; }
+    .aboutUs-section2 .row .text-wrapper p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #1F1F1F;
+      max-width: 466px;
+      width: 100%;
+      margin: 0 auto; }
+
+.aboutUs-section3 {
+  padding-top: 50px;
+  padding-bottom: 120px; }
+  .aboutUs-section3 .section-row {
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    .aboutUs-section3 .section-row .title {
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 64px;
+      line-height: 77px;
+      letter-spacing: 0.02em;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 24px; }
+    .aboutUs-section3 .section-row .description {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 70px; }
+    .aboutUs-section3 .section-row .row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px; }
+      .aboutUs-section3 .section-row .row div:first-child {
+        width: 466px;
+        height: 299px; }
+        .aboutUs-section3 .section-row .row div:first-child img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .aboutUs-section3 .section-row .row div:last-child {
+        width: 210px;
+        height: 299px; }
+        .aboutUs-section3 .section-row .row div:last-child img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .aboutUs-section3 .section-row .gold-text {
+      max-width: 466px;
+      width: 400%;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #D2C6A5;
+      margin-bottom: 0;
+      margin-top: 24px; }
+    .aboutUs-section3 .section-row .big-image {
+      width: 443px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .aboutUs-section3 .section-row .big-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.aboutUs-section4 {
+  width: 100%;
+  height: 693px;
+  position: relative; }
+  .aboutUs-section4 .video {
+    background: #1F1F1F; }
+  .aboutUs-section4 .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.69);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 300ms ease-in-out;
+    opacity: 1; }
+    .aboutUs-section4 .play-btn img {
+      width: 24px;
+      height: 24px; }
+  .aboutUs-section4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.aboutUs-section5 {
+  padding-top: 95px;
+  padding-bottom: 32px; }
+  .aboutUs-section5 .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 56px; }
+  .aboutUs-section5 .row {
+    display: flex;
+    margin: 0 -12px; }
+    .aboutUs-section5 .row .col {
+      width: 33.3%;
+      flex: 0 0 33.3%;
+      padding: 0 12px; }
+      .aboutUs-section5 .row .col .cart {
+        width: 100%; }
+        .aboutUs-section5 .row .col .cart .image {
+          width: 100%;
+          height: 250px;
+          margin: 0; }
+          .aboutUs-section5 .row .col .cart .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .aboutUs-section5 .row .col .cart .cart-info {
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          background-color: #EDF6F9; }
+          .aboutUs-section5 .row .col .cart .cart-info p {
+            margin: 0; }
+          .aboutUs-section5 .row .col .cart .cart-info .cart-title {
+            font-family: 'Canela Trial';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 32px;
+            line-height: 32px;
+            color: #1F1F1F; }
+          .aboutUs-section5 .row .col .cart .cart-info .cart-description {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1F1F1F; }
+          .aboutUs-section5 .row .col .cart .cart-info .cart-id {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #D2C6A5;
+            display: flex;
+            justify-content: flex-end; }

@@ -1,0 +1,198 @@
+.media-section1 {
+  padding: 50px 0 30px;
+  background-color: #EDF6F9;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .media-section1 .content .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 16px; }
+  .media-section1 .content .dropdown {
+    width: 443px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #EAE6D8; }
+    .media-section1 .content .dropdown .dropdown--switch:checked + .dropdown--options-filter .dropdown--select {
+      transform: scaleY(1); }
+    .media-section1 .content .dropdown .dropdown--switch:checked + .dropdown--options-filter .dropdown--filter:after {
+      transform: rotate(-135deg);
+      top: 26px; }
+    .media-section1 .content .dropdown .dropdown--options-filter {
+      width: 100%;
+      cursor: pointer; }
+    .media-section1 .content .dropdown .dropdown--filter {
+      position: relative;
+      display: flex;
+      color: #1F1F1F;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      transition: .3s;
+      margin: 0;
+      list-style-type: none;
+      padding: 18px 24px; }
+      .media-section1 .content .dropdown .dropdown--filter .dropdown--filter-selected {
+        font-size: 16px;
+        line-height: 19px;
+        color: #1F1F1F; }
+      .media-section1 .content .dropdown .dropdown--filter:focus {
+        border: none;
+        outline: none;
+        box-shadow: none; }
+      .media-section1 .content .dropdown .dropdown--filter::after {
+        position: absolute;
+        top: 23px;
+        right: 24px;
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-right: 2px solid #1F1F1F;
+        border-bottom: 2px solid #1F1F1F;
+        border-radius: 0.5px;
+        transform: rotate(45deg);
+        transition: .2s ease-in-out; }
+    .media-section1 .content .dropdown .dropdown--select {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      margin-top: 8px;
+      border: 1px solid #D2C6A5;
+      transform: scaleY(0);
+      transform-origin: top;
+      font-weight: 300;
+      transition: .2s ease-in-out;
+      list-style-type: none;
+      padding: 11px 0;
+      background: #fff; }
+      .media-section1 .content .dropdown .dropdown--select:after {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-left: 1px solid #D2C6A5;
+        border-top: 1px solid #D2C6A5;
+        background: #fff;
+        top: -4px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg); }
+    .media-section1 .content .dropdown .dropdown-select-option {
+      padding: 11px;
+      background-color: #fff;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #1F1F1F;
+      transition: all 200ms ease-in-out; }
+      .media-section1 .content .dropdown .dropdown-select-option:hover {
+        color: #D2C6A5; }
+
+.media-section2 .content {
+  padding: 56px 32px; }
+  .media-section2 .content .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px; }
+  .media-section2 .content .media-item {
+    max-width: 440px;
+    width: 100%; }
+    .media-section2 .content .media-item .media-item-content .media-image {
+      position: relative;
+      width: 100%;
+      height: 251px; }
+      .media-section2 .content .media-item .media-item-content .media-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .media-section2 .content .media-item .media-item-content .media-image .media-type {
+        position: absolute;
+        width: 131px;
+        height: 48px;
+        background: #D2C6A5;
+        left: 32px;
+        bottom: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.05em;
+        color: #1F1F1F; }
+    .media-section2 .content .media-item .media-item-content .media-info {
+      padding: 32px;
+      background-color: #EDF6F9; }
+      .media-section2 .content .media-item .media-item-content .media-info .media-title {
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        color: #1F1F1F;
+        margin-top: 0;
+        margin-bottom: 24px; }
+      .media-section2 .content .media-item .media-item-content .media-info .media-description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1F;
+        margin-top: 0;
+        margin-bottom: 32px; }
+      .media-section2 .content .media-item .media-item-content .media-info .read-more-link {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        cursor: pointer;
+        transition: all 200ms ease-in-out; }
+        .media-section2 .content .media-item .media-item-content .media-info .read-more-link:hover {
+          transform: scale(1.05); }
+        .media-section2 .content .media-item .media-item-content .media-info .read-more-link p {
+          margin: 0;
+          font-family: 'Canela Trial';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 24px;
+          color: #1F1F1F; }
+        .media-section2 .content .media-item .media-item-content .media-info .read-more-link img {
+          width: 15px;
+          height: 10px;
+          margin-top: 3px;
+          margin-left: 8px; }
+
+.media-pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  border-bottom: 1px solid #EFF2F4;
+  margin-bottom: -1px; }
+  .media-pagination .pagination-item {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #C5C5C5;
+    padding-bottom: 16px;
+    margin: 0 0 -1px; }
+    .media-pagination .pagination-item.active {
+      color: #1F1F1F;
+      border-bottom: 1px solid #1F1F1F; }

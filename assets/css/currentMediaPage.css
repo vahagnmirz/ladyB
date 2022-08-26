@@ -1,0 +1,36 @@
+.currentMedia-section1 {
+  padding: 120px 0;
+  background: #EDF6F9;
+  position: relative; }
+  .currentMedia-section1 .title {
+    max-width: 665px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1F1F1F; }
+  .currentMedia-section1 .social-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px 32px;
+    background-color: #D2C6A5;
+    display: flex;
+    align-items: center; }
+    .currentMedia-section1 .social-icons .icon {
+      width: 28px;
+      height: 28px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 200ms ease-in-out; }
+      .currentMedia-section1 .social-icons .icon:hover {
+        transform: scale(1.5); }
