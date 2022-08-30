@@ -11,6 +11,8 @@
     <title>LadyB</title>
 </head>
 <body>
+
+
 <header>
     <div class="nav">
         <div class="nav-header">
@@ -20,10 +22,10 @@
         </div>
 
         <div class="nav-links">
-            <a href="index.html" target="_blank" class="active">Home</a>
+            <a href="./index.html" target="_blank" class="active">Home</a>
             <a href="javascript:void(0)" class="header-shop">
                 <span>Shop</span>
-                <img src="assets/images/icons/arrow-down.svg" alt="icon" width="8" height="6">
+                <img src="./assets/images/icons/arrow-down.svg" alt="icon" width="8" height="6">
             </a>
             <a href="./pages/exploreProductsPage.html" target="_blank">Explore Products</a>
             <a href="./pages/aboutUsPage.html" target="_blank">About Us</a>
@@ -37,32 +39,41 @@
                 <div class="row">
                     <div class="left-part">
                         <div class="shop-image">
-                            <img src="assets/images/shop-dropdown-image.png" alt="image">
+                            <img src="./assets/images/shop-dropdown-image.png" alt="image">
                         </div>
                     </div>
                     <div class="right-part">
                         <div class="row">
                             <div class="column">
                                 <ul>
-                                    <li><p class="number">01</p><p class="text">Celebrity</p></li>
-                                    <li><p class="number">02</p><p class="text">Elegant</p></li>
-                                    <li><p class="number">03</p><p class="text">LadyB Lite</p></li>
-                                    <li><p class="number">04</p><p class="text">Men Socks</p></li>
+                                    <li><p class="number">01</p>
+                                        <p class="text">Celebrity</p></li>
+                                    <li><p class="number">02</p>
+                                        <p class="text">Elegant</p></li>
+                                    <li><p class="number">03</p>
+                                        <p class="text">LadyB Lite</p></li>
+                                    <li><p class="number">04</p>
+                                        <p class="text">Men Socks</p></li>
                                 </ul>
                                 <div class="link-to-shop-page">
-                                    <a href="pages/shopPage.html" target="_blank">See All</a>
+                                    <a href="./pages/shopPage.html" target="_blank">See All</a>
                                 </div>
                             </div>
                             <div class="column">
                                 <div class="row close-button-part">
                                     <div class="right-image">
-                                        <img src="assets/images/shop-dropdown-image2.png" alt="image">
+                                        <img src="./assets/images/shop-dropdown-image2.png" alt="image">
                                         <p>LadyB Lite</p>
                                     </div>
                                     <div class="close-button" id="shop-dd-close-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
-                                            <line y1="-0.5" x2="11.5333" y2="-0.5" transform="matrix(-0.72032 -0.693642 0.72032 -0.693642 10.0001 8)" stroke="#1F1F1F"/>
-                                            <line y1="-0.5" x2="11.5333" y2="-0.5" transform="matrix(0.72032 -0.693642 -0.72032 -0.693642 1 8)" stroke="#1F1F1F"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9"
+                                             fill="none">
+                                            <line y1="-0.5" x2="11.5333" y2="-0.5"
+                                                  transform="matrix(-0.72032 -0.693642 0.72032 -0.693642 10.0001 8)"
+                                                  stroke="#1F1F1F"/>
+                                            <line y1="-0.5" x2="11.5333" y2="-0.5"
+                                                  transform="matrix(0.72032 -0.693642 -0.72032 -0.693642 1 8)"
+                                                  stroke="#1F1F1F"/>
                                         </svg>
                                     </div>
                                 </div>
@@ -80,14 +91,35 @@
                 </a>
             </div>
             <div class="message-cart">
-                <a href="/">
+                <a href="./pages/cartPage.html">
                     <p>Your Cart</p>
                     <img src="./assets/images/message-icon.png" alt="icon" width="24" height="24">
                 </a>
             </div>
             <div class="sign-in">
-                <a href="/">
+                <a href="#open-modal">
                     <p>Sign In</p>
+                    <img src="./assets/images/user.png" alt="icon" width="24" height="24">
+                </a>
+                <div id="open-modal" class="modal-window">
+                    <div>
+                        <a href="#" title="Close" class="modal-close">
+                            &#215;
+                        </a>
+                        <h1>Welcome Back</h1>
+                        <p class="desc">Making a luxurious lifestyle accessible for a generous group of women is our daily drive.</p>
+                        <form action="">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="sign-in-btn">SIGN IN</button>
+                        </form>
+                        <div class="donthaveaccount"><p>Don’t have account? </p> <a href="./pages/authorization.html"> Register</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <a href="./pages/profilePage.html">
+                    <p>Profile</p>
                     <img src="./assets/images/user.png" alt="icon" width="24" height="24">
                 </a>
             </div>
@@ -95,15 +127,15 @@
                 <input type="checkbox" class="dropdown--switch" id="filter-switch" hidden/>
                 <label for="filter-switch" class="dropdown--options-filter">
                     <ul class="dropdown--filter" role="listbox" tabindex="-1">
-                        <li class="dropdown--filter-selected" id="language" aria-selected="true">
+                        <li class="dropdown--filter-selected" aria-selected="true">
                             ENG
                         </li>
                         <li>
                             <ul class="dropdown--select">
-                                <li class="dropdown-select-option lang-option" role="option">
+                                <li class="dropdown-select-option" role="option">
                                     ENG
                                 </li>
-                                <li class="dropdown-select-option lang-option" role="option">
+                                <li class="dropdown-select-option" role="option">
                                     SR
                                 </li>
                             </ul>
@@ -114,6 +146,9 @@
         </div>
     </div>
 </header>
+
+
+
 <main class="homepage">
     <div class="body-title">
         <h1 class="animate__animated animate__backInLeft">Health, Style And Beauty.</h1>

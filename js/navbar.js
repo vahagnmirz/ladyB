@@ -57,3 +57,22 @@ document.querySelector('.header-shop').addEventListener('click', () => {
 document.getElementById('shop-dd-close-btn').addEventListener('click', () => {
     document.querySelector('.shop-dropdown-background').classList.remove('opened')
 })
+
+
+
+
+
+
+
+document.querySelector('.sign-in-btn').addEventListener('click', () => {
+    localStorage.setItem('token', '12345');
+    document.location.reload(true)
+    document.querySelector('.sign-in').style.display = 'none';
+    document.querySelector('.profile').style.display = 'block';
+})
+
+if(!!localStorage.getItem('token')){
+    document.querySelector('.sign-in').style.display = 'none';
+    document.querySelector('.profile').style.display = 'block';
+}
+

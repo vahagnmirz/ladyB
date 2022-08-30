@@ -2,9 +2,8 @@
   padding: 20px 32px 40px;
   display: flex;
   flex-direction: row;
-  gap: 24px;
-
-  .left {
+  gap: 24px; }
+  .lookbook-wrapper .left {
     max-width: 560px;
     width: 100%;
     padding: 80px 0;
@@ -12,13 +11,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #D2C6A5;
-
-    p {
-      margin-top: 0;
-    }
-
-    .top {
+    background: #D2C6A5; }
+    .lookbook-wrapper .left p {
+      margin-top: 0; }
+    .lookbook-wrapper .left .top {
       font-weight: 600;
       font-size: 12px;
       line-height: 16px;
@@ -26,10 +22,8 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #FFFFFF;
-      margin-bottom: 108px;
-    }
-
-    .middle {
+      margin-bottom: 108px; }
+    .lookbook-wrapper .left .middle {
       font-family: 'Canela Trial';
       font-style: normal;
       font-weight: 100;
@@ -37,45 +31,21 @@
       line-height: 80px;
       text-align: center;
       letter-spacing: 0.02em;
-      color: #FFFFFF;
-    }
-
-    .bottom {
+      color: #FFFFFF; }
+    .lookbook-wrapper .left .bottom {
       font-weight: 400;
       font-size: 12px;
       line-height: 15px;
       text-align: center;
       color: #FFFFFF;
       max-width: 255px;
-      width: 100%;
-    }
-  }
-
-  .lookbook-image-wrapper {
+      width: 100%; }
+  .lookbook-wrapper .lookbook-image-wrapper {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    cursor: grab;
-    ///* width */
-    //&::-webkit-scrollbar {
-    //  width: 0;
-    //}
-    //
-    ///* Track */
-    //&::-webkit-scrollbar-track {
-    //  background: #f1f1f1;
-    //}
-    //
-    ///* Handle */
-    //&::-webkit-scrollbar-thumb {
-    //  background: #888;
-    //}
-    //
-    ///* Handle on hover */
-    //&::-webkit-scrollbar-thumb:hover {
-    //  background: #555;
-    //}
-    .lookbook-image {
+    cursor: grab; }
+    .lookbook-wrapper .lookbook-image-wrapper .lookbook-image {
       width: 2000px;
       height: 650px;
       background-image: url(../../assets/images/lookbook-page-image.png);
@@ -85,43 +55,28 @@
       position: relative;
       -webkit-animation: waves 10s infinite;
       -moz-animation: waves 10s infinite;
-      animation: waves 10s infinite;
-    }
-  }
-}
+      animation: waves 10s infinite; }
 
 @-webkit-keyframes waves {
   0% {
-    left: -1200px;
-  }
+    left: -1200px; }
   50% {
-    left: 0;
-  }
+    left: 0; }
   100% {
-    left: -1200px;
-  }
-}
+    left: -1200px; } }
 
 @-moz-keyframes waves {
   0% {
-    left: -1200px;
-  }
+    left: -1200px; }
   50% {
-    left: 0;
-  }
+    left: 0; }
   100% {
-    left: -1200px;
-  }
-}
+    left: -1200px; } }
 
 @keyframes waves {
   0% {
-    left: -1200px;
-  }
+    left: -1200px; }
   50% {
-    left: 0;
-  }
+    left: 0; }
   100% {
-    left: -1200px;
-  }
-}
+    left: -1200px; } }

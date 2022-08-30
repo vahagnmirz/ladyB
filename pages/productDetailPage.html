@@ -27,11 +27,11 @@
                 <span>Shop</span>
                 <img src="../assets/images/icons/arrow-down.svg" alt="icon" width="8" height="6">
             </a>
-            <a href="/" target="_blank">Explore Products</a>
-            <a href="/" target="_blank">About Us</a>
-            <a href="/" target="_blank">Media</a>
-            <a href="/" target="_blank">Lookbook</a>
-            <a href="/" target="_blank">Contact</a>
+            <a href="./exploreProductsPage.html" target="_blank">Explore Products</a>
+            <a href="./aboutUsPage.html" target="_blank">About Us</a>
+            <a href="./mediaPage.html" target="_blank">Media</a>
+            <a href="./lookbookPage.html" target="_blank">Lookbook</a>
+            <a href="./contactPage.html" target="_blank">Contact</a>
         </div>
 
         <div class="shop-dropdown-background">
@@ -91,14 +91,35 @@
                 </a>
             </div>
             <div class="message-cart">
-                <a href="/">
+                <a href="./cartPage.html">
                     <p>Your Cart</p>
                     <img src="../assets/images/message-icon.png" alt="icon" width="24" height="24">
                 </a>
             </div>
             <div class="sign-in">
-                <a href="/">
+                <a href="#open-modal">
                     <p>Sign In</p>
+                    <img src="../assets/images/user.png" alt="icon" width="24" height="24">
+                </a>
+                <div id="open-modal" class="modal-window">
+                    <div>
+                        <a href="#" title="Close" class="modal-close">
+                            &#215;
+                        </a>
+                        <h1>Welcome Back</h1>
+                        <p class="desc">Making a luxurious lifestyle accessible for a generous group of women is our daily drive.</p>
+                        <form action="">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="sign-in-btn">SIGN IN</button>
+                        </form>
+                        <div class="donthaveaccount"><p>Don’t have account? </p> <a href="./authorization.html"> Register</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <a href="./profilePage.html">
+                    <p>Profile</p>
                     <img src="../assets/images/user.png" alt="icon" width="24" height="24">
                 </a>
             </div>

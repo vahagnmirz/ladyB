@@ -50,8 +50,119 @@ header {
       align-items: center;
       justify-content: center;
       gap: 40px; }
+      header .nav .nav-links-right .sign-in .modal-window {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.59);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s; }
+        header .nav .nav-links-right .sign-in .modal-window:target {
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto; }
+        header .nav .nav-links-right .sign-in .modal-window > div {
+          max-width: 724px;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 70px 117px;
+          background: white; }
+        header .nav .nav-links-right .sign-in .modal-window h1 {
+          font-family: 'Canela Trial';
+          font-style: normal;
+          font-weight: 100;
+          font-size: 32px;
+          line-height: 32px;
+          letter-spacing: 0.02em;
+          color: #1F1F1F;
+          margin-top: 0;
+          margin-bottom: 16px; }
+        header .nav .nav-links-right .sign-in .modal-window p {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #1F1F1F;
+          margin-top: 0;
+          margin-bottom: 24px; }
+          header .nav .nav-links-right .sign-in .modal-window p.desc {
+            max-width: 310px;
+            width: 100%; }
+        header .nav .nav-links-right .sign-in .modal-window .donthaveaccount {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          header .nav .nav-links-right .sign-in .modal-window .donthaveaccount p {
+            margin: 0 3px 0 0; }
+          header .nav .nav-links-right .sign-in .modal-window .donthaveaccount a {
+            font-weight: bold;
+            text-decoration: underline;
+            color: #1F1F1F;
+            font-size: 12px;
+            line-height: 15px;
+            margin: 0; }
+        header .nav .nav-links-right .sign-in .modal-window form {
+          width: 100%;
+          display: flex;
+          flex-direction: column; }
+          header .nav .nav-links-right .sign-in .modal-window form input {
+            padding: 19px 24px;
+            box-shadow: none;
+            outline: none;
+            border: 1px solid #EAE6D8;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 16px; }
+            header .nav .nav-links-right .sign-in .modal-window form input::placeholder {
+              color: #C5C5C5; }
+          header .nav .nav-links-right .sign-in .modal-window form button {
+            background: #D2C6A5;
+            padding: 19px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #1F1F1F;
+            transition: all 300ms ease-in-out;
+            margin-bottom: 24px; }
+            header .nav .nav-links-right .sign-in .modal-window form button:hover {
+              font-size: 14px; }
+      header .nav .nav-links-right .sign-in .modal-close {
+        position: absolute;
+        right: 24px;
+        font-size: 22px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 24px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 1px solid #D2C6A5;
+        text-decoration: none; }
+        header .nav .nav-links-right .sign-in .modal-close:hover {
+          color: black; }
       header .nav .nav-links-right .sign-in.active a {
         color: #D2C6A5; }
+      header .nav .nav-links-right .profile {
+        display: none; }
       header .nav .nav-links-right > div a {
         display: flex;
         align-items: center;

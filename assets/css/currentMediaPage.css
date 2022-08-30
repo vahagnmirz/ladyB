@@ -1,3 +1,9 @@
+.inner-container {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
 .currentMedia-section1 {
   padding: 120px 0;
   background: #EDF6F9;
@@ -34,3 +40,171 @@
       transition: all 200ms ease-in-out; }
       .currentMedia-section1 .social-icons .icon:hover {
         transform: scale(1.5); }
+
+.currentMedia-section2 {
+  padding: 24px 0; }
+  .currentMedia-section2 .top-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 78px;
+    gap: 24px; }
+    .currentMedia-section2 .top-info p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1F1F1F;
+      margin: 0; }
+    .currentMedia-section2 .top-info .line {
+      width: 1px;
+      height: 16px;
+      background-color: #D2C6A5; }
+  .currentMedia-section2 .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 40px; }
+  .currentMedia-section2 .text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F1F1F;
+    margin: 0; }
+  .currentMedia-section2 .media-image {
+    width: 910px;
+    height: 515px;
+    margin: 0 auto; }
+    .currentMedia-section2 .media-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .currentMedia-section2 .image-info {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 70px; }
+
+.currentMedia-section3 {
+  background: #F3EAE4;
+  padding: 100px; }
+  .currentMedia-section3 .text {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    margin: 0; }
+  .currentMedia-section3 .backticks {
+    position: absolute;
+    top: 4px;
+    left: -108px;
+    width: 60px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .currentMedia-section3 .backticks img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+
+.currentMedia-section4 {
+  padding-top: 70px;
+  padding-bottom: 96px; }
+  .currentMedia-section4 .text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F1F1F; }
+  .currentMedia-section4 .similar-media .title {
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 40px; }
+  .currentMedia-section4 .similar-media .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px; }
+  .currentMedia-section4 .similar-media .media-item {
+    max-width: 440px;
+    width: 100%; }
+    .currentMedia-section4 .similar-media .media-item .media-item-content .media-image {
+      position: relative;
+      width: 100%;
+      height: 251px; }
+      .currentMedia-section4 .similar-media .media-item .media-item-content .media-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .currentMedia-section4 .similar-media .media-item .media-item-content .media-image .media-type {
+        position: absolute;
+        width: 131px;
+        height: 48px;
+        background: #D2C6A5;
+        left: 32px;
+        bottom: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.05em;
+        color: #1F1F1F; }
+    .currentMedia-section4 .similar-media .media-item .media-item-content .media-info {
+      padding: 32px;
+      background-color: #EDF6F9; }
+      .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .media-title {
+        font-family: 'Canela Trial';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        color: #1F1F1F;
+        margin-top: 0;
+        margin-bottom: 24px; }
+      .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .media-description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1F1F1F;
+        margin-top: 0;
+        margin-bottom: 32px; }
+      .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .read-more-link {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        cursor: pointer;
+        transition: all 200ms ease-in-out; }
+        .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .read-more-link:hover {
+          transform: scale(1.05); }
+        .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .read-more-link p {
+          margin: 0;
+          font-family: 'Canela Trial';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 24px;
+          color: #1F1F1F; }
+        .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .read-more-link img {
+          width: 15px;
+          height: 10px;
+          margin-top: 3px;
+          margin-left: 8px; }
