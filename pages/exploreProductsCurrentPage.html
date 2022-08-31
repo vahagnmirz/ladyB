@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>LadyB</title>
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                <img src="../assets/images/logo.png" alt="logo" width="60" height="54">
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="javascript:void(0)" class="header-shop">
+                <span>Shop</span>
+                <img src="../assets/images/icons/arrow-down.svg" alt="icon" width="8" height="6">
+            </a>
+            <a href="./exploreProductsPage.html" class="active">Explore Products</a>
+            <a href="./aboutUsPage.html">About Us</a>
+            <a href="./mediaPage.html">Media</a>
+            <a href="./lookbookPage.html">Lookbook</a>
+            <a href="./contactPage.html">Contact</a>
+        </div>
+
+        <div class="shop-dropdown-background">
+            <div class="shop-dropdown-container">
+                <div class="row">
+                    <div class="left-part">
+                        <div class="shop-image">
+                            <img src="../assets/images/shop-dropdown-image.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="row">
+                            <div class="column">
+                                <ul>
+                                    <li><p class="number">01</p>
+                                        <p class="text">Celebrity</p></li>
+                                    <li><p class="number">02</p>
+                                        <p class="text">Elegant</p></li>
+                                    <li><p class="number">03</p>
+                                        <p class="text">LadyB Lite</p></li>
+                                    <li><p class="number">04</p>
+                                        <p class="text">Men Socks</p></li>
+                                </ul>
+                                <div class="link-to-shop-page">
+                                    <a href="./shopPage.html" target="_blank">See All</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="row close-button-part">
+                                    <div class="right-image">
+                                        <img src="../assets/images/shop-dropdown-image2.png" alt="image">
+                                        <p>LadyB Lite</p>
+                                    </div>
+                                    <div class="close-button" id="shop-dd-close-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9"
+                                             fill="none">
+                                            <line y1="-0.5" x2="11.5333" y2="-0.5"
+                                                  transform="matrix(-0.72032 -0.693642 0.72032 -0.693642 10.0001 8)"
+                                                  stroke="#1F1F1F"/>
+                                            <line y1="-0.5" x2="11.5333" y2="-0.5"
+                                                  transform="matrix(0.72032 -0.693642 -0.72032 -0.693642 1 8)"
+                                                  stroke="#1F1F1F"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-links-right">
+            <div class="nav-btn">
+                <a href="javascript:void(0)" class="menu-icon indent">
+                    <span class="menu-icon__text"></span>
+                </a>
+            </div>
+            <div class="message-cart">
+                <a href="./cartPage.html">
+                    <p>Your Cart</p>
+                    <img src="../assets/images/message-icon.png" alt="icon" width="24" height="24">
+                </a>
+            </div>
+            <div class="sign-in">
+                <a href="#open-modal">
+                    <p>Sign In</p>
+                    <img src="../assets/images/user.png" alt="icon" width="24" height="24">
+                </a>
+                <div id="open-modal" class="modal-window">
+                    <div>
+                        <a href="#" title="Close" class="modal-close">
+                            &#215;
+                        </a>
+                        <h1>Welcome Back</h1>
+                        <p class="desc">Making a luxurious lifestyle accessible for a generous group of women is our daily drive.</p>
+                        <form action="">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="sign-in-btn">SIGN IN</button>
+                        </form>
+                        <div class="donthaveaccount"><p>Don’t have account? </p> <a href="./authorization.html"> Register</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <a href="./profilePage.html">
+                    <p>Profile</p>
+                    <img src="../assets/images/user.png" alt="icon" width="24" height="24">
+                </a>
+            </div>
+            <div class="dropdown">
+                <input type="checkbox" class="dropdown--switch" id="filter-switch" hidden/>
+                <label for="filter-switch" class="dropdown--options-filter">
+                    <ul class="dropdown--filter" role="listbox" tabindex="-1">
+                        <li class="dropdown--filter-selected" aria-selected="true">
+                            ENG
+                        </li>
+                        <li>
+                            <ul class="dropdown--select">
+                                <li class="dropdown-select-option" role="option">
+                                    ENG
+                                </li>
+                                <li class="dropdown-select-option" role="option">
+                                    SR
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </label>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="explore-section1">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h2 class="title">Luxurious And <br> Contemporary Appeal</h2>
+                    <h2 class="title gold">for every woman</h2>
+                    <p class="description">Making a luxurious lifestyle accessible for a generous group of women is our daily drive.</p>
+                    <div class="scroll-to">
+                        <span>Scroll For More</span>
+                        <img src="../assets/images/icons/arrow-left-black.svg" alt="icon" width="15" height="12">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="slider-wrapper">
+                        <div class="sliding-items">
+                            <div class="slider-buttons">
+                                <div class="prev-slide">
+                                    <img src="../assets/images/icons/arrow-left-black.svg" alt="icon">
+                                </div>
+                                <div class="next-slide">
+                                    <img src="../assets/images/icons/arrow-left-black.svg" alt="icon">
+                                </div>
+                            </div>
+                            <div class="slide-item"></div>
+                        </div>
+                        <div class="active-slide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore-section2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="title">Effortless <br>
+                        Chic Lifestyle</p>
+                    <p class="description">Making a luxurious lifestyle accessible for a generous group of women is our daily drive.</p>
+                </div>
+                <div class="col">
+                    <div class="img-wrapper">
+                        <img src="../assets/images/detailpage1.png" alt="images">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img-wrapper">
+                        <img src="../assets/images/detailpage2.png" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore-section3">
+        <div class="row">
+            <div class="image">
+                <img src="../assets/images/detailpage2.png" alt="images">
+            </div>
+            <div class="slider-wrapper">
+                <h3>Best Sellers</h3>
+                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="big-slider">
+                    <div class="swiper bigSwiper">
+                        <div class="swiper-button-prev swiper-button-prev-big">
+                            <img src="../assets/images/icons/arrow-left-black.svg" alt="">
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-big"></div>
+                        <div class="swiper-button-next swiper-button-next-big">
+                            <img src="../assets/images/icons/arrow-left-black.svg" alt="">
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="swiper sliderItem">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide1.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide2.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide3.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide4.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/slide2.png" alt="slide">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev-small"></div>
+                                        <div class="swiper-pagination swiper-pagination-small"></div>
+                                        <div class="swiper-button-next swiper-button-next-small"></div>
+                                    </div>
+                                    <p class="title">20 Denier Sheer Tights</p>
+                                    <p class="price">$39.00</p>
+                                    <div class="add-to-cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="swiper sliderItem">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide1.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide2.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide3.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide4.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/slide2.png" alt="slide">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev-small"></div>
+                                        <div class="swiper-pagination swiper-pagination-small"></div>
+                                        <div class="swiper-button-next swiper-button-next-small"></div>
+                                    </div>
+                                    <p class="title">20 Denier Sheer Tights</p>
+                                    <p class="price">$39.00</p>
+                                    <div class="add-to-cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="swiper sliderItem">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide1.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide2.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide3.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide4.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/slide2.png" alt="slide">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev-small"></div>
+                                        <div class="swiper-pagination swiper-pagination-small"></div>
+                                        <div class="swiper-button-next swiper-button-next-small"></div>
+                                    </div>
+                                    <p class="title">20 Denier Sheer Tights</p>
+                                    <p class="price">$39.00</p>
+                                    <div class="add-to-cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="swiper sliderItem">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide1.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide2.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide3.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide4.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/slide2.png" alt="slide">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev-small"></div>
+                                        <div class="swiper-pagination swiper-pagination-small"></div>
+                                        <div class="swiper-button-next swiper-button-next-small"></div>
+                                    </div>
+                                    <p class="title">20 Denier Sheer Tights</p>
+                                    <p class="price">$39.00</p>
+                                    <div class="add-to-cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="swiper sliderItem">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide1.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide2.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide3.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide4.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/slide2.png" alt="slide">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev-small"></div>
+                                        <div class="swiper-pagination swiper-pagination-small"></div>
+                                        <div class="swiper-button-next swiper-button-next-small"></div>
+                                    </div>
+                                    <p class="title">20 Denier Sheer Tights</p>
+                                    <p class="price">$39.00</p>
+                                    <div class="add-to-cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="swiper sliderItem">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide1.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide2.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide3.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/detailslide4.png" alt="slide">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../assets/images/slide2.png" alt="slide">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev-small"></div>
+                                        <div class="swiper-pagination swiper-pagination-small"></div>
+                                        <div class="swiper-button-next swiper-button-next-small"></div>
+                                    </div>
+                                    <p class="title">20 Denier Sheer Tights</p>
+                                    <p class="price">$39.00</p>
+                                    <div class="add-to-cart">ADD TO CART</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore-section4">
+        <div class="container">
+            <div class="testimonials">
+                <p class="title" data-aos="fade-down-right">Testimonials</p>
+                <div class="row">
+                    <div class="col" data-aos="fade-down">
+                        <div class="cart">
+                            <p class="cart-number">01</p>
+                            <p class="cart-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis
+                                nostrud.</p>
+                            <div class="cart-image">
+                                <div class="slashs">
+                                    <img src="../assets/images/icons/slashs-icon.svg" alt="icon">
+                                </div>
+                                <div class="user-image">
+                                    <div class="img">
+                                        <img src="../assets/images/testimonial1.png" alt="image">
+                                    </div>
+                                    <p class="fullname">Lepa Brena</p>
+                                </div>
+                            </div>
+                            <p class="cart-footer">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-down">
+                        <div class="cart">
+                            <p class="cart-number">02</p>
+                            <p class="cart-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis
+                                nostrud.</p>
+                            <div class="cart-image">
+                                <div class="slashs">
+                                    <img src="../assets/images/icons/slashs-icon.svg" alt="icon">
+                                </div>
+                                <div class="user-image">
+                                    <div class="img">
+                                        <img src="../assets/images/testimonial1.png" alt="image">
+                                    </div>
+                                    <p class="fullname">Lepa Brena</p>
+                                </div>
+                            </div>
+                            <p class="cart-footer">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-down">
+                        <div class="cart">
+                            <p class="cart-number">03</p>
+                            <p class="cart-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis
+                                nostrud.</p>
+                            <div class="cart-image">
+                                <div class="slashs">
+                                    <img src="../assets/images/icons/slashs-icon.svg" alt="icon">
+                                </div>
+                                <div class="user-image">
+                                    <div class="img">
+                                        <img src="../assets/images/testimonial1.png" alt="image">
+                                    </div>
+                                    <p class="fullname">Lepa Brena</p>
+                                </div>
+                            </div>
+                            <p class="cart-footer">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore-section5">
+        <div class="lookbook">
+            <p class="repeat-text">
+                <span>Lookbook</span>
+                <span>Lookbook</span>
+                <span>Lookbook</span>
+                <span>Lookbook</span>
+                <span>Lookbook</span>
+            </p>
+            <div class="row content">
+                <div class="column">
+                    <div class="left">
+                        <p class="title">SS ‘22</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua - ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco</p>
+                        <p class="link">
+                            <span>Discover All</span>
+                            <img src="../assets/images/icons/arrow-left.svg" alt="icon" width="15" height="12">
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row right">
+                        <div class="column">
+                            <img src="../assets/images/lookbook1.png" alt="image" width="326" height="500">
+                        </div>
+                        <div class="column">
+                            <img src="../assets/images/lookbook2.png" alt="image" width="326" height="500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="column">
+            <div class="footer-logo">
+                <img src="../assets/images/footer-logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="column">
+            <div class="links">
+                <p class="title">Pages</p>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About us</li>
+                    <li>Media</li>
+                    <li>Lookbook</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="links">
+                <p class="title">Customer Service</p>
+                <ul>
+                    <li>Orders</li>
+                    <li>Transport</li>
+                    <li>Return & Money</li>
+                    <li>Payment options</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="links">
+                <p class="title">Guide Products</p>
+                <ul>
+                    <li>Size guide</li>
+                    <li>Style guide</li>
+                    <li>Materials</li>
+                    <li>Garment care</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="links">
+                <p class="title">Do You Need Help?</p>
+                <ul>
+                    <li>Send us an email</li>
+                    <li>Call us: 0880 - 14278</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="all-rights-reserved">
+        <p>© Lady B, all rights reserved 2022</p>
+        <div>
+            <p>Privacy Policy</p>
+            <p>FAQ</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/homepage-slider.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/exploreProductsPage.js"></script>
+</body>
+</html>

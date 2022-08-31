@@ -423,6 +423,7 @@ header {
 
               a {
                 cursor: pointer;
+                width: fit-content;
                 font-family: 'Canela Trial';
                 font-style: normal;
                 font-weight: 300;
@@ -433,6 +434,10 @@ header {
                 letter-spacing: 0.05em;
                 color: #1F1F1F;
                 text-decoration: none;
+                transition: all 200ms ease-in-out;
+                &:hover{
+                  margin-left: -5px;
+                }
               }
 
               &:after {
@@ -445,7 +450,8 @@ header {
                 border-radius: 50%;
                 border: 1px solid #D2C6A5;
                 opacity: 0.3;
-                -path: ellipse(71px 80px at 10% 50%);
+                clip-path: ellipse(71px 80px at 10% 50%);
+                z-index: -1;
               }
             }
 
@@ -663,5 +669,10 @@ header {
         }
       }
     }
+  }
+}
+header{
+  .active{
+    font-weight: 600;
   }
 }

@@ -322,6 +322,7 @@ header {
               margin-top: 55px; }
               header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .link-to-shop-page a {
                 cursor: pointer;
+                width: fit-content;
                 font-family: 'Canela Trial';
                 font-style: normal;
                 font-weight: 300;
@@ -331,7 +332,10 @@ header {
                 align-items: center;
                 letter-spacing: 0.05em;
                 color: #1F1F1F;
-                text-decoration: none; }
+                text-decoration: none;
+                transition: all 200ms ease-in-out; }
+                header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .link-to-shop-page a:hover {
+                  margin-left: -5px; }
               header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .link-to-shop-page:after {
                 content: '';
                 position: absolute;
@@ -342,7 +346,8 @@ header {
                 border-radius: 50%;
                 border: 1px solid #D2C6A5;
                 opacity: 0.3;
-                -path: ellipse(71px 80px at 10% 50%); }
+                clip-path: ellipse(71px 80px at 10% 50%);
+                z-index: -1; }
             header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .column {
               width: 50%;
               flex: 0 0 50%; }
@@ -487,3 +492,6 @@ header {
             opacity: 0; }
           header .nav .nav-btn .menu-icon.opened:after {
             transform: rotate(-45deg) translate3d(7px, -6.5px, 0); } }
+
+header .active {
+  font-weight: 600; }

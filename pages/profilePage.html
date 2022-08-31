@@ -22,16 +22,16 @@
         </div>
 
         <div class="nav-links">
-            <a href="../index.html" target="_blank">Home</a>
+            <a href="../index.html">Home</a>
             <a href="javascript:void(0)" class="header-shop">
                 <span>Shop</span>
                 <img src="../assets/images/icons/arrow-down.svg" alt="icon" width="8" height="6">
             </a>
-            <a href="./exploreProductsPage.html" target="_blank">Explore Products</a>
-            <a href="./aboutUsPage.html" target="_blank">About Us</a>
-            <a href="./mediaPage.html" target="_blank">Media</a>
-            <a href="./lookbookPage.html" target="_blank">Lookbook</a>
-            <a href="./contactPage.html" target="_blank">Contact</a>
+            <a href="./exploreProductsPage.html">Explore Products</a>
+            <a href="./aboutUsPage.html">About Us</a>
+            <a href="./mediaPage.html">Media</a>
+            <a href="./lookbookPage.html">Lookbook</a>
+            <a href="./contactPage.html">Contact</a>
         </div>
 
         <div class="shop-dropdown-background">
@@ -107,19 +107,21 @@
                             &#215;
                         </a>
                         <h1>Welcome Back</h1>
-                        <p class="desc">Making a luxurious lifestyle accessible for a generous group of women is our daily drive.</p>
+                        <p class="desc">Making a luxurious lifestyle accessible for a generous group of women is our
+                            daily drive.</p>
                         <form action="">
                             <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">
                             <button type="submit" class="sign-in-btn">SIGN IN</button>
                         </form>
-                        <div class="donthaveaccount"><p>Don’t have account? </p> <a href="./authorization.html"> Register</a></div>
+                        <div class="donthaveaccount"><p>Don’t have account? </p> <a href="./authorization.html">
+                            Register</a></div>
                     </div>
                 </div>
             </div>
-            <div class="profile active">
+            <div class="profile">
                 <a href="./profilePage.html">
-                    <p>Profile</p>
+                    <p class="active">Profile</p>
                     <img src="../assets/images/user.png" alt="icon" width="24" height="24">
                 </a>
             </div>
@@ -148,7 +150,191 @@
 </header>
 
 <main>
-    <h1>Profile Page</h1>
+    <div class="top">
+        Your Profile
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="left-side">
+                <div class="user-content">
+                    <div class="user-image">
+                        <img src="../assets/images/icons/user-logo.svg" alt="icon">
+                    </div>
+                    <p class="user-name">John Doe</p>
+                </div>
+                <div class="tabs">
+                    <label for="tab-1">
+                        <input type="radio" id="tab-1" name="tab" checked="checked" hidden>
+                        <div class="inner-text">
+                            <div class="left">
+                                <p>01</p>
+                                <p>Account</p>
+                            </div>
+                            <div class="arrow">
+                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="4.37114e-08" y1="5.98218" x2="14" y2="5.98218" stroke="#1F1F1F"/>
+                                    <path d="M9.94714 1C9.94714 1 10.7775 2.83032 11.9471 4C12.9471 5 14.9471 6 14.9471 6"
+                                          stroke="#1F1F1F"/>
+                                    <path d="M9.94714 11C9.94714 11 10.7775 9.16968 11.9471 8C12.9471 7 14.9471 6 14.9471 6"
+                                          stroke="#1F1F1F"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </label>
+                    <label for="tab-2">
+                        <input type="radio" id="tab-2" name="tab" hidden>
+                        <div class="inner-text">
+                            <div class="left">
+                                <p>02</p>
+                                <p>Order History</p>
+                            </div>
+                            <div class="arrow">
+                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="4.37114e-08" y1="5.98218" x2="14" y2="5.98218"/>
+                                    <path d="M9.94714 1C9.94714 1 10.7775 2.83032 11.9471 4C12.9471 5 14.9471 6 14.9471 6"/>
+                                    <path d="M9.94714 11C9.94714 11 10.7775 9.16968 11.9471 8C12.9471 7 14.9471 6 14.9471 6"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </label>
+                </div>
+                <div class="logout">
+                    <p class="logout-btn">Log Out</p>
+                    <p class="delete-account">Delete Account</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="tab-content">
+                    <section id="tab-item-1">
+                        <form action="">
+                            <div class="form-item">
+                                <p class="form-item-type">Profile Name</p>
+                                <label for="name">
+                                    <input type="text" id="name" placeholder="John Doe" disabled value="John Doe">
+                                    <span class="toggleInput">Change</span>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-type">Username</p>
+                                <label for="username">
+                                    <input type="text" id="username" placeholder="John D." disabled value="John D.">
+                                    <span class="toggleInput">Change</span>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-type">Email</p>
+                                <label for="email">
+                                    <input type="email" id="email" placeholder="johndoe@gmail.com" disabled
+                                           value="johndoe@gmail.com">
+                                    <span class="toggleInput">Change</span>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-type">Password</p>
+                                <label for="pass">
+                                    <input type="password" id="pass" placeholder="*************" disabled
+                                           value="*************">
+                                    <span class="toggleInput">Change</span>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-type">Zip</p>
+                                <label for="zip">
+                                    <input type="text" id="zip" placeholder="11000" disabled value="11000">
+                                    <span class="toggleInput">Change</span>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-type">City</p>
+                                <label for="city">
+                                    <input type="text" id="city" placeholder="Belgrade" disabled value="Belgrade">
+                                    <span class="toggleInput">Change</span>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-type">Street Number & Name</p>
+                                <label for="secret-number">
+                                    <input type="text" id="secret-number" placeholder="Street Name 123" disabled
+                                           value="Street Name 123">
+                                    <span class="toggleInput">Change</span>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-type">Phone Number</p>
+                                <label for="phone">
+                                    <input type="text" id="phone" placeholder="0000000" disabled value="0000000">
+                                    <span class="toggleInput">Change</span>
+                                </label>
+                            </div>
+                            <button type="submit">Save</button>
+                        </form>
+                    </section>
+                    <section id="tab-item-2">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="../assets/images/media-item1.png" alt="image">
+                                    </div>
+                                    <p>Oroblu Ethnical Net Tights</p>
+                                </td>
+                                <td>Striped Stockings</td>
+                                <td>$39.00</td>
+                                <td>Order Again</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="../assets/images/media-item1.png" alt="image">
+                                    </div>
+                                    <p>Oroblu Ethnical Net Tights</p>
+                                </td>
+                                <td>Striped Stockings</td>
+                                <td>$39.00</td>
+                                <td>Order Again</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="../assets/images/media-item1.png" alt="image">
+                                    </div>
+                                    <p>Oroblu Ethnical Net Tights</p>
+                                </td>
+                                <td>Striped Stockings</td>
+                                <td>$39.00</td>
+                                <td>Order Again</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="../assets/images/media-item1.png" alt="image">
+                                    </div>
+                                    <p>Oroblu Ethnical Net Tights</p>
+                                </td>
+                                <td>Striped Stockings</td>
+                                <td>$39.00</td>
+                                <td>Order Again</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main>
 
@@ -216,6 +402,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../js/navbar.js"></script>
-<script src="../js/contactPage.js"></script>
+<script src="../js/profilePage.js"></script>
 </body>
 </html>

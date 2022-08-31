@@ -31,6 +31,68 @@ document.addEventListener('click', (e) => {
 //Size dropdown
 
 
+//START
+//Modal Size dropdown
+
+// Change option selected
+const madalSizeLabel = document.querySelector('#modal-size')
+const modalSizeOptions = Array.from(document.querySelectorAll('.modal-size-option'))
+
+modalSizeOptions.forEach((option) => {
+    option.addEventListener('click', () => {
+        madalSizeLabel.textContent = option.textContent
+    })
+})
+
+// Close dropdown onclick outside
+document.addEventListener('click', (e) => {
+    const toggle = document.getElementById('modal-size-switch')
+    const element = e.target
+
+    if (element === toggle) return;
+
+    const isDropdownChild = element.closest('#sizeFilter')
+
+    if (!isDropdownChild) {
+        toggle.checked = false
+    }
+})
+
+//END
+//Modal Size dropdown
+
+
+//START
+//Store Finder dropdown
+
+// Change option selected
+const townLabel = document.querySelector('#town')
+const townOptions = Array.from(document.querySelectorAll('.town-option'))
+
+townOptions.forEach((option) => {
+    option.addEventListener('click', () => {
+        townLabel.textContent = option.textContent
+    })
+})
+
+// Close dropdown onclick outside
+document.addEventListener('click', (e) => {
+    const toggle = document.getElementById('town-switch')
+    const element = e.target
+
+    if (element === toggle) return;
+
+    const isDropdownChild = element.closest('#sizeFilter')
+
+    if (!isDropdownChild) {
+        toggle.checked = false
+    }
+})
+
+//END
+//Store Finder dropdown
+
+
 
 //START
 //Counter
@@ -87,6 +149,47 @@ window.onclick = e => {
     if (e.target === modal) {
         modal.style.display = "none";
         modalContent.classList.remove("show");
+    }
+};
+
+const storemodal = document.querySelector(".store-modal");
+const storemodalContent = document.querySelector(".store-modal-content");
+
+document.querySelector(".btn-store").addEventListener("click", function() {
+    storemodal.style.display = "block";
+    storemodalContent.classList.add("show");
+});
+
+document.querySelector(".close-store").addEventListener("click", function() {
+    storemodal.style.display = "none";
+    storemodalContent.classList.remove("show");
+});
+
+window.onclick = e => {
+    if (e.target === modal) {
+        storemodal.style.display = "none";
+        storemodalContent.classList.remove("show");
+    }
+};
+
+
+const town = document.querySelector(".town-modal");
+const townContent = document.querySelector(".town-modal-content");
+
+document.querySelector(".continue-btn").addEventListener("click", function() {
+    town.style.display = "block";
+    townContent.classList.add("show");
+});
+
+document.querySelector(".town-close").addEventListener("click", function() {
+    town.style.display = "none";
+    townContent.classList.remove("show");
+});
+
+window.onclick = e => {
+    if (e.target === modal) {
+        town.style.display = "none";
+        townContent.classList.remove("show");
     }
 };
 

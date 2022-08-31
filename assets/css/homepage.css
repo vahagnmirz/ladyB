@@ -111,8 +111,9 @@ main {
               border-radius: 50%;
               border: 1px solid #1F1F1F;
               opacity: 0.3;
-              -path: ellipse(71px 80px at 10% 50%); }
-            main .home-section1 .big-column .image .image-text .more-about-btn span {
+              clip-path: ellipse(71px 80px at 10% 50%);
+              z-index: -1; }
+            main .home-section1 .big-column .image .image-text .more-about-btn a {
               font-family: 'Canela Trial';
               font-style: normal;
               font-weight: 300;
@@ -121,7 +122,12 @@ main {
               display: flex;
               align-items: center;
               letter-spacing: 0.05em;
-              color: #1F1F1F; }
+              color: #1F1F1F;
+              transition: all 200ms ease-in-out;
+              cursor: pointer;
+              text-decoration: none; }
+              main .home-section1 .big-column .image .image-text .more-about-btn a:hover {
+                margin-left: -5px; }
             main .home-section1 .big-column .image .image-text .more-about-btn img {
               width: 15px;
               height: 12px;
@@ -195,6 +201,7 @@ main {
       justify-content: center;
       text-align: center; }
       main .home-section3 .links .link .text {
+        text-decoration: none;
         cursor: pointer;
         font-weight: 100;
         font-size: 64px;

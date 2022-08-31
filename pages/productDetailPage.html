@@ -22,16 +22,16 @@
         </div>
 
         <div class="nav-links">
-            <a href="../index.html" target="_blank">Home</a>
+            <a href="../index.html">Home</a>
             <a href="javascript:void(0)" class="header-shop active">
                 <span>Shop</span>
                 <img src="../assets/images/icons/arrow-down.svg" alt="icon" width="8" height="6">
             </a>
-            <a href="./exploreProductsPage.html" target="_blank">Explore Products</a>
-            <a href="./aboutUsPage.html" target="_blank">About Us</a>
-            <a href="./mediaPage.html" target="_blank">Media</a>
-            <a href="./lookbookPage.html" target="_blank">Lookbook</a>
-            <a href="./contactPage.html" target="_blank">Contact</a>
+            <a href="./exploreProductsPage.html">Explore Products</a>
+            <a href="./aboutUsPage.html">About Us</a>
+            <a href="./mediaPage.html">Media</a>
+            <a href="./lookbookPage.html">Lookbook</a>
+            <a href="./contactPage.html">Contact</a>
         </div>
 
         <div class="shop-dropdown-background">
@@ -240,7 +240,7 @@
                         </div>
                         <div class="buttons">
                             <button class="button">ADD TO CART</button>
-                            <button class="button outlined">FIND IN STORE</button>
+                            <button class="button outlined btn-store">FIND IN STORE</button>
                         </div>
                         <a class="btn size-guide-modal-btn">Size Guide</a>
                         <div class="accordion">
@@ -586,6 +586,134 @@
                     </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="size-guide-modal find-store">
+    <div class="modal store-modal">
+        <div class="modal-content store-modal-content">
+            <div class="modal-header">
+                <h3>Availability in store</h3>
+                <span class="close close-store"><span>&times;</span></span>
+            </div>
+            <div class="modal-body">
+                <p class="subtitle">Select the size you wish to check in store</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="left-side">
+                            <div>
+                                <p class="color">Color: <span>3294 - natural</span></p>
+                                <div class="colors">
+                                    <div class="color-item item1 active"></div>
+                                    <div class="color-item item2"></div>
+                                    <div class="color-item item3"></div>
+                                    <div class="color-item item4"></div>
+                                    <div class="color-item item5"></div>
+                                    <div class="color-item item6"></div>
+                                </div>
+                                <div class="dropdown">
+                                    <input type="checkbox" class="dropdown--switch" id="modal-size-switch" hidden/>
+                                    <label for="modal-size-switch" class="dropdown--options-filter">
+                                        <ul class="dropdown--filter" id="modal-sizeFilter" role="listbox" tabindex="-1">
+                                            <li class="dropdown--filter-selected" id="modal-size" aria-selected="true">
+                                                Choose Size
+                                            </li>
+                                            <li>
+                                                <ul class="dropdown--select">
+                                                    <li class="dropdown-select-option modal-size-option" role="option">
+                                                        XS
+                                                    </li>
+                                                    <li class="dropdown-select-option modal-size-option" role="option">
+                                                        S
+                                                    </li>
+                                                    <li class="dropdown-select-option modal-size-option" role="option">
+                                                        M
+                                                    </li>
+                                                    <li class="dropdown-select-option modal-size-option" role="option">
+                                                        L
+                                                    </li>
+                                                    <li class="dropdown-select-option modal-size-option" role="option">
+                                                        XL
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="continue-btn">Continue</button>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="store-image">
+                            <img src="../assets/images/detailslide4.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="size-guide-modal store-finder">
+    <div class="modal town-modal">
+        <div class="modal-content town-modal-content">
+            <div class="modal-header">
+                <h3>Store Finder</h3>
+                <span class="close town-close"><span>&times;</span></span>
+            </div>
+            <div class="modal-body">
+                  <div class="row">
+                      <div class="left-side">
+                          <div>
+                              <div class="dropdown">
+                                  <input type="checkbox" class="dropdown--switch" id="town-switch" hidden/>
+                                  <label for="town-switch" class="dropdown--options-filter">
+                                      <ul class="dropdown--filter" id="townFilter" role="listbox" tabindex="-1">
+                                          <li class="dropdown--filter-selected" id="town" aria-selected="true">
+                                              Search For Town
+                                          </li>
+                                          <li>
+                                              <ul class="dropdown--select">
+                                                  <li class="dropdown-select-option town-option" role="option">
+                                                      Town
+                                                  </li>
+                                                  <li class="dropdown-select-option town-option" role="option">
+                                                      Town
+                                                  </li>
+                                                  <li class="dropdown-select-option town-option" role="option">
+                                                      Town
+                                                  </li>
+                                              </ul>
+                                          </li>
+                                      </ul>
+                                  </label>
+                              </div>
+                              <div class="addresses">
+                                  <div class="address-item">
+                                        <p class="title">Jurija Gagarina 16</p>
+                                        <p class="text">011 344 88 764</p>
+                                        <p class="text">11 000, Belgrade</p>
+                                      <p class="number">01</p>
+                                  </div>
+                                  <div class="address-item">
+                                      <p class="title">Jurija Gagarina 16</p>
+                                      <p class="text">011 344 88 764</p>
+                                      <p class="text">11 000, Belgrade</p>
+                                      <p class="number">02</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="store-image">
+                          <img src="../assets/images/store-finder.png" alt="image">
+                          <button>
+                              <span>See on maps </span>
+                              <img src="../assets/images/icons/arrow-down.svg" alt="icon">
+                          </button>
+                      </div>
+                </div>
             </div>
         </div>
     </div>
