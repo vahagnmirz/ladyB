@@ -3,6 +3,8 @@ footer {
   footer .footer {
     padding: 60px 32px 40px;
     display: flex; }
+    footer .footer .logo-mobile {
+      display: none; }
     footer .footer .column {
       width: 20%;
       flex: 0 0 20%; }
@@ -53,3 +55,17 @@ footer {
       line-height: 12px;
       color: #1F1F1F;
       margin: 0; }
+
+@media (max-width: 991px) {
+  footer .footer {
+    flex-wrap: wrap; }
+    footer .footer .logo-mobile {
+      display: block; }
+    footer .footer .logo-desktop {
+      display: none !important; }
+    footer .footer .column {
+      width: 50%;
+      flex: 0 0 50%;
+      display: flex;
+      margin: 0 auto;
+      justify-content: center; } }

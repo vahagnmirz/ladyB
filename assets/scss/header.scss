@@ -71,7 +71,7 @@ header {
       justify-content: center;
       gap: 40px;
 
-      .sign-in{
+      .sign-in {
         .modal-window {
           position: fixed;
           background-color: rgba(0, 0, 0, 0.59);
@@ -84,11 +84,13 @@ header {
           opacity: 0;
           pointer-events: none;
           transition: all 0.3s;
+
           &:target {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
           }
+
           & > div {
             max-width: 724px;
             width: 100%;
@@ -99,7 +101,8 @@ header {
             padding: 70px 117px;
             background: white;
           }
-          h1{
+
+          h1 {
             font-family: 'Canela Trial';
             font-style: normal;
             font-weight: 100;
@@ -110,26 +113,31 @@ header {
             margin-top: 0;
             margin-bottom: 16px;
           }
-          p{
+
+          p {
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
             color: #1F1F1F;
             margin-top: 0;
             margin-bottom: 24px;
-            &.desc{
+
+            &.desc {
               max-width: 310px;
               width: 100%;
             }
           }
-          .donthaveaccount{
+
+          .donthaveaccount {
             display: flex;
             align-items: center;
             justify-content: center;
-            p{
+
+            p {
               margin: 0 3px 0 0;
             }
-            a{
+
+            a {
               font-weight: bold;
               text-decoration: underline;
               color: #1F1F1F;
@@ -138,11 +146,13 @@ header {
               margin: 0;
             }
           }
-          form{
+
+          form {
             width: 100%;
             display: flex;
             flex-direction: column;
-            input{
+
+            input {
               padding: 19px 24px;
               box-shadow: none;
               outline: none;
@@ -151,11 +161,13 @@ header {
               font-size: 14px;
               line-height: 18px;
               margin-bottom: 16px;
-              &::placeholder{
+
+              &::placeholder {
                 color: #C5C5C5;;
               }
             }
-            button{
+
+            button {
               background: #D2C6A5;
               padding: 19px 0;
               display: flex;
@@ -173,12 +185,14 @@ header {
               color: #1F1F1F;
               transition: all 300ms ease-in-out;
               margin-bottom: 24px;
-              &:hover{
+
+              &:hover {
                 font-size: 14px;
               }
             }
           }
         }
+
         .modal-close {
           position: absolute;
           right: 24px;
@@ -193,6 +207,7 @@ header {
           border-radius: 50%;
           border: 1px solid #D2C6A5;
           text-decoration: none;
+
           &:hover {
             color: black;
           }
@@ -204,7 +219,8 @@ header {
           color: #D2C6A5;
         }
       }
-      .profile{
+
+      .profile {
         display: none;
       }
 
@@ -398,6 +414,7 @@ header {
 
         .row {
           display: flex;
+          padding: 0;
 
           .left-part {
             width: 20%;
@@ -435,7 +452,8 @@ header {
                 color: #1F1F1F;
                 text-decoration: none;
                 transition: all 200ms ease-in-out;
-                &:hover{
+
+                &:hover {
                   margin-left: -5px;
                 }
               }
@@ -671,8 +689,9 @@ header {
     }
   }
 }
-header{
-  .active{
+
+header {
+  .active {
     font-weight: 600;
   }
 }

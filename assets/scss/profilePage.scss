@@ -1,4 +1,4 @@
-.top-profile{
+.top-profile {
   padding: 60px 0;
   text-align: center;
   background: #EDF6F9;
@@ -10,35 +10,41 @@
   letter-spacing: 0.02em;
   color: #1F1F1F;
 }
-.row{
+
+.row {
   display: flex;
   padding: 32px 0;
   justify-content: space-between;
-  .left-side{
+
+  .left-side {
     max-width: 326px;
     width: 100%;
     padding: 50px 32px 25px;
     background: #EFF2F4;
-    .user-content{
+
+    .user-content {
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-bottom: 56px;
-      .user-image{
+
+      .user-image {
         width: 72px;
         height: 72px;
         border-radius: 50%;
         overflow: hidden;
         margin-bottom: 16px;
-        img{
+
+        img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
-      .user-name{
+
+      .user-name {
         font-family: 'Canela Trial';
         font-style: normal;
         font-weight: 100;
@@ -49,17 +55,21 @@
         margin: 0;
       }
     }
-    .tabs{
+
+    .tabs {
       display: flex;
       flex-direction: column;
       margin-bottom: 90px;
-      label{
+
+      label {
         margin-bottom: 2px;
-        &:last-child{
+
+        &:last-child {
           margin-bottom: 0;
         }
       }
-      .inner-text{
+
+      .inner-text {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -67,53 +77,63 @@
         border-bottom: 1px solid #C5C5C5;
         padding: 16px 0;
         cursor: pointer;
-        .left{
+
+        .left {
           display: flex;
           align-items: center;
           gap: 46px;
         }
-        &>div{
-          p{
+
+        & > div {
+          p {
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
             color: #C5C5C5;
             margin: 0;
           }
-          svg{
-            line{
+
+          svg {
+            line {
               stroke: #C5C5C5;
             }
-            path{
+
+            path {
               stroke: #C5C5C5;
             }
           }
         }
       }
-      input:checked + .inner-text{
+
+      input:checked + .inner-text {
         border-bottom: 1px solid #1F1F1F;
-        &>div{
-          p{
+
+        & > div {
+          p {
             color: #1F1F1F;
           }
-          svg{
-            line{
-              stroke:#1F1F1F;
+
+          svg {
+            line {
+              stroke: #1F1F1F;
             }
-            path{
+
+            path {
               stroke: #1F1F1F;
             }
           }
         }
       }
     }
-    .logout{
+
+    .logout {
       border-top: 1px solid #C5C5C5;
       padding-top: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .logout-btn, .delete-account{
+
+      .logout-btn, .delete-account {
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -121,29 +141,35 @@
         margin: 0;
         cursor: pointer;
       }
-      .delete-account{
+
+      .delete-account {
         color: #C5C5C5;
       }
     }
   }
-  .right-side{
+
+  .right-side {
     width: 100%;
     padding: 0 24px;
-    .tab-content{
+
+    .tab-content {
       width: 100%;
     }
-    form{
+
+    form {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       justify-content: flex-end;
       gap: 0 92px;
-      .form-item{
+
+      .form-item {
         min-width: 320px;
         max-width: 374px;
         width: 100%;
         margin-bottom: 48px;
-        .form-item-type{
+
+        .form-item-type {
           font-family: 'Canela Trial';
           font-style: normal;
           font-weight: 300;
@@ -154,9 +180,11 @@
           margin-top: 0;
           margin-bottom: 8px;
         }
-        label{
+
+        label {
           position: relative;
-          input{
+
+          input {
             width: 100%;
             background-color: #fff;
             padding: 16px 50px 16px 0;
@@ -170,15 +198,18 @@
             outline: none;
             box-shadow: none;
             border-bottom: 1px solid #1F1F1F;
-            &:disabled{
+
+            &:disabled {
               color: #C5C5C5;
               border-color: #C5C5C5;
             }
-            &::placeholder{
+
+            &::placeholder {
               color: #C5C5C5;
             }
           }
-          .toggleInput{
+
+          .toggleInput {
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
@@ -191,7 +222,8 @@
           }
         }
       }
-      button{
+
+      button {
         font-weight: 700;
         font-size: 12px;
         line-height: 15px;
@@ -207,11 +239,13 @@
         cursor: pointer;
       }
     }
-    table{
+
+    table {
       border-spacing: 0;
       width: 100%;
-      thead{
-        th{
+
+      thead {
+        th {
           font-weight: 400;
           font-size: 12px;
           line-height: 15px;
@@ -220,26 +254,31 @@
           text-align: left;
         }
       }
-      tbody{
-        tr{
-          td{
+
+      tbody {
+        tr {
+          td {
             padding: 16px 0;
             border-bottom: 1px solid #1A1515;
-            &:first-child{
+
+            &:first-child {
               display: flex;
               align-items: center;
               gap: 50px;
-              div{
+
+              div {
                 width: 59px;
                 height: 48px;
                 overflow: hidden;
-                img{
+
+                img {
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
                 }
               }
-              p{
+
+              p {
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 17px;
@@ -247,19 +286,22 @@
                 margin: 0;
               }
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
               ont-weight: 400;
               font-size: 12px;
               line-height: 15px;
               color: #2C2C2C;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
               font-weight: 600;
               font-size: 14px;
               line-height: 18px;
               color: #1F1F1F;
             }
-            &:last-child{
+
+            &:last-child {
               font-weight: 400;
               font-size: 12px;
               line-height: 15px;

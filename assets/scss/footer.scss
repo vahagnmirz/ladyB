@@ -3,6 +3,9 @@ footer{
   .footer{
     padding: 60px 32px 40px;
     display: flex;
+    .logo-mobile{
+      display: none;
+    }
     .column{
       width: 20%;
       flex: 0 0 20%;
@@ -66,4 +69,26 @@ footer{
       margin: 0;
     }
   }
+}
+
+@media (max-width: 991px) {
+  footer{
+    .footer{
+      flex-wrap: wrap;
+      .logo-mobile{
+        display: block;
+      }
+      .logo-desktop{
+        display: none !important;
+      }
+      .column{
+        width: 50%;
+        flex: 0 0 50%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+      }
+    }
+  }
+
 }

@@ -303,7 +303,8 @@ header {
         transition-delay: 400ms;
         transition: all 600ms ease-in-out; }
         header .nav .shop-dropdown-background .shop-dropdown-container .row {
-          display: flex; }
+          display: flex;
+          padding: 0; }
           header .nav .shop-dropdown-background .shop-dropdown-container .row .left-part {
             width: 20%;
             flex: 0 0 20%; }
