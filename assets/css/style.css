@@ -1135,10 +1135,20 @@ main {
       main .home-section3 .links .link .hovered-images img:first-child {
         top: unset;
         bottom: 60px;
-        left: 55%; }
+        left: 55%; } }
+      @media (max-width: 991px) and (max-width: 480px) {
+        main .home-section3 .links .link .hovered-images img:first-child {
+          left: 51%; } }
+
+@media (max-width: 991px) {
       main .home-section3 .links .link .hovered-images img:last-child {
         bottom: 60px;
-        right: 55%; }
+        right: 55%; } }
+      @media (max-width: 991px) and (max-width: 480px) {
+        main .home-section3 .links .link .hovered-images img:last-child {
+          right: 51%; } }
+
+@media (max-width: 991px) {
   main .home-section4 {
     padding: 64px 0 64px 24px; }
     main .home-section4 .shop-slider {

@@ -669,11 +669,17 @@ main {
                 top: unset;
                 bottom: 60px;
                 left: 55%;
+                @media (max-width: 480px) {
+                  left: 51%;
+                }
               }
 
               &:last-child {
                 bottom: 60px;
                 right: 55%;
+                @media (max-width: 480px) {
+                  right: 51%;
+                }
               }
             }
           }
