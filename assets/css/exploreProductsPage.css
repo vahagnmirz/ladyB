@@ -36,6 +36,9 @@
     height: 100%;
     position: relative; }
     .explore-links .links .link .hovered-images img {
+      width: 209px;
+      height: 318px;
+      object-fit: cover;
       position: absolute;
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
@@ -512,3 +515,34 @@
       .explore-section5 .lookbook .left .link span {
         margin: 0 9px 0 0;
         display: inline-block; }
+
+@media (max-width: 991px) {
+  .explore-links {
+    padding: 20px 24px 50px;
+    height: 780px; }
+    .explore-links .title {
+      margin-bottom: 32px; }
+    .explore-links .links .link .text {
+      cursor: pointer;
+      letter-spacing: 0.02em;
+      margin-bottom: 40px;
+      margin-top: 0;
+      transition: all 0.5s ease-in-out;
+      text-decoration: none;
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      color: #1F1F1F; }
+    .explore-links .links .link .hovered-images img {
+      width: 182px;
+      height: 278px; }
+      .explore-links .links .link .hovered-images img:first-child {
+        top: unset;
+        bottom: 60px;
+        left: 55%; }
+      .explore-links .links .link .hovered-images img:last-child {
+        bottom: 60px;
+        right: 55%; } }

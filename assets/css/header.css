@@ -457,7 +457,11 @@ header {
             margin-bottom: 24px; }
         header .nav .nav-links.opened {
           height: calc(100vh - 82px);
-          overflow-y: auto; }
+          overflow-y: auto;
+          background-image: url(../../assets/images/mobile-navbar-image.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-color: #fff; }
         header .nav .nav-links .header-shop img {
           transform: rotate(-90deg);
           height: 12px;
@@ -492,7 +496,77 @@ header {
           header .nav .nav-btn .menu-icon.opened .menu-icon__text {
             opacity: 0; }
           header .nav .nav-btn .menu-icon.opened:after {
-            transform: rotate(-45deg) translate3d(7px, -6.5px, 0); } }
+            transform: rotate(-45deg) translate3d(7px, -6.5px, 0); }
+      header .nav .shop-dropdown-background {
+        max-height: calc(100vh - 82px);
+        overflow-y: auto; }
+        header .nav .shop-dropdown-background .shop-dropdown-container {
+          padding-right: 24px;
+          padding-left: 24px;
+          height: auto; }
+          header .nav .shop-dropdown-background .shop-dropdown-container > .row .left-part {
+            position: absolute;
+            right: 0;
+            top: 0; }
+          header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part {
+            width: 100%;
+            flex: 0 0 100%;
+            padding-top: 90px;
+            padding-bottom: 180px; }
+            header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part > .row {
+              flex-wrap: wrap; }
+              header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part > .row .column {
+                width: 100%;
+                flex: 0 0 100%; }
+                header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part > .row .column ul {
+                  max-width: 100%;
+                  border-bottom: none;
+                  padding-bottom: 0; }
+                header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part > .row .column .link-to-shop-page {
+                  position: absolute;
+                  bottom: 90px;
+                  margin-left: 40px; }
+                  header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part > .row .column .link-to-shop-page:after {
+                    top: -20px;
+                    left: -40px;
+                    width: 64px;
+                    height: 64px;
+                    opacity: 0.3;
+                    clip-path: ellipse(55px 71px at 10% 50%); }
+            header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part .close-button {
+              position: absolute;
+              top: 30px;
+              left: 24px;
+              width: auto;
+              height: auto;
+              margin: 0;
+              border: none;
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 29px; }
+              header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part .close-button:after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                right: -20px;
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+                border-bottom: 2px solid;
+                border-left: 2px solid; }
+            header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part .right-image {
+              max-width: 380px;
+              height: 260px;
+              margin-top: 30px; }
+              header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part .right-image p {
+                left: unset;
+                transform: unset;
+                right: 6px;
+                bottom: 10px;
+                font-weight: 300;
+                font-size: 40px;
+                line-height: 64px;
+                min-width: unset; } }
 
 header .active {
   font-weight: 600; }

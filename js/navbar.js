@@ -7,6 +7,7 @@ triggerButton.addEventListener('click', () => {
         document.querySelector('.nav-links').classList.remove('opened');
         document.querySelector('.nav-links').removeChild(document.querySelector('.sign-in'))
         document.querySelector('.menu-icon').classList.remove('opened')
+        document.querySelector('.shop-dropdown-background').classList.remove('opened')
     } else {
         document.querySelector('.nav-links').classList.add('opened');
         let newTag = document.createElement("a");
@@ -76,3 +77,24 @@ if(!!localStorage.getItem('token')){
     document.querySelector('.profile').style.display = 'block';
 }
 
+
+
+window.addEventListener('resize', (event) => {
+    if(event.target.innerWidth <= 991){
+        document.getElementById('shop-dd-close-btn').innerHTML = "Menu"
+    }else{
+        document.getElementById('shop-dd-close-btn').innerHTML = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"11\" height=\"9\" viewBox=\"0 0 11 9\"\n" +
+            "             fill=\"none\">\n" +
+            "            <line y1=\"-0.5\" x2=\"11.5333\" y2=\"-0.5\"\n" +
+            "                  transform=\"matrix(-0.72032 -0.693642 0.72032 -0.693642 10.0001 8)\"\n" +
+            "                  stroke=\"#1F1F1F\"/>\n" +
+            "            <line y1=\"-0.5\" x2=\"11.5333\" y2=\"-0.5\"\n" +
+            "                  transform=\"matrix(0.72032 -0.693642 -0.72032 -0.693642 1 8)\"\n" +
+            "                  stroke=\"#1F1F1F\"/>\n" +
+            "        </svg>"
+
+    }
+})
+if(window.innerWidth <= 991){
+    document.getElementById('shop-dd-close-btn').innerHTML = "Menu"
+}
