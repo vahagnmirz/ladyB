@@ -310,3 +310,40 @@
     }
   }
 }
+
+@media(max-width: 1200px){
+  .contact-page{
+    padding: 0 24px 40px;
+  }
+  .contact-section2{
+    .map{
+      .dropdown{
+        width: 100%;
+      }
+    }
+  }
+
+}
+@media(max-width: 991px){
+  .contact-section1{
+    height: 187px;
+    .top{
+      font-size: 40px;
+      line-height: 48px;
+    }
+    .bottom{
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+  .contact-section2{
+    flex-direction: column;
+    gap: 64px;
+    margin: 0;
+    .col{
+      padding: 0;
+      width: 100%;
+      flex:  0 0 100%;
+    }
+  }
+}

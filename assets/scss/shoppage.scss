@@ -222,3 +222,49 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .shop-page{
+    padding:  0 24px 64px;
+    .shop-page-filters-container{
+      .left-sorts{
+        gap: 24px;
+      }
+    }
+    .shop-grid{
+      margin: 0 -8px;
+      .grid-item{
+        width: 50%;
+        flex: 0 0 50%;
+        padding: 0 8px;
+        margin-bottom: 40px;
+        .image{
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .shop-page{
+    .shop-grid{
+      .grid-item{
+        .image{
+          height: 340px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+  .shop-page{
+    .shop-grid{
+      .grid-item{
+        .image{
+          height: 264px;
+        }
+      }
+    }
+  }
+}

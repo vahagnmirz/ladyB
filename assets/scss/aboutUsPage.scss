@@ -18,7 +18,22 @@
         padding: 0 12px;
       }
     }
-
+    .mobile-title{
+      display: none;
+      font-family: 'Canela Trial';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0.02em;
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 32px;
+      span{
+        color: #D2C6A5;
+        font-style: italic;
+      }
+    }
     .title {
       font-family: 'Canela Trial';
       font-style: normal;
@@ -331,6 +346,154 @@
             color: #D2C6A5;
             display: flex;
             justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutUs-section1{
+    .aboutUs-section1-wrapper{
+      padding: 40px 24px;
+      .row{
+        flex-wrap: wrap;
+        margin: 0 -8px;
+        .column{
+          width: 100%;
+          flex: 0 0 100%;
+          padding: 0;
+        }
+      }
+      .title{
+        display: none;
+      }
+      .mobile-title{
+        display: block;
+      }
+      .imgs-wrapper{
+        gap: 16px;
+        align-items: flex-end;
+        justify-content: flex-start;
+        .img-wrapper{
+          &:first-child{
+            width: 182px;
+            height: 244px;
+
+          }
+          &.absolute-mobile{
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          &:last-child{
+            width: 182px;
+            height: 381px;
+          }
+        }
+        .img-wrapper-with-button{
+          height: auto;
+          .img-wrapper{
+            width: 182px;
+            height: 121px;
+          }
+          .more-about-btn{
+            display: none;
+          }
+        }
+      }
+
+    }
+  }
+  .aboutUs-section2{
+    padding: 64px 0;
+    .row{
+      flex-direction: column;
+      padding-top: 170px;
+      .text-wrapper{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        h2{
+          font-weight: 100;
+          font-size: 40px;
+          line-height: 48px;
+          margin-bottom: 24px;
+        }
+        p{
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .image-wrapper{
+        width: 281px;
+        height: 402px;
+        &:first-child{
+          margin-right: auto;
+          margin-bottom: 16px;
+        }
+        &:last-child{
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  .aboutUs-section3{
+    padding: 0 24px 30px;
+    .section-row{
+      .title{
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 12px;
+      }
+      .description{
+        margin-bottom: 32px;
+      }
+      .big-image{
+        display: none;
+      }
+      .row{
+        gap: 12px;
+        div{
+          width: 182px !important;
+          height: 324px !important;
+        }
+      }
+    }
+  }
+  .aboutUs-section4{
+    height: 400px;
+    .video{
+      height: 400px;
+    }
+    .play-btn{
+      width: 64px;
+      height: 64px;
+    }
+  }
+  .aboutUs-section5{
+    padding: 64px 24px;
+    .title{
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 32px;
+    }
+    .row{
+      margin: 0;
+      flex-direction: column;
+      .col{
+        padding: 0;
+        width: 100%;
+        flex: 0 0 100%;
+        .cart{
+          margin-bottom: 24px;
+        }
+        &:last-child{
+          .cart{
+            margin-bottom: 0;
           }
         }
       }

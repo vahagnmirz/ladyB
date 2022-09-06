@@ -260,3 +260,27 @@
           color: #C5C5C5; }
         .contact-section2 .map .dropdown .dropdown-select-option:hover {
           color: #D2C6A5; }
+
+@media (max-width: 1200px) {
+  .contact-page {
+    padding: 0 24px 40px; }
+  .contact-section2 .map .dropdown {
+    width: 100%; } }
+
+@media (max-width: 991px) {
+  .contact-section1 {
+    height: 187px; }
+    .contact-section1 .top {
+      font-size: 40px;
+      line-height: 48px; }
+    .contact-section1 .bottom {
+      font-size: 40px;
+      line-height: 48px; }
+  .contact-section2 {
+    flex-direction: column;
+    gap: 64px;
+    margin: 0; }
+    .contact-section2 .col {
+      padding: 0;
+      width: 100%;
+      flex: 0 0 100%; } }

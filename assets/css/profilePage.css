@@ -10,33 +10,34 @@
   letter-spacing: 0.02em;
   color: #1F1F1F; }
 
-.row {
+.profilePage .row {
   display: flex;
-  padding: 32px 0;
+  padding: 32px 24px;
   justify-content: space-between; }
-  .row .left-side {
+  .profilePage .row .left-side {
     max-width: 326px;
     width: 100%;
+    height: fit-content;
     padding: 50px 32px 25px;
     background: #EFF2F4; }
-    .row .left-side .user-content {
+    .profilePage .row .left-side .user-content {
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-bottom: 56px; }
-      .row .left-side .user-content .user-image {
+      .profilePage .row .left-side .user-content .user-image {
         width: 72px;
         height: 72px;
         border-radius: 50%;
         overflow: hidden;
         margin-bottom: 16px; }
-        .row .left-side .user-content .user-image img {
+        .profilePage .row .left-side .user-content .user-image img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-      .row .left-side .user-content .user-name {
+      .profilePage .row .left-side .user-content .user-name {
         font-family: 'Canela Trial';
         font-style: normal;
         font-weight: 100;
@@ -45,15 +46,15 @@
         text-align: center;
         color: #1F1F1F;
         margin: 0; }
-    .row .left-side .tabs {
+    .profilePage .row .left-side .tabs {
       display: flex;
       flex-direction: column;
       margin-bottom: 90px; }
-      .row .left-side .tabs label {
+      .profilePage .row .left-side .tabs label {
         margin-bottom: 2px; }
-        .row .left-side .tabs label:last-child {
+        .profilePage .row .left-side .tabs label:last-child {
           margin-bottom: 0; }
-      .row .left-side .tabs .inner-text {
+      .profilePage .row .left-side .tabs .inner-text {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -61,60 +62,60 @@
         border-bottom: 1px solid #C5C5C5;
         padding: 16px 0;
         cursor: pointer; }
-        .row .left-side .tabs .inner-text .left {
+        .profilePage .row .left-side .tabs .inner-text .left {
           display: flex;
           align-items: center;
           gap: 46px; }
-        .row .left-side .tabs .inner-text > div p {
+        .profilePage .row .left-side .tabs .inner-text > div p {
           font-weight: 400;
           font-size: 14px;
           line-height: 16px;
           color: #C5C5C5;
           margin: 0; }
-        .row .left-side .tabs .inner-text > div svg line {
+        .profilePage .row .left-side .tabs .inner-text > div svg line {
           stroke: #C5C5C5; }
-        .row .left-side .tabs .inner-text > div svg path {
+        .profilePage .row .left-side .tabs .inner-text > div svg path {
           stroke: #C5C5C5; }
-      .row .left-side .tabs input:checked + .inner-text {
+      .profilePage .row .left-side .tabs input:checked + .inner-text {
         border-bottom: 1px solid #1F1F1F; }
-        .row .left-side .tabs input:checked + .inner-text > div p {
+        .profilePage .row .left-side .tabs input:checked + .inner-text > div p {
           color: #1F1F1F; }
-        .row .left-side .tabs input:checked + .inner-text > div svg line {
+        .profilePage .row .left-side .tabs input:checked + .inner-text > div svg line {
           stroke: #1F1F1F; }
-        .row .left-side .tabs input:checked + .inner-text > div svg path {
+        .profilePage .row .left-side .tabs input:checked + .inner-text > div svg path {
           stroke: #1F1F1F; }
-    .row .left-side .logout {
+    .profilePage .row .left-side .logout {
       border-top: 1px solid #C5C5C5;
       padding-top: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .row .left-side .logout .logout-btn, .row .left-side .logout .delete-account {
+      .profilePage .row .left-side .logout .logout-btn, .profilePage .row .left-side .logout .delete-account {
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
         color: #1F1F1F;
         margin: 0;
         cursor: pointer; }
-      .row .left-side .logout .delete-account {
+      .profilePage .row .left-side .logout .delete-account {
         color: #C5C5C5; }
-  .row .right-side {
+  .profilePage .row .right-side {
     width: 100%;
     padding: 0 24px; }
-    .row .right-side .tab-content {
+    .profilePage .row .right-side .tab-content {
       width: 100%; }
-    .row .right-side form {
+    .profilePage .row .right-side form {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       justify-content: flex-end;
       gap: 0 92px; }
-      .row .right-side form .form-item {
+      .profilePage .row .right-side form .form-item {
         min-width: 320px;
         max-width: 374px;
         width: 100%;
         margin-bottom: 48px; }
-        .row .right-side form .form-item .form-item-type {
+        .profilePage .row .right-side form .form-item .form-item-type {
           font-family: 'Canela Trial';
           font-style: normal;
           font-weight: 300;
@@ -124,9 +125,9 @@
           color: #1F1F1F;
           margin-top: 0;
           margin-bottom: 8px; }
-        .row .right-side form .form-item label {
+        .profilePage .row .right-side form .form-item label {
           position: relative; }
-          .row .right-side form .form-item label input {
+          .profilePage .row .right-side form .form-item label input {
             width: 100%;
             background-color: #fff;
             padding: 16px 50px 16px 0;
@@ -140,12 +141,12 @@
             outline: none;
             box-shadow: none;
             border-bottom: 1px solid #1F1F1F; }
-            .row .right-side form .form-item label input:disabled {
+            .profilePage .row .right-side form .form-item label input:disabled {
               color: #C5C5C5;
               border-color: #C5C5C5; }
-            .row .right-side form .form-item label input::placeholder {
+            .profilePage .row .right-side form .form-item label input::placeholder {
               color: #C5C5C5; }
-          .row .right-side form .form-item label .toggleInput {
+          .profilePage .row .right-side form .form-item label .toggleInput {
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
@@ -155,7 +156,7 @@
             transform: translateY(-50%);
             right: 0;
             cursor: pointer; }
-      .row .right-side form button {
+      .profilePage .row .right-side form button {
         font-weight: 700;
         font-size: 12px;
         line-height: 15px;
@@ -169,51 +170,81 @@
         border: none;
         outline: none;
         cursor: pointer; }
-    .row .right-side table {
+    .profilePage .row .right-side table {
       border-spacing: 0;
       width: 100%; }
-      .row .right-side table thead th {
+      .profilePage .row .right-side table thead th {
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;
         color: #000000;
         padding-bottom: 36px;
         text-align: left; }
-      .row .right-side table tbody tr td {
+      .profilePage .row .right-side table tbody tr td {
         padding: 16px 0;
         border-bottom: 1px solid #1A1515; }
-        .row .right-side table tbody tr td:first-child {
+        .profilePage .row .right-side table tbody tr td:first-child {
           display: flex;
           align-items: center;
           gap: 50px; }
-          .row .right-side table tbody tr td:first-child div {
+          .profilePage .row .right-side table tbody tr td:first-child div {
             width: 59px;
             height: 48px;
             overflow: hidden; }
-            .row .right-side table tbody tr td:first-child div img {
+            .profilePage .row .right-side table tbody tr td:first-child div img {
               width: 100%;
               height: 100%;
               object-fit: cover; }
-          .row .right-side table tbody tr td:first-child p {
+          .profilePage .row .right-side table tbody tr td:first-child p {
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
             color: #8A7065;
             margin: 0; }
-        .row .right-side table tbody tr td:nth-child(2) {
+        .profilePage .row .right-side table tbody tr td:nth-child(2) {
           ont-weight: 400;
           font-size: 12px;
           line-height: 15px;
           color: #2C2C2C; }
-        .row .right-side table tbody tr td:nth-child(3) {
+        .profilePage .row .right-side table tbody tr td:nth-child(3) {
           font-weight: 600;
           font-size: 14px;
           line-height: 18px;
           color: #1F1F1F; }
-        .row .right-side table tbody tr td:last-child {
+        .profilePage .row .right-side table tbody tr td:last-child {
           font-weight: 400;
           font-size: 12px;
           line-height: 15px;
           text-align: right;
           color: #6981FF;
           cursor: pointer; }
+
+@media (max-width: 881px) {
+  .top-profile {
+    padding: 40px 0;
+    font-size: 40px;
+    line-height: 48px; }
+  .profilePage .row {
+    flex-direction: column;
+    justify-content: center; }
+    .profilePage .row .left-side {
+      max-width: 100%; }
+    .profilePage .row .right-side {
+      margin-top: 76px; }
+      .profilePage .row .right-side form {
+        flex-direction: column;
+        gap: 32px; }
+        .profilePage .row .right-side form .form-item {
+          max-width: 100%; }
+      .profilePage .row .right-side table thead {
+        display: none; }
+      .profilePage .row .right-side table tbody tr td {
+        font-size: 14px; }
+        .profilePage .row .right-side table tbody tr td:first-child {
+          display: table-cell; }
+          .profilePage .row .right-side table tbody tr td:first-child div {
+            display: none; }
+        .profilePage .row .right-side table tbody tr td:nth-child(2) {
+          display: none; }
+        .profilePage .row .right-side table tbody tr td:last-child {
+          display: none; } }

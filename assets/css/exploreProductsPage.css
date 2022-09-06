@@ -67,6 +67,18 @@
     .explore-section1 .row .column {
       width: 50%;
       flex: 0 0 50%; }
+  .explore-section1 .title-mobile {
+    display: none;
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1F1F1F;
+    text-transform: uppercase; }
+    .explore-section1 .title-mobile span {
+      text-transform: lowercase;
+      color: #D2C6A5; }
   .explore-section1 .title {
     font-family: 'Canela Trial';
     font-style: normal;
@@ -545,4 +557,130 @@
         left: 55%; }
       .explore-links .links .link .hovered-images img:last-child {
         bottom: 60px;
-        right: 55%; } }
+        right: 55%; }
+  .explore-section1 {
+    padding: 0 24px;
+    margin-bottom: 64px; }
+    .explore-section1 .row {
+      flex-wrap: wrap; }
+      .explore-section1 .row .column {
+        width: 100%;
+        flex: 0 0 100%; }
+    .explore-section1 .title {
+      display: none; }
+    .explore-section1 .title-mobile {
+      display: block;
+      max-width: 324px; }
+    .explore-section1 .description {
+      max-width: 100%;
+      margin-left: 0;
+      padding-left: 50px; }
+    .explore-section1 .scroll-to {
+      display: none; }
+    .explore-section1 .slider-wrapper {
+      margin-left: -200px;
+      gap: 16px; }
+      .explore-section1 .slider-wrapper .sliding-items .slider-buttons {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        margin-bottom: 30px; }
+        .explore-section1 .slider-wrapper .sliding-items .slider-buttons > div {
+          width: 34px;
+          height: 34px; }
+          .explore-section1 .slider-wrapper .sliding-items .slider-buttons > div.next-slide {
+            border-color: #D2C6A5; }
+      .explore-section1 .slider-wrapper .active-slide {
+        min-width: 330px;
+        height: 488px; }
+  .explore-section2 {
+    padding: 0 24px; }
+    .explore-section2 .container .row {
+      flex-wrap: wrap;
+      margin: 0 -8px; }
+      .explore-section2 .container .row .col {
+        width: 50%;
+        flex: 0 0 50%;
+        padding: 0 8px; }
+        .explore-section2 .container .row .col:first-child {
+          width: 100%;
+          flex: 0 0 100%; }
+        .explore-section2 .container .row .col:last-child {
+          margin-top: -200px; } }
+        @media (max-width: 991px) and (max-width: 591px) {
+          .explore-section2 .container .row .col:last-child {
+            margin-top: -220px; } }
+        @media (max-width: 991px) and (max-width: 446px) {
+          .explore-section2 .container .row .col:last-child {
+            margin-top: -270px; } }
+
+@media (max-width: 991px) {
+    .explore-section2 .title {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 32px; }
+    .explore-section2 .description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      width: 50%;
+      margin: 0 0 40px 0; }
+  .explore-section3 {
+    margin-top: 32px;
+    padding: 0 0 0 24px; }
+    .explore-section3 .row {
+      padding: 0; }
+      .explore-section3 .row .image {
+        padding-right: 24px;
+        margin-bottom: 32px; }
+      .explore-section3 .row .slider-wrapper {
+        overflow: hidden; }
+        .explore-section3 .row .slider-wrapper .big-slider {
+          width: 130%; }
+          .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-button-prev-big, .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-button-next-big {
+            top: 25px; }
+          .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-pagination-big {
+            top: 17px; }
+  .explore-section4 .testimonials {
+    padding: 64px 0 64px 24px; }
+    .explore-section4 .testimonials .row {
+      overflow: hidden;
+      margin-right: 0; }
+      .explore-section4 .testimonials .row .col {
+        min-width: 331px; }
+    .explore-section4 .testimonials .title {
+      font-weight: 100;
+      font-size: 40px;
+      line-height: 48px; }
+    .explore-section4 .testimonials .cart {
+      padding: 32px 24px; }
+      .explore-section4 .testimonials .cart .cart-number {
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 16px; }
+      .explore-section4 .testimonials .cart .cart-image {
+        width: 100%;
+        margin-bottom: 32px; }
+      .explore-section4 .testimonials .cart .cart-description {
+        margin-bottom: 55px; }
+      .explore-section4 .testimonials .cart .cart-footer {
+        margin: 0; }
+  .explore-section5 .lookbook {
+    padding: 32px 24px 32px 24px; }
+    .explore-section5 .lookbook .repeat-text span {
+      font-weight: 100;
+      font-size: 40px;
+      line-height: 48px; }
+    .explore-section5 .lookbook .content {
+      flex-direction: column-reverse; }
+      .explore-section5 .lookbook .content .column {
+        width: 100%;
+        flex: 0 0 100%; }
+        .explore-section5 .lookbook .content .column .right .column {
+          width: 50%;
+          flex: 0 0 50%;
+          display: flex;
+          justify-content: center; }
+          .explore-section5 .lookbook .content .column .right .column img {
+            width: 182px;
+            height: 280px; } }

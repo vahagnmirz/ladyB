@@ -23,6 +23,10 @@
       padding: 0;
       border: 1px solid #EAE6D8;
 
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
       .dropdown--switch:checked + .dropdown--options-filter .dropdown--select {
         transform: scaleY(1);
       }

@@ -56,25 +56,6 @@
     height: 100%;
     overflow-x: hidden;
     cursor: grab;
-    ///* width */
-    //&::-webkit-scrollbar {
-    //  width: 0;
-    //}
-    //
-    ///* Track */
-    //&::-webkit-scrollbar-track {
-    //  background: #f1f1f1;
-    //}
-    //
-    ///* Handle */
-    //&::-webkit-scrollbar-thumb {
-    //  background: #888;
-    //}
-    //
-    ///* Handle on hover */
-    //&::-webkit-scrollbar-thumb:hover {
-    //  background: #555;
-    //}
     .lookbook-image {
       width: 2000px;
       height: 650px;
@@ -123,5 +104,18 @@
   }
   100% {
     left: -1200px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .lookbook-wrapper{
+    flex-direction: column;
+    padding: 20px 0 40px;
+    gap: 32px;
+    .left{
+      max-width: 100%;
+      padding: 64px 0;
+    }
   }
 }

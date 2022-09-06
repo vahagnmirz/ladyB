@@ -168,157 +168,163 @@
         <div class="your-cart">
             <div class="content checkout">
                 <div class="checkout-fields">
-                    <div class="payment-method">
-                        <h2 class="title">Payment Method</h2>
-                        <div class="radio-buttons">
-                            <p>
-                                <input type="radio" id="test1" name="radio-group" checked>
-                                <label for="test1">Cash Upon Delivery</label>
-                            </p>
-                            <p>
-                                <input type="radio" id="test2" name="radio-group">
-                                <label for="test2">Credit Card</label>
-                            </p>
-                        </div>
-                    </div>
+
                     <div class="personal-details">
-                        <p class="title">Personal details</p>
-                        <p class="text">If you have a user account, <a href="./pages/authorization.html">sign in.</a>
-                        </p>
+
                         <form action="">
-                            <div class="row">
-                                <div class="col-10">
-                                    <input type="text" placeholder="Enter Your Email here">
+                            <div class="payment-method">
+                                <h2 class="title">Payment Method</h2>
+                                <div class="radio-buttons">
+                                    <p>
+                                        <input type="radio" id="test1" name="radio-group" checked>
+                                        <label for="test1">Cash Upon Delivery</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" id="test2" name="radio-group">
+                                        <label for="test2">Credit Card</label>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-5">
-                                    <input type="text" placeholder="Name">
-                                </div>
-                                <div class="col-5">
-                                    <input type="text" placeholder="Surname">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-5">
-                                    <input type="text" placeholder="ZIP">
-                                </div>
-                                <div class="col-5">
-                                    <div class="dropdown">
-                                        <input type="checkbox" class="dropdown--switch" id="city1-switch" hidden/>
-                                        <label for="city1-switch" class="dropdown--options-filter">
-                                            <ul class="dropdown--filter" id="city1Filter" role="listbox" tabindex="-1">
-                                                <li class="dropdown--filter-selected" id="city1" aria-selected="true">
-                                                    City
-                                                </li>
-                                                <li>
-                                                    <ul class="dropdown--select">
-                                                        <li class="dropdown-select-option city1-option" role="option">
-                                                            City 1
-                                                        </li>
-                                                        <li class="dropdown-select-option city1-option" role="option">
-                                                            City 2
-                                                        </li>
-                                                        <li class="dropdown-select-option city1-option" role="option">
-                                                            City 3
-                                                        </li>
-                                                        <li class="dropdown-select-option city1-option" role="option">
-                                                            City 4
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </label>
+
+                            <div>
+                                <p class="title">Personal details</p>
+                                <p class="text">If you have a user account, <a href="./pages/authorization.html">sign in.</a>
+                                </p>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <input type="text" placeholder="Enter Your Email here">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-5">
-                                    <input type="text" placeholder="Street Number & Name">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Surname">
+                                    </div>
                                 </div>
-                                <div class="col-5">
-                                    <input type="text" placeholder="Phone Number">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input type="text" placeholder="ZIP">
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="dropdown">
+                                            <input type="checkbox" class="dropdown--switch" id="city1-switch" hidden/>
+                                            <label for="city1-switch" class="dropdown--options-filter">
+                                                <ul class="dropdown--filter" id="city1Filter" role="listbox" tabindex="-1">
+                                                    <li class="dropdown--filter-selected" id="city1" aria-selected="true">
+                                                        City
+                                                    </li>
+                                                    <li>
+                                                        <ul class="dropdown--select">
+                                                            <li class="dropdown-select-option city1-option" role="option">
+                                                                City 1
+                                                            </li>
+                                                            <li class="dropdown-select-option city1-option" role="option">
+                                                                City 2
+                                                            </li>
+                                                            <li class="dropdown-select-option city1-option" role="option">
+                                                                City 3
+                                                            </li>
+                                                            <li class="dropdown-select-option city1-option" role="option">
+                                                                City 4
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="legal">
-                                <p>Legal Entity (for companies)</p>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Street Number & Name">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="legal">
+                                    <p>Legal Entity (for companies)</p>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Company Name">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Identification number">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input type="text" placeholder="PIB">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" placeholder="ZIP">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="dropdown">
+                                            <input type="checkbox" class="dropdown--switch" id="city2-switch" hidden/>
+                                            <label for="city2-switch" class="dropdown--options-filter">
+                                                <ul class="dropdown--filter" id="city2Filter" role="listbox" tabindex="-1">
+                                                    <li class="dropdown--filter-selected" id="city2" aria-selected="true">
+                                                        City
+                                                    </li>
+                                                    <li>
+                                                        <ul class="dropdown--select">
+                                                            <li class="dropdown-select-option city2-option" role="option">
+                                                                City 1
+                                                            </li>
+                                                            <li class="dropdown-select-option city2-option" role="option">
+                                                                City 2
+                                                            </li>
+                                                            <li class="dropdown-select-option city2-option" role="option">
+                                                                City 3
+                                                            </li>
+                                                            <li class="dropdown-select-option city2-option" role="option">
+                                                                City 4
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Street Number & Name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Name Of Contact Person">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <input type="text" placeholder="Surname Of Contact Person">
+                                    </div>
+                                </div>
                                 <div class="line"></div>
+                                <div class="radio-buttons">
+                                    <p>
+                                        <input type="checkbox" id="check1" name="radio-group">
+                                        <label for="check1">Register Your Account</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="check2" name="radio-group">
+                                        <label for="check2">I agree with a <a href="/">Privacy Policy</a> terms</label>
+                                    </p>
+                                </div>
+
                             </div>
-                            <div class="row">
-                                <div class="col-5">
-                                    <input type="text" placeholder="Company Name">
-                                </div>
-                                <div class="col-5">
-                                    <input type="text" placeholder="Identification number">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-5">
-                                    <input type="text" placeholder="PIB">
-                                </div>
-                                <div class="col-5">
-                                    <input type="text" placeholder="ZIP">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-5">
-                                    <div class="dropdown">
-                                        <input type="checkbox" class="dropdown--switch" id="city2-switch" hidden/>
-                                        <label for="city2-switch" class="dropdown--options-filter">
-                                            <ul class="dropdown--filter" id="city2Filter" role="listbox" tabindex="-1">
-                                                <li class="dropdown--filter-selected" id="city2" aria-selected="true">
-                                                    City
-                                                </li>
-                                                <li>
-                                                    <ul class="dropdown--select">
-                                                        <li class="dropdown-select-option city2-option" role="option">
-                                                            City 1
-                                                        </li>
-                                                        <li class="dropdown-select-option city2-option" role="option">
-                                                            City 2
-                                                        </li>
-                                                        <li class="dropdown-select-option city2-option" role="option">
-                                                            City 3
-                                                        </li>
-                                                        <li class="dropdown-select-option city2-option" role="option">
-                                                            City 4
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <input type="text" placeholder="Street Number & Name">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-5">
-                                    <input type="text" placeholder="Phone Number">
-                                </div>
-                                <div class="col-5">
-                                    <input type="text" placeholder="Name Of Contact Person">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-5">
-                                    <input type="text" placeholder="Surname Of Contact Person">
-                                </div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="radio-buttons">
-                                <p>
-                                    <input type="checkbox" id="check1" name="radio-group">
-                                    <label for="check1">Register Your Account</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" id="check2" name="radio-group">
-                                    <label for="check2">I agree with a <a href="/">Privacy Policy</a> terms</label>
-                                </p>
-                            </div>
-                            <button type="submit" class="place-order">Place Order</button>
                         </form>
+                        <button type="submit" class="place-order">Place Order</button>
                     </div>
                 </div>
                 <div class="right-part">

@@ -10,10 +10,30 @@ triggerButton.addEventListener('click', () => {
         document.querySelector('.shop-dropdown-background').classList.remove('opened')
     } else {
         document.querySelector('.nav-links').classList.add('opened');
-        let newTag = document.createElement("a");
-        newTag.href = '/'
-        newTag.innerHTML = 'Sign in';
+        let newTag = document.createElement("div");
+        // newTag.href = '#open-modal'
+        // newTag.innerHTML = 'Sign in';
         newTag.className = 'sign-in'
+        newTag.innerHTML = '<a href="#open-modal">\n' +
+            '                    <p>Sign In</p>\n' +
+            '                </a>\n' +
+            '                <div id="open-modal" class="modal-window">\n' +
+            '                    <div>\n' +
+            '                        <a href="#" title="Close" class="modal-close">\n' +
+            '                            &#215;\n' +
+            '                        </a>\n' +
+            '                        <h1>Welcome Back</h1>\n' +
+            '                        <p class="desc">Making a luxurious lifestyle accessible for a generous group of women is our\n' +
+            '                            daily drive.</p>\n' +
+            '                        <form action="">\n' +
+            '                            <input type="text" placeholder="Username">\n' +
+            '                            <input type="password" placeholder="Password">\n' +
+            '                            <button type="submit" class="sign-in-btn">SIGN IN</button>\n' +
+            '                        </form>\n' +
+            '                        <div class="donthaveaccount"><p>Don’t have account? </p> <a href="./pages/authorization.html">\n' +
+            '                            Register</a></div>\n' +
+            '                    </div>\n' +
+            '                </div>'
         document.querySelector('.nav-links').appendChild(newTag);
         document.querySelector('.menu-icon').classList.add('opened')
     }

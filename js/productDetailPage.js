@@ -225,3 +225,12 @@ let swiper = new Swiper(".productDetailSwiper", {
         },
     },
 });
+
+const mobileSwiper = new Swiper(".mobileSwiper", {
+    direction: "vertical",
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

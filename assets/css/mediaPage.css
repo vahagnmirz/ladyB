@@ -20,6 +20,9 @@
     margin: 0;
     padding: 0;
     border: 1px solid #EAE6D8; }
+    @media (max-width: 500px) {
+      .media-section1 .content .dropdown {
+        width: 100%; } }
     .media-section1 .content .dropdown .dropdown--switch:checked + .dropdown--options-filter .dropdown--select {
       transform: scaleY(1); }
     .media-section1 .content .dropdown .dropdown--switch:checked + .dropdown--options-filter .dropdown--filter:after {
