@@ -1657,7 +1657,7 @@ main {
             width: 30px;
             height: 30px;
             background-color: transparent;
-            border: 0.5px solid #1F1F1F;
+            border: 1px solid #1F1F1F;
             border-radius: 50%; }
           .product-detail-page .detail-section1 .information .colors .color-item.active:after {
             content: '';
@@ -1667,7 +1667,7 @@ main {
             width: 30px;
             height: 30px;
             background-color: transparent;
-            border: 0.5px solid #1F1F1F;
+            border: 1px solid #1F1F1F;
             border-radius: 50%; }
           .product-detail-page .detail-section1 .information .colors .color-item.item1 {
             background-color: #C29677; }
@@ -2297,7 +2297,7 @@ main {
         width: 30px;
         height: 30px;
         background-color: transparent;
-        border: 0.5px solid #1F1F1F;
+        border: 1px solid #1F1F1F;
         border-radius: 50%; }
       .size-guide-modal.find-store .modal-body .left-side .colors .color-item.active:after {
         content: '';
@@ -2307,7 +2307,7 @@ main {
         width: 30px;
         height: 30px;
         background-color: transparent;
-        border: 0.5px solid #1F1F1F;
+        border: 1px solid #1F1F1F;
         border-radius: 50%; }
       .size-guide-modal.find-store .modal-body .left-side .colors .color-item.item1 {
         background-color: #C29677; }
