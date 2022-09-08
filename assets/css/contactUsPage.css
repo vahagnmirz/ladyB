@@ -17,7 +17,7 @@
   flex-direction: column;
   margin-bottom: 40px; }
   .contact-section1 .top {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -28,7 +28,7 @@
     margin-top: 0;
     margin-bottom: 3px; }
   .contact-section1 .bottom {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: italic;
     font-weight: 100;
     font-size: 64px;
@@ -60,7 +60,7 @@
     background-size: contain;
     background-position: right; }
     .contact-section2 .information .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 32px;

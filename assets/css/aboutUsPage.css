@@ -13,7 +13,7 @@
         padding: 0 12px; }
     .aboutUs-section1 .aboutUs-section1-wrapper .mobile-title {
       display: none;
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 40px;
@@ -26,7 +26,7 @@
         color: #D2C6A5;
         font-style: italic; }
     .aboutUs-section1 .aboutUs-section1-wrapper .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -86,7 +86,7 @@
             opacity: 0.3;
             clip-path: ellipse(71px 80px at 10% 50%); }
           .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .more-about-btn span {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 300;
             font-size: 14px;
@@ -115,7 +115,7 @@
         height: 100%;
         object-fit: cover; }
     .aboutUs-section2 .row .text-wrapper h2 {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -142,7 +142,7 @@
     flex-direction: column;
     position: relative; }
     .aboutUs-section3 .section-row .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -233,7 +233,7 @@
   padding-top: 95px;
   padding-bottom: 32px; }
   .aboutUs-section5 .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -269,7 +269,7 @@
           .aboutUs-section5 .row .col .cart .cart-info p {
             margin: 0; }
           .aboutUs-section5 .row .col .cart .cart-info .cart-title {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
             font-size: 32px;

@@ -29,7 +29,7 @@
     max-width: 665px;
     width: 100%;
     margin: 0 auto;
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -76,7 +76,7 @@
       height: 16px;
       background-color: #D2C6A5; }
   .currentMedia-section2 .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 32px;
@@ -110,7 +110,7 @@
   background: #F3EAE4;
   padding: 100px; }
   .currentMedia-section3 .text {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 32px;
@@ -140,7 +140,7 @@
     line-height: 24px;
     color: #1F1F1F; }
   .currentMedia-section4 .similar-media .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -188,7 +188,7 @@
       padding: 32px;
       background-color: #EDF6F9; }
       .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .media-title {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 32px;
@@ -214,7 +214,7 @@
           transform: scale(1.05); }
         .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .read-more-link p {
           margin: 0;
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 300;
           font-size: 14px;

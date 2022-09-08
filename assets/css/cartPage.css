@@ -2,7 +2,7 @@
   padding: 60px 0;
   text-align: center;
   background: #EDF6F9;
-  font-family: 'Canela Trial';
+  font-family: 'Canela-Trial';
   font-style: normal;
   font-weight: 100;
   font-size: 64px;
@@ -255,7 +255,7 @@
           background: #F3EAE4;
           margin-bottom: 40px; }
           .your-cart .content.checkout .checkout-fields .payment-method .title {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
             font-size: 32px;
@@ -306,7 +306,7 @@
             -webkit-transform: scale(1);
             transform: scale(1); }
         .your-cart .content.checkout .checkout-fields .personal-details .title {
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 100;
           font-size: 32px;

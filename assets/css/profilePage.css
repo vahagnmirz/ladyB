@@ -2,7 +2,7 @@
   padding: 60px 0;
   text-align: center;
   background: #EDF6F9;
-  font-family: 'Canela Trial';
+  font-family: 'Canela-Trial';
   font-style: normal;
   font-weight: 100;
   font-size: 64px;
@@ -38,7 +38,7 @@
           height: 100%;
           object-fit: cover; }
       .profilePage .row .left-side .user-content .user-name {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 24px;
@@ -116,7 +116,7 @@
         width: 100%;
         margin-bottom: 48px; }
         .profilePage .row .right-side form .form-item .form-item-type {
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 300;
           font-size: 16px;

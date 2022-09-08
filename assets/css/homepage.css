@@ -82,7 +82,7 @@ main {
             text-transform: uppercase;
             color: #1F1F1F; }
           main .home-section1 .big-column .image .image-text .big-title span {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
             font-size: 64px;
@@ -116,7 +116,7 @@ main {
               clip-path: ellipse(71px 80px at 10% 50%);
               z-index: -1; }
             main .home-section1 .big-column .image .image-text .more-about-btn a {
-              font-family: 'Canela Trial';
+              font-family: 'Canela-Trial';
               font-style: normal;
               font-weight: 300;
               font-size: 14px;
@@ -208,7 +208,7 @@ main {
         font-weight: 100;
         font-size: 64px;
         line-height: 77px;
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         letter-spacing: 0.02em;
         color: #1F1F1F;
         margin-bottom: 40px;
@@ -337,7 +337,7 @@ main {
       margin: 0;
       z-index: 1; }
       main .home-section5 .repeat-text span {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 136px;
@@ -380,7 +380,7 @@ main {
         width: 100%; }
       main .home-section5 .left .link {
         margin: 0;
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -473,7 +473,7 @@ main {
       margin-top: 0;
       transition: all 0.5s ease-in-out;
       text-decoration: none;
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 300;
       font-size: 40px;

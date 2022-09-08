@@ -152,7 +152,7 @@ header {
           padding: 70px 117px;
           background: white; }
         header .nav .nav-links-right .sign-in .modal-window h1 {
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 100;
           font-size: 32px;
@@ -402,7 +402,7 @@ header {
               header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .link-to-shop-page a {
                 cursor: pointer;
                 width: fit-content;
-                font-family: 'Canela Trial';
+                font-family: 'Canela-Trial';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 14px;
@@ -467,7 +467,7 @@ header {
               position: relative; }
               header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .right-image p {
                 position: absolute;
-                font-family: 'Canela Trial';
+                font-family: 'Canela-Trial';
                 font-style: normal;
                 font-weight: 100;
                 font-size: 64px;
@@ -553,7 +553,7 @@ header {
             padding: 50px 100px;
             background: white; }
           header .nav .nav-links .sign-in .modal-window h1 {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
             font-size: 32px;
@@ -848,7 +848,7 @@ main {
             text-transform: uppercase;
             color: #1F1F1F; }
           main .home-section1 .big-column .image .image-text .big-title span {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
             font-size: 64px;
@@ -882,7 +882,7 @@ main {
               clip-path: ellipse(71px 80px at 10% 50%);
               z-index: -1; }
             main .home-section1 .big-column .image .image-text .more-about-btn a {
-              font-family: 'Canela Trial';
+              font-family: 'Canela-Trial';
               font-style: normal;
               font-weight: 300;
               font-size: 14px;
@@ -974,7 +974,7 @@ main {
         font-weight: 100;
         font-size: 64px;
         line-height: 77px;
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         letter-spacing: 0.02em;
         color: #1F1F1F;
         margin-bottom: 40px;
@@ -1103,7 +1103,7 @@ main {
       margin: 0;
       z-index: 1; }
       main .home-section5 .repeat-text span {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 136px;
@@ -1146,7 +1146,7 @@ main {
         width: 100%; }
       main .home-section5 .left .link {
         margin: 0;
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -1239,7 +1239,7 @@ main {
       margin-top: 0;
       transition: all 0.5s ease-in-out;
       text-decoration: none;
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 300;
       font-size: 40px;
@@ -1608,7 +1608,7 @@ main {
       justify-content: space-between;
       height: 100%; }
       .product-detail-page .detail-section1 .information .title {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 32px;
@@ -1893,7 +1893,7 @@ main {
       left: 0; }
       .detail-section2 .row .text-part .mobile-title {
         display: none;
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 40px;
@@ -1904,7 +1904,7 @@ main {
           color: #D2C6A5;
           text-transform: lowercase; }
       .detail-section2 .row .text-part h2 {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 64px;
@@ -1914,7 +1914,7 @@ main {
         margin-top: 0;
         margin-bottom: 16px; }
       .detail-section2 .row .text-part .header-text {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: italic;
         font-weight: 100;
         font-size: 64px;
@@ -1951,7 +1951,7 @@ main {
           border: 1px solid #D2C6A5;
           clip-path: ellipse(71px 80px at 10% 50%); }
         .detail-section2 .row .text-part .dicoverladyb span {
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 300;
           font-size: 14px;
@@ -1976,7 +1976,7 @@ main {
       flex: 0 0 33.3%;
       padding: 0 12px; }
   .detail-section3 .testimonials .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -1993,7 +1993,7 @@ main {
     border-bottom: 4px solid #D2C6A5;
     box-shadow: 0 3px 6px -1px #1f1f1f7a; }
     .detail-section3 .testimonials .cart .cart-number {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -2041,7 +2041,7 @@ main {
           text-transform: uppercase;
           color: #1F1F1F; }
     .detail-section3 .testimonials .cart .cart-footer {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: italic;
       font-weight: 300;
       font-size: 16px;
@@ -2051,7 +2051,7 @@ main {
 .detail-section4 {
   padding: 0 32px; }
   .detail-section4 .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -2138,7 +2138,7 @@ main {
       align-items: center;
       justify-content: space-between; }
       .size-guide-modal .modal .modal-content .modal-header h3 {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 32px;
@@ -2696,7 +2696,7 @@ main {
         padding: 0 12px; }
     .aboutUs-section1 .aboutUs-section1-wrapper .mobile-title {
       display: none;
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 40px;
@@ -2709,7 +2709,7 @@ main {
         color: #D2C6A5;
         font-style: italic; }
     .aboutUs-section1 .aboutUs-section1-wrapper .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -2769,7 +2769,7 @@ main {
             opacity: 0.3;
             clip-path: ellipse(71px 80px at 10% 50%); }
           .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .more-about-btn span {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 300;
             font-size: 14px;
@@ -2798,7 +2798,7 @@ main {
         height: 100%;
         object-fit: cover; }
     .aboutUs-section2 .row .text-wrapper h2 {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -2825,7 +2825,7 @@ main {
     flex-direction: column;
     position: relative; }
     .aboutUs-section3 .section-row .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -2916,7 +2916,7 @@ main {
   padding-top: 95px;
   padding-bottom: 32px; }
   .aboutUs-section5 .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -2952,7 +2952,7 @@ main {
           .aboutUs-section5 .row .col .cart .cart-info p {
             margin: 0; }
           .aboutUs-section5 .row .col .cart .cart-info .cart-title {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
             font-size: 32px;
@@ -3095,7 +3095,7 @@ main {
   flex-direction: column;
   margin-bottom: 40px; }
   .contact-section1 .top {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -3106,7 +3106,7 @@ main {
     margin-top: 0;
     margin-bottom: 3px; }
   .contact-section1 .bottom {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: italic;
     font-weight: 100;
     font-size: 64px;
@@ -3138,7 +3138,7 @@ main {
     background-size: contain;
     background-position: right; }
     .contact-section2 .information .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 32px;
@@ -3387,7 +3387,7 @@ main {
       font-weight: 100;
       font-size: 64px;
       line-height: 77px;
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       letter-spacing: 0.02em;
       color: #1F1F1F;
       margin-bottom: 40px;
@@ -3434,7 +3434,7 @@ main {
       flex: 0 0 50%; }
   .explore-section1 .title-mobile {
     display: none;
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 40px;
@@ -3445,7 +3445,7 @@ main {
       text-transform: lowercase;
       color: #D2C6A5; }
   .explore-section1 .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -3488,7 +3488,7 @@ main {
       opacity: 0.3;
       clip-path: ellipse(71px 80px at 10% 50%); }
     .explore-section1 .scroll-to span {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -3557,7 +3557,7 @@ main {
       width: 33.3%;
       flex: 0 0 33.3%; }
   .explore-section2 .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -3619,7 +3619,7 @@ main {
           width: 100%;
           flex: 0 0 100%; } }
       .explore-section3 .row .slider-wrapper h3 {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 64px;
@@ -3749,7 +3749,7 @@ main {
       flex: 0 0 33.3%;
       padding: 0 12px; }
   .explore-section4 .testimonials .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -3766,7 +3766,7 @@ main {
     border-bottom: 4px solid #D2C6A5;
     box-shadow: 0 3px 6px -1px #1f1f1f7a; }
     .explore-section4 .testimonials .cart .cart-number {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -3814,7 +3814,7 @@ main {
           text-transform: uppercase;
           color: #1F1F1F; }
     .explore-section4 .testimonials .cart .cart-footer {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: italic;
       font-weight: 300;
       font-size: 16px;
@@ -3836,7 +3836,7 @@ main {
     margin: 0;
     z-index: 1; }
     .explore-section5 .lookbook .repeat-text span {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 136px;
@@ -3879,7 +3879,7 @@ main {
       width: 100%; }
     .explore-section5 .lookbook .left .link {
       margin: 0;
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -3906,7 +3906,7 @@ main {
       margin-top: 0;
       transition: all 0.5s ease-in-out;
       text-decoration: none;
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 300;
       font-size: 40px;
@@ -4057,7 +4057,7 @@ main {
   align-items: center;
   justify-content: center; }
   .media-section1 .content .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -4197,7 +4197,7 @@ main {
       padding: 32px;
       background-color: #EDF6F9; }
       .media-section2 .content .media-item .media-item-content .media-info .media-title {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 32px;
@@ -4223,7 +4223,7 @@ main {
           transform: scale(1.05); }
         .media-section2 .content .media-item .media-item-content .media-info .read-more-link p {
           margin: 0;
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 300;
           font-size: 14px;
@@ -4288,7 +4288,7 @@ main {
     max-width: 665px;
     width: 100%;
     margin: 0 auto;
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -4335,7 +4335,7 @@ main {
       height: 16px;
       background-color: #D2C6A5; }
   .currentMedia-section2 .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 32px;
@@ -4369,7 +4369,7 @@ main {
   background: #F3EAE4;
   padding: 100px; }
   .currentMedia-section3 .text {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 32px;
@@ -4399,7 +4399,7 @@ main {
     line-height: 24px;
     color: #1F1F1F; }
   .currentMedia-section4 .similar-media .title {
-    font-family: 'Canela Trial';
+    font-family: 'Canela-Trial';
     font-style: normal;
     font-weight: 100;
     font-size: 64px;
@@ -4447,7 +4447,7 @@ main {
       padding: 32px;
       background-color: #EDF6F9; }
       .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .media-title {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 32px;
@@ -4473,7 +4473,7 @@ main {
           transform: scale(1.05); }
         .currentMedia-section4 .similar-media .media-item .media-item-content .media-info .read-more-link p {
           margin: 0;
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 300;
           font-size: 14px;
@@ -4551,7 +4551,7 @@ main {
       color: #FFFFFF;
       margin-bottom: 108px; }
     .lookbook-wrapper .left .middle {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 64px;
@@ -4675,7 +4675,7 @@ main {
           text-transform: uppercase;
           cursor: pointer; }
     .create-account-page .center .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 32px;
@@ -4751,7 +4751,7 @@ main {
   padding: 60px 0;
   text-align: center;
   background: #EDF6F9;
-  font-family: 'Canela Trial';
+  font-family: 'Canela-Trial';
   font-style: normal;
   font-weight: 100;
   font-size: 64px;
@@ -4787,7 +4787,7 @@ main {
           height: 100%;
           object-fit: cover; }
       .profilePage .row .left-side .user-content .user-name {
-        font-family: 'Canela Trial';
+        font-family: 'Canela-Trial';
         font-style: normal;
         font-weight: 100;
         font-size: 24px;
@@ -4865,7 +4865,7 @@ main {
         width: 100%;
         margin-bottom: 48px; }
         .profilePage .row .right-side form .form-item .form-item-type {
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 300;
           font-size: 16px;
@@ -5002,7 +5002,7 @@ main {
   padding: 60px 0;
   text-align: center;
   background: #EDF6F9;
-  font-family: 'Canela Trial';
+  font-family: 'Canela-Trial';
   font-style: normal;
   font-weight: 100;
   font-size: 64px;
@@ -5255,7 +5255,7 @@ main {
           background: #F3EAE4;
           margin-bottom: 40px; }
           .your-cart .content.checkout .checkout-fields .payment-method .title {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
             font-size: 32px;
@@ -5306,7 +5306,7 @@ main {
             -webkit-transform: scale(1);
             transform: scale(1); }
         .your-cart .content.checkout .checkout-fields .personal-details .title {
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 100;
           font-size: 32px;
@@ -5618,7 +5618,7 @@ main {
     max-width: 326px;
     width: 100%; }
     .thank-you .content .thank-you-text .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 100;
       font-size: 32px;
@@ -5670,7 +5670,7 @@ footer {
         height: 100%;
         object-fit: contain; }
     footer .footer .links .title {
-      font-family: 'Canela Trial';
+      font-family: 'Canela-Trial';
       font-style: normal;
       font-weight: 300;
       font-size: 14px;

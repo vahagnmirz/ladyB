@@ -76,7 +76,7 @@ header {
           padding: 70px 117px;
           background: white; }
         header .nav .nav-links-right .sign-in .modal-window h1 {
-          font-family: 'Canela Trial';
+          font-family: 'Canela-Trial';
           font-style: normal;
           font-weight: 100;
           font-size: 32px;
@@ -326,7 +326,7 @@ header {
               header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .link-to-shop-page a {
                 cursor: pointer;
                 width: fit-content;
-                font-family: 'Canela Trial';
+                font-family: 'Canela-Trial';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 14px;
@@ -391,7 +391,7 @@ header {
               position: relative; }
               header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .right-image p {
                 position: absolute;
-                font-family: 'Canela Trial';
+                font-family: 'Canela-Trial';
                 font-style: normal;
                 font-weight: 100;
                 font-size: 64px;
@@ -477,7 +477,7 @@ header {
             padding: 50px 100px;
             background: white; }
           header .nav .nav-links .sign-in .modal-window h1 {
-            font-family: 'Canela Trial';
+            font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
             font-size: 32px;
