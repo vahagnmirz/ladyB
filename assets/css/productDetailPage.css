@@ -1064,6 +1064,8 @@
       top: 120px; } } }
 
 @media (max-width: 991px) {
+  .backToShop {
+    margin-bottom: 32px; }
   .product-detail-page {
     padding: 0 24px; }
     .product-detail-page .detail-section1 {

@@ -74,8 +74,7 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      &.for-mobile {
+      &.for-mobile{
         display: none;
       }
 
@@ -541,9 +540,9 @@ main {
   }
 }
 
-@media (max-width: 991px) {
-  .body-title {
-    main {
+main {
+  @media (max-width: 991px) {
+    .body-title {
       text-align: left;
       padding: 0 24px;
 
@@ -564,41 +563,33 @@ main {
         text-align: left;
       }
     }
-
-    .home-section1 {
+    .home-section1{
       padding: 0 0 64px;
       flex-direction: column;
       gap: 64px;
-
-      .small-column {
+      .small-column{
         display: none;
       }
-
-      .big-column {
+      .big-column{
         width: 100%;
         flex: 0 0 100%;
         padding: 0 24px;
-
-        .image {
+        .image{
           position: relative;
           max-width: 100%;
           width: 100%;
           height: 610px !important;
-
-          .image-text {
+          .image-text{
             display: none;
           }
-
           &:hover {
             pointer-events: none;
           }
         }
-
-        &.for-mobile {
+        &.for-mobile{
           display: block;
           padding: 0;
-
-          .image {
+          .image{
             max-width: 100vw;
             height: 610px !important;
             object-fit: contain;
@@ -606,21 +597,18 @@ main {
             .image-text {
               left: 24px;
               display: block;
-
-              .big-title {
-                span {
+              .big-title{
+                span{
                   font-weight: 100;
                   font-size: 40px;
                   line-height: 48px;
                 }
               }
-
-              .small-title {
+              .small-title{
                 margin-top: 0;
                 margin-bottom: 16px;
               }
-
-              .description {
+              .description{
                 max-width: 185px;
                 font-weight: 300;
                 font-size: 16px;
@@ -628,8 +616,7 @@ main {
                 margin-left: 0;
                 margin-top: 16px;
               }
-
-              .more-about-btn {
+              .more-about-btn{
                 margin-left: 32px;
               }
             }
@@ -637,20 +624,16 @@ main {
         }
       }
     }
-
-    .home-section2 {
+    .home-section2{
       height: 428px;
-
-      .play-btn {
+      .play-btn{
         width: 100px;
         height: 100px;
       }
-
-      video {
+      video{
         height: 428px !important;
       }
     }
-
     .home-section3 {
       padding: 20px 24px 50px;
       height: 780px;
@@ -703,24 +686,19 @@ main {
         }
       }
     }
-
-    .home-section4 {
+    .home-section4{
       padding: 64px 0 64px 24px;
-
-      .shop-slider {
+      .shop-slider{
         overflow: hidden;
         gap: 24px;
-
-        .slide {
+        .slide{
           min-width: 326px;
           flex: unset;
-
-          &.active {
+          &.active{
             min-width: 326px;
             flex: unset;
           }
-
-          img {
+          img{
             width: 100%;
             height: 474px;
             object-fit: cover;
@@ -728,22 +706,18 @@ main {
           }
         }
       }
-
-      .information {
+      .information{
         width: calc(100% - 24px);
         flex-direction: column;
-
-        .line {
+        .line{
           width: 18px;
           height: 1px;
           margin: 48px auto;
         }
-
-        .info {
+        .info{
           width: 100%;
           flex: 0 0 100%;
-
-          p {
+          p{
             font-weight: 300;
             font-size: 24px;
             line-height: 18px;
@@ -751,33 +725,27 @@ main {
         }
       }
     }
-
-    .home-section5 {
+    .home-section5{
       padding: 32px 24px 32px 24px;
-
-      .repeat-text {
-        span {
+      .repeat-text{
+        span{
           font-weight: 100;
           font-size: 40px;
           line-height: 48px;
         }
       }
-
-      .content {
+      .content{
         flex-direction: column-reverse;
-
-        .column {
+        .column{
           width: 100%;
           flex: 0 0 100%;
-
-          .right {
-            .column {
+          .right{
+            .column{
               width: 50%;
               flex: 0 0 50%;
               display: flex;
               justify-content: center;
-
-              img {
+              img{
                 width: 182px;
                 height: 280px;
               }
