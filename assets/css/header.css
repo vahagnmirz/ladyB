@@ -255,7 +255,8 @@ header {
           font-weight: 300;
           transition: .2s ease-in-out;
           list-style-type: none;
-          padding: 11px 0; }
+          padding: 11px 0;
+          background-color: #FFFFFF; }
           header .nav .nav-links-right .dropdown .dropdown--select:after {
             content: '';
             position: absolute;
