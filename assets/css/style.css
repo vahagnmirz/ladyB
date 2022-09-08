@@ -624,11 +624,11 @@ header {
         header .nav .nav-links .sign-in .modal-close {
           position: absolute;
           right: 24px;
+          justify-content: center;
           font-size: 22px;
           text-align: center;
           display: flex;
           align-items: center;
-          justify-content: center;
           top: 24px;
           width: 56px;
           height: 56px;
@@ -1161,78 +1161,78 @@ main {
           display: inline-block; }
 
 @media (max-width: 991px) {
-  main .body-title {
+  .body-title main {
     text-align: left;
     padding: 0 24px; }
-    main .body-title h1 {
+    .body-title main h1 {
       font-size: 40px;
       line-height: 48px;
       text-align: left; }
-      main .body-title h1:nth-child(2) {
+      .body-title main h1:nth-child(2) {
         margin-bottom: 16px; }
-    main .body-title p {
+    .body-title main p {
       font-weight: 300;
       font-size: 14px;
       line-height: 24px;
       text-align: left; }
-  main .home-section1 {
+  .body-title .home-section1 {
     padding: 0 0 64px;
     flex-direction: column;
     gap: 64px; }
-    main .home-section1 .small-column {
+    .body-title .home-section1 .small-column {
       display: none; }
-    main .home-section1 .big-column {
+    .body-title .home-section1 .big-column {
       width: 100%;
       flex: 0 0 100%;
       padding: 0 24px; }
-      main .home-section1 .big-column .image {
+      .body-title .home-section1 .big-column .image {
         position: relative;
         max-width: 100%;
         width: 100%;
         height: 610px !important; }
-        main .home-section1 .big-column .image .image-text {
+        .body-title .home-section1 .big-column .image .image-text {
           display: none; }
-        main .home-section1 .big-column .image:hover {
+        .body-title .home-section1 .big-column .image:hover {
           pointer-events: none; }
-      main .home-section1 .big-column.for-mobile {
+      .body-title .home-section1 .big-column.for-mobile {
         display: block;
         padding: 0; }
-        main .home-section1 .big-column.for-mobile .image {
+        .body-title .home-section1 .big-column.for-mobile .image {
           max-width: 100vw;
           height: 610px !important;
           object-fit: contain; }
-          main .home-section1 .big-column.for-mobile .image .image-text {
+          .body-title .home-section1 .big-column.for-mobile .image .image-text {
             left: 24px;
             display: block; }
-            main .home-section1 .big-column.for-mobile .image .image-text .big-title span {
+            .body-title .home-section1 .big-column.for-mobile .image .image-text .big-title span {
               font-weight: 100;
               font-size: 40px;
               line-height: 48px; }
-            main .home-section1 .big-column.for-mobile .image .image-text .small-title {
+            .body-title .home-section1 .big-column.for-mobile .image .image-text .small-title {
               margin-top: 0;
               margin-bottom: 16px; }
-            main .home-section1 .big-column.for-mobile .image .image-text .description {
+            .body-title .home-section1 .big-column.for-mobile .image .image-text .description {
               max-width: 185px;
               font-weight: 300;
               font-size: 16px;
               line-height: 24px;
               margin-left: 0;
               margin-top: 16px; }
-            main .home-section1 .big-column.for-mobile .image .image-text .more-about-btn {
+            .body-title .home-section1 .big-column.for-mobile .image .image-text .more-about-btn {
               margin-left: 32px; }
-  main .home-section2 {
+  .body-title .home-section2 {
     height: 428px; }
-    main .home-section2 .play-btn {
+    .body-title .home-section2 .play-btn {
       width: 100px;
       height: 100px; }
-    main .home-section2 video {
+    .body-title .home-section2 video {
       height: 428px !important; }
-  main .home-section3 {
+  .body-title .home-section3 {
     padding: 20px 24px 50px;
     height: 780px; }
-    main .home-section3 .title {
+    .body-title .home-section3 .title {
       margin-bottom: 32px; }
-    main .home-section3 .links .link .text {
+    .body-title .home-section3 .links .link .text {
       cursor: pointer;
       letter-spacing: 0.02em;
       margin-bottom: 40px;
@@ -1246,73 +1246,73 @@ main {
       line-height: 48px;
       text-align: center;
       color: #1F1F1F; }
-    main .home-section3 .links .link .hovered-images img {
+    .body-title .home-section3 .links .link .hovered-images img {
       width: 182px;
       height: 278px; }
-      main .home-section3 .links .link .hovered-images img:first-child {
+      .body-title .home-section3 .links .link .hovered-images img:first-child {
         top: unset;
         bottom: 60px;
         left: 55%; } }
       @media (max-width: 991px) and (max-width: 480px) {
-        main .home-section3 .links .link .hovered-images img:first-child {
+        .body-title .home-section3 .links .link .hovered-images img:first-child {
           left: 51%; } }
 
 @media (max-width: 991px) {
-      main .home-section3 .links .link .hovered-images img:last-child {
+      .body-title .home-section3 .links .link .hovered-images img:last-child {
         bottom: 60px;
         right: 55%; } }
       @media (max-width: 991px) and (max-width: 480px) {
-        main .home-section3 .links .link .hovered-images img:last-child {
+        .body-title .home-section3 .links .link .hovered-images img:last-child {
           right: 51%; } }
 
 @media (max-width: 991px) {
-  main .home-section4 {
+  .body-title .home-section4 {
     padding: 64px 0 64px 24px; }
-    main .home-section4 .shop-slider {
+    .body-title .home-section4 .shop-slider {
       overflow: hidden;
       gap: 24px; }
-      main .home-section4 .shop-slider .slide {
+      .body-title .home-section4 .shop-slider .slide {
         min-width: 326px;
         flex: unset; }
-        main .home-section4 .shop-slider .slide.active {
+        .body-title .home-section4 .shop-slider .slide.active {
           min-width: 326px;
           flex: unset; }
-        main .home-section4 .shop-slider .slide img {
+        .body-title .home-section4 .shop-slider .slide img {
           width: 100%;
           height: 474px;
           object-fit: cover;
           object-position: center; }
-    main .home-section4 .information {
+    .body-title .home-section4 .information {
       width: calc(100% - 24px);
       flex-direction: column; }
-      main .home-section4 .information .line {
+      .body-title .home-section4 .information .line {
         width: 18px;
         height: 1px;
         margin: 48px auto; }
-      main .home-section4 .information .info {
+      .body-title .home-section4 .information .info {
         width: 100%;
         flex: 0 0 100%; }
-        main .home-section4 .information .info p {
+        .body-title .home-section4 .information .info p {
           font-weight: 300;
           font-size: 24px;
           line-height: 18px; }
-  main .home-section5 {
+  .body-title .home-section5 {
     padding: 32px 24px 32px 24px; }
-    main .home-section5 .repeat-text span {
+    .body-title .home-section5 .repeat-text span {
       font-weight: 100;
       font-size: 40px;
       line-height: 48px; }
-    main .home-section5 .content {
+    .body-title .home-section5 .content {
       flex-direction: column-reverse; }
-      main .home-section5 .content .column {
+      .body-title .home-section5 .content .column {
         width: 100%;
         flex: 0 0 100%; }
-        main .home-section5 .content .column .right .column {
+        .body-title .home-section5 .content .column .right .column {
           width: 50%;
           flex: 0 0 50%;
           display: flex;
           justify-content: center; }
-          main .home-section5 .content .column .right .column img {
+          .body-title .home-section5 .content .column .right .column img {
             width: 182px;
             height: 280px; } }
 
