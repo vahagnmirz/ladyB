@@ -249,6 +249,8 @@
       .your-cart .content.checkout .checkout-fields {
         max-width: 584px;
         width: 100%; }
+        .your-cart .content.checkout .checkout-fields .radio-buttons .mobile-payments {
+          display: none; }
         .your-cart .content.checkout .checkout-fields .payment-method {
           width: 100%;
           padding: 24px;
@@ -557,6 +559,8 @@
   .your-cart .content {
     padding: 40px 0;
     flex-direction: column; }
+    .your-cart .content .table a {
+      max-width: 100%; }
     .your-cart .content .table table {
       display: none; }
     .your-cart .content .table .mobile-view {
@@ -564,11 +568,15 @@
       .your-cart .content .table .mobile-view table {
         display: table !important; }
     .your-cart .content .right-part {
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 100%; }
     .your-cart .content.checkout .checkout-fields {
       max-width: 100%;
       flex-direction: column-reverse;
       display: flex; }
+      .your-cart .content.checkout .checkout-fields .personal-details .place-order {
+        margin-top: 16px;
+        margin-bottom: 48px; }
   .top-cart {
     font-size: 40px;
     line-height: 48px;
@@ -582,9 +590,15 @@
     flex-direction: column-reverse;
     display: flex; }
     .your-cart .content.checkout .checkout-fields .personal-details .place-order {
-      margin-top: 18px; }
+      margin-top: 16px; }
+    .your-cart .content.checkout .checkout-fields .personal-details .radio-buttons .mobile-payments {
+      display: block;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #C5C5C5; }
     .your-cart .content.checkout .checkout-fields .personal-details form {
       flex-direction: column-reverse; }
+      .your-cart .content.checkout .checkout-fields .personal-details form .desktop-payments {
+        display: none; }
       .your-cart .content.checkout .checkout-fields .personal-details form .row {
         flex-wrap: wrap;
         gap: 16px; }
@@ -593,5 +607,5 @@
           flex: 0 0 100%; }
     .your-cart .content.checkout .checkout-fields .payment-method {
       background-color: transparent;
-      padding: 24px 0;
+      padding: 66px 0 8px;
       margin-bottom: 0; } }

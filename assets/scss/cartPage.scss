@@ -349,6 +349,11 @@
       .checkout-fields {
         max-width: 584px;
         width: 100%;
+        .radio-buttons{
+          .mobile-payments{
+            display: none;
+          }
+        }
 
         .payment-method {
           width: 100%;
@@ -780,6 +785,9 @@
       flex-direction: column;
 
       .table {
+        a{
+          max-width: 100%;
+        }
         table {
           display: none;
         }
@@ -795,6 +803,7 @@
 
       .right-part {
         margin: 0 auto;
+        max-width: 100%;
       }
 
       &.checkout {
@@ -802,6 +811,12 @@
           max-width: 100%;
           flex-direction: column-reverse;
           display: flex;
+          .personal-details{
+            .place-order {
+              margin-top: 16px;
+              margin-bottom: 48px;
+            }
+          }
         }
       }
     }
@@ -829,12 +844,21 @@
 
           .personal-details {
             .place-order {
-              margin-top: 18px;
+               margin-top: 16px;
+             }
+            .radio-buttons{
+              .mobile-payments{
+                display: block;
+                padding-bottom: 32px;
+                border-bottom: 1px solid #C5C5C5;
+              }
             }
 
             form {
               flex-direction: column-reverse;
-
+              .desktop-payments{
+                display: none;
+              }
               .row {
                 flex-wrap: wrap;
                 gap: 16px;
@@ -850,7 +874,7 @@
 
           .payment-method {
             background-color: transparent;
-            padding: 24px 0;
+            padding: 66px 0 8px;
             margin-bottom: 0;
           }
 

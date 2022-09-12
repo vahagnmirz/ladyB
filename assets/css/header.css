@@ -475,7 +475,7 @@ header {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding: 50px 100px;
+            padding: 100px 50px 50px;
             background: white; }
           header .nav .nav-links .sign-in .modal-window h1 {
             font-family: 'Canela-Trial';
@@ -516,7 +516,7 @@ header {
             display: flex;
             flex-direction: column; }
             header .nav .nav-links .sign-in .modal-window form input {
-              padding: 19px 24px;
+              padding: 18px 24px;
               box-shadow: none;
               outline: none;
               border: 1px solid #EAE6D8;
@@ -528,7 +528,7 @@ header {
                 color: #C5C5C5; }
             header .nav .nav-links .sign-in .modal-window form button {
               background: #D2C6A5;
-              padding: 19px 0;
+              padding: 16px 0;
               display: flex;
               align-items: center;
               justify-content: center;

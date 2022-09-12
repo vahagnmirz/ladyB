@@ -1081,14 +1081,18 @@
             display: block; }
       .product-detail-page .detail-section1 .information .title span {
         color: #D2C6A5; }
-      .product-detail-page .detail-section1 .information .sizeAndCount .column8 {
-        width: 60%;
-        flex: 0 0 60%;
-        padding: 0 8px; }
-      .product-detail-page .detail-section1 .information .sizeAndCount .column4 {
-        width: 40%;
-        flex: 0 0 40%;
-        padding: 0 8px; }
+      .product-detail-page .detail-section1 .information .sizeAndCount {
+        margin: 0 -8px; }
+        .product-detail-page .detail-section1 .information .sizeAndCount .column8 {
+          width: 60%;
+          flex: 0 0 60%;
+          padding: 0 8px; }
+        .product-detail-page .detail-section1 .information .sizeAndCount .column4 {
+          width: 40%;
+          flex: 0 0 40%;
+          padding: 0 8px; }
+      .product-detail-page .detail-section1 .information .colors {
+        margin-left: 4px; }
   .detail-section2 .row .text-part h2 {
     display: none; }
   .detail-section2 .row .text-part .header-text {
@@ -1115,13 +1119,16 @@
 
 @media (max-width: 991px) {
   .detail-section3 .testimonials {
-    padding: 64px 0 64px 24px; }
+    padding: 64px 0 64px 24px;
+    width: 100%;
+    overflow: hidden; }
     .detail-section3 .testimonials .row {
-      overflow: hidden;
-      margin-right: 0;
+      overflow-x: auto;
+      margin: 0 -16px;
       padding: 0; }
       .detail-section3 .testimonials .row .col {
-        min-width: 331px; }
+        min-width: 331px;
+        padding: 0 16px; }
     .detail-section3 .testimonials .title {
       font-weight: 100;
       font-size: 40px;
