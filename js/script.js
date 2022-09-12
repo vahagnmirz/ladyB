@@ -18,6 +18,21 @@ document.querySelector('.video').addEventListener('click', () => {
 
 
 
+gsap.registerPlugin(ScrollTrigger);
 
+gsap.to('.image4', {
+    scrollTrigger: {
+        trigger: '.image4',
+        toggleActions: 'restart none reverse none',
+        start: "top 400px",
+        end: 'bottom 100%',
+        scrub: 1,
+        markers:true
+    },
+    maxWidth: '100vw',
+    height: '813px',
+    objectFit: 'contain',
+    duration: 1
+})
 
 
