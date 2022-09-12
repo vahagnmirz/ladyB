@@ -127,3 +127,15 @@
       text-align: center;
       letter-spacing: 0.05em;
       color: #1F1F1F; }
+
+@media (max-width: 991px) {
+  .create-account-page {
+    padding: 30px 24px 35px; }
+    .create-account-page .row {
+      justify-content: center; }
+    .create-account-page .left {
+      display: none; }
+    .create-account-page .right {
+      display: none; }
+    .create-account-page .center .subtitle {
+      margin-bottom: 60px; } }

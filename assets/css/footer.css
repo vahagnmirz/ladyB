@@ -68,4 +68,6 @@ footer {
       flex: 0 0 50%;
       display: flex;
       margin: 0 auto;
-      justify-content: flex-start; } }
+      justify-content: flex-start; }
+      footer .footer .column.logo-mobile {
+        justify-content: center; } }

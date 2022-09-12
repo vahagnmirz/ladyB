@@ -149,3 +149,23 @@
 
   }
 }
+
+@media(max-width: 991px){
+  .create-account-page{
+    padding: 30px 24px 35px;
+    .row{
+      justify-content: center;
+    }
+    .left{
+      display: none;
+    }
+    .right{
+      display: none;
+    }
+    .center{
+      .subtitle{
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

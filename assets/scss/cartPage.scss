@@ -839,7 +839,7 @@
       &.checkout {
         .checkout-fields {
           max-width: 100%;
-          flex-direction: column-reverse;
+          //flex-direction: column-reverse;
           display: flex;
 
           .personal-details {
@@ -855,10 +855,10 @@
             }
 
             form {
-              flex-direction: column-reverse;
-              .desktop-payments{
-                display: none;
-              }
+              //flex-direction: column-reverse;
+              //.desktop-payments{
+              //  display: none;
+              //}
               .row {
                 flex-wrap: wrap;
                 gap: 16px;
@@ -874,7 +874,7 @@
 
           .payment-method {
             background-color: transparent;
-            padding: 66px 0 8px;
+            padding: 16px 0 8px;
             margin-bottom: 0;
           }
 
