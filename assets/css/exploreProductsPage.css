@@ -120,8 +120,7 @@
       height: 80px;
       border-radius: 50%;
       border: 1px solid #D2C6A5;
-      opacity: 0.3;
-      clip-path: ellipse(71px 80px at 10% 50%); }
+      clip-path: ellipse(68px 80px at 10% 50%); }
     .explore-section1 .scroll-to span {
       font-family: 'Canela-Trial';
       font-style: normal;
@@ -157,7 +156,8 @@
         transition: all .3s ease-in-out; }
       .explore-section1 .slider-wrapper .sliding-items .slider-buttons {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 80px; }
         .explore-section1 .slider-wrapper .sliding-items .slider-buttons > div {
           width: 117px;
           height: 117px;
@@ -179,7 +179,23 @@
       background-size: cover;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
+      transition: all .3s ease-in-out;
+      position: relative; }
+      .explore-section1 .slider-wrapper .active-slide .navigation {
+        position: absolute;
+        left: 0;
+        bottom: 44px;
+        transform: rotate(90deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px; }
+        .explore-section1 .slider-wrapper .active-slide .navigation p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #1F1F1F; }
 
 .explore-section2 {
   padding: 0 32px; }
@@ -351,6 +367,17 @@
             font-size: 12px;
             font-weight: bold;
             color: #1F1F1F; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-button-next-small {
+          left: 120px;
+          right: unset; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-button-prev-small {
+          left: -5px; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-small {
+          left: 20px;
+          width: auto;
+          right: unset; }
+          .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-small .swiper-pagination-bullet {
+            margin: 0 6.5px; }
       .explore-section3 .row .slider-wrapper .big-slider .bigSwiper {
         width: 100%;
         height: 500px;
@@ -421,7 +448,7 @@
       display: flex;
       width: 85%;
       justify-content: space-between;
-      margin-bottom: 50px; }
+      margin-bottom: 47px; }
       .explore-section4 .testimonials .cart .cart-image .slashs {
         width: 75px;
         height: 50px; }
@@ -447,7 +474,8 @@
           line-height: 16px;
           letter-spacing: 0.05em;
           text-transform: uppercase;
-          color: #1F1F1F; }
+          color: #1F1F1F;
+          margin: 0; }
     .explore-section4 .testimonials .cart .cart-footer {
       font-family: 'Canela-Trial';
       font-style: italic;
@@ -488,7 +516,17 @@
       width: 50%;
       flex: 0 0 50%; }
     .explore-section5 .lookbook .row.right {
-      align-items: center; }
+      align-items: center;
+      justify-content: flex-end;
+      gap: 24px; }
+      .explore-section5 .lookbook .row.right .lookbook-image {
+        max-width: 326px;
+        width: 100%;
+        height: 500px; }
+        .explore-section5 .lookbook .row.right .lookbook-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
   .explore-section5 .lookbook .content {
     align-items: flex-end; }
   .explore-section5 .lookbook .left {

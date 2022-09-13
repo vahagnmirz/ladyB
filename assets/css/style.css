@@ -362,7 +362,7 @@ header {
       left: 0;
       width: 100%;
       height: calc(100vh - 82px);
-      background: #EAE6D8;
+      background: rgba(0, 0, 0, 0.59);
       pointer-events: none;
       opacity: 0;
       z-index: -1;
@@ -376,12 +376,13 @@ header {
       header .nav .shop-dropdown-background .shop-dropdown-container {
         transform: translateY(-100vh);
         width: 100%;
-        height: 400px;
+        height: 451px;
         overflow: hidden;
         background: #fff;
         padding-right: 32px;
         transition-delay: 400ms;
-        transition: all 600ms ease-in-out; }
+        transition: all 600ms ease-in-out;
+        border-bottom: 50px solid #D2C6A5; }
         header .nav .shop-dropdown-background .shop-dropdown-container .row {
           display: flex;
           padding: 0; }
@@ -1485,7 +1486,8 @@ main {
     justify-content: center;
     gap: 40px;
     border-bottom: 1px solid #EFF2F4;
-    margin-bottom: -1px; }
+    margin-bottom: -1px;
+    margin-top: 40px; }
     .shop-page .shop-pagination .pagination-item {
       cursor: pointer;
       font-weight: 600;
@@ -1881,7 +1883,10 @@ main {
       .product-detail-page .detail-section1 .information .bluePart {
         background: #EDF6F9;
         padding: 32px;
-        margin-top: 45px; }
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 25px; }
         .product-detail-page .detail-section1 .information .bluePart .text {
           display: flex;
           align-items: center; }
@@ -1889,10 +1894,11 @@ main {
             width: 17px;
             height: 17px;
             margin-right: 8px; }
-          .product-detail-page .detail-section1 .information .bluePart .text .text {
+          .product-detail-page .detail-section1 .information .bluePart .text p {
             font-size: 12px;
             line-height: 15px;
-            color: #1F1F1F; }
+            color: #1F1F1F;
+            margin: 0; }
 
 .detail-section2 {
   background: #EFF2F4;
@@ -2644,16 +2650,12 @@ main {
 
 @media (max-width: 991px) {
   .detail-section3 .testimonials {
-    padding: 64px 0 64px 24px;
-    width: 100%;
-    overflow: hidden; }
+    padding: 64px 0 64px 24px; }
     .detail-section3 .testimonials .row {
-      overflow-x: auto;
-      margin: 0 -16px;
-      padding: 0; }
+      overflow: hidden;
+      margin-right: 0; }
       .detail-section3 .testimonials .row .col {
-        min-width: 331px;
-        padding: 0 16px; }
+        min-width: 331px; }
     .detail-section3 .testimonials .title {
       font-weight: 100;
       font-size: 40px;
@@ -2797,8 +2799,7 @@ main {
             height: 80px;
             border-radius: 50%;
             border: 1px solid #D2C6A5;
-            opacity: 0.3;
-            clip-path: ellipse(71px 80px at 10% 50%); }
+            clip-path: ellipse(68px 80px at 10% 50%); }
           .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .more-about-btn span {
             font-family: 'Canela-Trial';
             font-style: normal;
@@ -2813,7 +2814,8 @@ main {
             width: 15px;
             height: 12px;
             margin-left: 9px;
-            margin-top: 2px; }
+            margin-top: 2px;
+            transform: rotate(90deg); }
 
 .aboutUs-section2 {
   padding: 90px 0; }
@@ -2871,7 +2873,9 @@ main {
       line-height: 24px;
       color: #1F1F1F;
       margin-top: 0;
-      margin-bottom: 70px; }
+      margin-bottom: 70px;
+      max-width: 466px;
+      width: 100%; }
     .aboutUs-section3 .section-row .row {
       display: flex;
       align-items: center;
@@ -2944,8 +2948,7 @@ main {
     object-fit: cover; }
 
 .aboutUs-section5 {
-  padding-top: 95px;
-  padding-bottom: 32px; }
+  padding: 95px 32px 32px; }
   .aboutUs-section5 .title {
     font-family: 'Canela-Trial';
     font-style: normal;
@@ -2968,7 +2971,7 @@ main {
         width: 100%; }
         .aboutUs-section5 .row .col .cart .image {
           width: 100%;
-          height: 250px;
+          height: 251px;
           margin: 0; }
           .aboutUs-section5 .row .col .cart .image img {
             width: 100%;
@@ -3516,8 +3519,7 @@ main {
       height: 80px;
       border-radius: 50%;
       border: 1px solid #D2C6A5;
-      opacity: 0.3;
-      clip-path: ellipse(71px 80px at 10% 50%); }
+      clip-path: ellipse(68px 80px at 10% 50%); }
     .explore-section1 .scroll-to span {
       font-family: 'Canela-Trial';
       font-style: normal;
@@ -3553,7 +3555,8 @@ main {
         transition: all .3s ease-in-out; }
       .explore-section1 .slider-wrapper .sliding-items .slider-buttons {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 80px; }
         .explore-section1 .slider-wrapper .sliding-items .slider-buttons > div {
           width: 117px;
           height: 117px;
@@ -3575,7 +3578,23 @@ main {
       background-size: cover;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out; }
+      transition: all .3s ease-in-out;
+      position: relative; }
+      .explore-section1 .slider-wrapper .active-slide .navigation {
+        position: absolute;
+        left: 0;
+        bottom: 44px;
+        transform: rotate(90deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px; }
+        .explore-section1 .slider-wrapper .active-slide .navigation p {
+          margin: 0;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #1F1F1F; }
 
 .explore-section2 {
   padding: 0 32px; }
@@ -3747,6 +3766,17 @@ main {
             font-size: 12px;
             font-weight: bold;
             color: #1F1F1F; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-button-next-small {
+          left: 120px;
+          right: unset; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-button-prev-small {
+          left: -5px; }
+        .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-small {
+          left: 20px;
+          width: auto;
+          right: unset; }
+          .explore-section3 .row .slider-wrapper .slider-item .swiper-pagination-small .swiper-pagination-bullet {
+            margin: 0 6.5px; }
       .explore-section3 .row .slider-wrapper .big-slider .bigSwiper {
         width: 100%;
         height: 500px;
@@ -3817,7 +3847,7 @@ main {
       display: flex;
       width: 85%;
       justify-content: space-between;
-      margin-bottom: 50px; }
+      margin-bottom: 47px; }
       .explore-section4 .testimonials .cart .cart-image .slashs {
         width: 75px;
         height: 50px; }
@@ -3843,7 +3873,8 @@ main {
           line-height: 16px;
           letter-spacing: 0.05em;
           text-transform: uppercase;
-          color: #1F1F1F; }
+          color: #1F1F1F;
+          margin: 0; }
     .explore-section4 .testimonials .cart .cart-footer {
       font-family: 'Canela-Trial';
       font-style: italic;
@@ -3884,7 +3915,17 @@ main {
       width: 50%;
       flex: 0 0 50%; }
     .explore-section5 .lookbook .row.right {
-      align-items: center; }
+      align-items: center;
+      justify-content: flex-end;
+      gap: 24px; }
+      .explore-section5 .lookbook .row.right .lookbook-image {
+        max-width: 326px;
+        width: 100%;
+        height: 500px; }
+        .explore-section5 .lookbook .row.right .lookbook-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
   .explore-section5 .lookbook .content {
     align-items: flex-end; }
   .explore-section5 .lookbook .left {
@@ -5788,7 +5829,9 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #1F1F1F; }
+  color: #1F1F1F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .button {
   background: #D2C6A5;

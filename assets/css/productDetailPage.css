@@ -356,7 +356,10 @@
       .product-detail-page .detail-section1 .information .bluePart {
         background: #EDF6F9;
         padding: 32px;
-        margin-top: 45px; }
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 25px; }
         .product-detail-page .detail-section1 .information .bluePart .text {
           display: flex;
           align-items: center; }
@@ -364,10 +367,11 @@
             width: 17px;
             height: 17px;
             margin-right: 8px; }
-          .product-detail-page .detail-section1 .information .bluePart .text .text {
+          .product-detail-page .detail-section1 .information .bluePart .text p {
             font-size: 12px;
             line-height: 15px;
-            color: #1F1F1F; }
+            color: #1F1F1F;
+            margin: 0; }
 
 .detail-section2 {
   background: #EFF2F4;
@@ -1119,16 +1123,12 @@
 
 @media (max-width: 991px) {
   .detail-section3 .testimonials {
-    padding: 64px 0 64px 24px;
-    width: 100%;
-    overflow: hidden; }
+    padding: 64px 0 64px 24px; }
     .detail-section3 .testimonials .row {
-      overflow-x: auto;
-      margin: 0 -16px;
-      padding: 0; }
+      overflow: hidden;
+      margin-right: 0; }
       .detail-section3 .testimonials .row .col {
-        min-width: 331px;
-        padding: 0 16px; }
+        min-width: 331px; }
     .detail-section3 .testimonials .title {
       font-weight: 100;
       font-size: 40px;

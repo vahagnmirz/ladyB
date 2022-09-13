@@ -501,6 +501,9 @@
         background: #EDF6F9;
         padding: 32px;
         margin-top: 45px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 25px;
         .text{
           display: flex;
           align-items: center;
@@ -509,10 +512,11 @@
             height: 17px;
             margin-right: 8px;
           }
-          .text{
+          p{
             font-size: 12px;
             line-height: 15px;
             color: #1F1F1F;
+            margin: 0;
           }
         }
       }
@@ -1497,15 +1501,11 @@
   .detail-section3{
     .testimonials{
       padding: 64px 0 64px 24px;
-      width: 100%;
-      overflow: hidden;
       .row{
-        overflow-x: auto;
-        margin: 0 -16px;
-        padding: 0;
+        overflow: hidden;
+        margin-right: 0;
         .col{
           min-width: 331px;
-          padding: 0 16px;
         }
       }
       .title{
