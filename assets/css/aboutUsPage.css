@@ -102,7 +102,7 @@
             transform: rotate(90deg); }
 
 .aboutUs-section2 {
-  padding: 90px 0; }
+  padding: 90px 32px; }
   .aboutUs-section2 .row {
     display: flex;
     align-items: center;
@@ -135,8 +135,7 @@
       margin: 0 auto; }
 
 .aboutUs-section3 {
-  padding-top: 50px;
-  padding-bottom: 120px; }
+  padding: 50px 32px 120px; }
   .aboutUs-section3 .section-row {
     display: flex;
     flex-direction: column;
@@ -328,7 +327,7 @@
         .aboutUs-section1 .aboutUs-section1-wrapper .imgs-wrapper .img-wrapper-with-button .more-about-btn {
           display: none; }
   .aboutUs-section2 {
-    padding: 64px 0; }
+    padding: 64px 24px; }
     .aboutUs-section2 .row {
       flex-direction: column;
       padding-top: 170px; }

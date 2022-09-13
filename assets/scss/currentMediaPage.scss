@@ -45,8 +45,8 @@
     color: #1F1F1F;
   }
   .social-icons{
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 82px;
     right: 0;
     padding: 9px 32px;
     background-color: #D2C6A5;
@@ -278,6 +278,8 @@
       line-height: 48px;
     }
     .social-icons{
+      position: absolute;
+      top: 0;
       gap: 45px;
       .icon{
         width: 24px;

@@ -40,8 +40,8 @@
     letter-spacing: 0.02em;
     color: #1F1F1F; }
   .currentMedia-section1 .social-icons {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 82px;
     right: 0;
     padding: 9px 32px;
     background-color: #D2C6A5;
@@ -237,6 +237,8 @@
       font-size: 40px;
       line-height: 48px; }
     .currentMedia-section1 .social-icons {
+      position: absolute;
+      top: 0;
       gap: 45px; }
       .currentMedia-section1 .social-icons .icon {
         width: 24px;

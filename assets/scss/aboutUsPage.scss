@@ -127,7 +127,7 @@
   }
 }
 .aboutUs-section2{
-  padding: 90px 0;
+  padding: 90px 32px;
   .row{
     display: flex;
     align-items: center;
@@ -167,8 +167,7 @@
   }
 }
 .aboutUs-section3{
-  padding-top: 50px;
-  padding-bottom: 120px;
+  padding: 50px 32px 120px;
   .section-row{
     display: flex;
     flex-direction: column;
@@ -408,7 +407,7 @@
     }
   }
   .aboutUs-section2{
-    padding: 64px 0;
+    padding: 64px 24px;
     .row{
       flex-direction: column;
       padding-top: 170px;

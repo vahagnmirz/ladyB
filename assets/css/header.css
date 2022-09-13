@@ -75,7 +75,12 @@ header {
           left: 50%;
           transform: translate(-50%, -50%);
           padding: 70px 117px;
-          background: white; }
+          background-color: #FFFFFF;
+          background-image: url("../../assets/images/sign-in-modal.png");
+          background-repeat: no-repeat;
+          background-position: right;
+          background-size: contain;
+          border-bottom: 24px solid #EAE6D8; }
         header .nav .nav-links-right .sign-in .modal-window h1 {
           font-family: 'Canela-Trial';
           font-style: normal;
@@ -199,6 +204,10 @@ header {
             display: none; } }
       @media (max-width: 991px) {
         header .nav .nav-links-right > div.sign-in {
+          visibility: hidden;
+          width: 0;
+          height: 0; }
+        header .nav .nav-links-right > div.profile {
           visibility: hidden;
           width: 0;
           height: 0; } }
@@ -449,12 +458,12 @@ header {
         left: 0;
         padding: 0 25px;
         gap: 0; }
-        header .nav .nav-header .nav-links .sign-in a {
+        header .nav .nav-header .nav-links .sign-in a, header .nav .nav-header .nav-links .profile a {
           text-decoration: none;
           color: #1A1515; }
-        header .nav .nav-header .nav-links .sign-in p {
+        header .nav .nav-header .nav-links .sign-in p, header .nav .nav-header .nav-links .profile p {
           margin: 0; }
-        header .nav .nav-header .nav-links .sign-in .modal-window {
+        header .nav .nav-header .nav-links .sign-in .modal-window, header .nav .nav-header .nav-links .profile .modal-window {
           position: fixed;
           background-color: rgba(0, 0, 0, 0.59);
           top: 0;
@@ -466,11 +475,11 @@ header {
           opacity: 0;
           pointer-events: none;
           transition: all 0.3s; }
-          header .nav .nav-header .nav-links .sign-in .modal-window:target {
+          header .nav .nav-header .nav-links .sign-in .modal-window:target, header .nav .nav-header .nav-links .profile .modal-window:target {
             visibility: visible;
             opacity: 1;
             pointer-events: auto; }
-          header .nav .nav-header .nav-links .sign-in .modal-window > div {
+          header .nav .nav-header .nav-links .sign-in .modal-window > div, header .nav .nav-header .nav-links .profile .modal-window > div {
             max-width: 724px;
             width: 100%;
             position: absolute;
@@ -479,7 +488,7 @@ header {
             transform: translate(-50%, -50%);
             padding: 100px 50px 50px;
             background: white; }
-          header .nav .nav-header .nav-links .sign-in .modal-window h1 {
+          header .nav .nav-header .nav-links .sign-in .modal-window h1, header .nav .nav-header .nav-links .profile .modal-window h1 {
             font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
@@ -489,23 +498,23 @@ header {
             color: #1F1F1F;
             margin-top: 0;
             margin-bottom: 16px; }
-          header .nav .nav-header .nav-links .sign-in .modal-window p {
+          header .nav .nav-header .nav-links .sign-in .modal-window p, header .nav .nav-header .nav-links .profile .modal-window p {
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
             color: #1F1F1F;
             margin-top: 0;
             margin-bottom: 24px; }
-            header .nav .nav-header .nav-links .sign-in .modal-window p.desc {
+            header .nav .nav-header .nav-links .sign-in .modal-window p.desc, header .nav .nav-header .nav-links .profile .modal-window p.desc {
               max-width: 310px;
               width: 100%; }
-          header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount {
+          header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount, header .nav .nav-header .nav-links .profile .modal-window .donthaveaccount {
             display: flex;
             align-items: center;
             justify-content: center; }
-            header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount p {
+            header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount p, header .nav .nav-header .nav-links .profile .modal-window .donthaveaccount p {
               margin: 0 3px 0 0; }
-            header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount a {
+            header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount a, header .nav .nav-header .nav-links .profile .modal-window .donthaveaccount a {
               width: fit-content;
               font-weight: bold;
               text-decoration: underline;
@@ -513,11 +522,11 @@ header {
               font-size: 12px;
               line-height: 15px;
               margin: 0; }
-          header .nav .nav-header .nav-links .sign-in .modal-window form {
+          header .nav .nav-header .nav-links .sign-in .modal-window form, header .nav .nav-header .nav-links .profile .modal-window form {
             width: 100%;
             display: flex;
             flex-direction: column; }
-            header .nav .nav-header .nav-links .sign-in .modal-window form input {
+            header .nav .nav-header .nav-links .sign-in .modal-window form input, header .nav .nav-header .nav-links .profile .modal-window form input {
               padding: 18px 24px;
               box-shadow: none;
               outline: none;
@@ -526,9 +535,9 @@ header {
               font-size: 14px;
               line-height: 18px;
               margin-bottom: 16px; }
-              header .nav .nav-header .nav-links .sign-in .modal-window form input::placeholder {
+              header .nav .nav-header .nav-links .sign-in .modal-window form input::placeholder, header .nav .nav-header .nav-links .profile .modal-window form input::placeholder {
                 color: #C5C5C5; }
-            header .nav .nav-header .nav-links .sign-in .modal-window form button {
+            header .nav .nav-header .nav-links .sign-in .modal-window form button, header .nav .nav-header .nav-links .profile .modal-window form button {
               background: #D2C6A5;
               padding: 16px 0;
               display: flex;
@@ -546,9 +555,9 @@ header {
               color: #1F1F1F;
               transition: all 300ms ease-in-out;
               margin-bottom: 24px; }
-              header .nav .nav-header .nav-links .sign-in .modal-window form button:hover {
+              header .nav .nav-header .nav-links .sign-in .modal-window form button:hover, header .nav .nav-header .nav-links .profile .modal-window form button:hover {
                 font-size: 14px; }
-        header .nav .nav-header .nav-links .sign-in .modal-close {
+        header .nav .nav-header .nav-links .sign-in .modal-close, header .nav .nav-header .nav-links .profile .modal-close {
           position: absolute;
           right: 24px;
           justify-content: center;
@@ -562,7 +571,7 @@ header {
           border-radius: 50%;
           border: 1px solid #D2C6A5;
           text-decoration: none; }
-          header .nav .nav-header .nav-links .sign-in .modal-close:hover {
+          header .nav .nav-header .nav-links .sign-in .modal-close:hover, header .nav .nav-header .nav-links .profile .modal-close:hover {
             color: black; }
         header .nav .nav-header .nav-links a {
           display: block;

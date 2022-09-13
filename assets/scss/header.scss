@@ -102,7 +102,12 @@ header {
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 70px 117px;
-            background: white;
+            background-color: #FFFFFF;
+            background-image: url("../../assets/images/sign-in-modal.png");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            border-bottom: 24px solid #EAE6D8;
           }
 
           h1 {
@@ -274,6 +279,11 @@ header {
 
         @media (max-width: 991px) {
           &.sign-in {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+          }
+          &.profile {
             visibility: hidden;
             width: 0;
             height: 0;
@@ -616,7 +626,7 @@ header {
           left: 0;
           padding: 0 25px;
           gap: 0;
-          .sign-in {
+          .sign-in, .profile {
             a{
               text-decoration: none;
               color: #1A1515;

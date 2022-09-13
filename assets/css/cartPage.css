@@ -5,8 +5,8 @@
   font-family: 'Canela-Trial';
   font-style: normal;
   font-weight: 100;
-  font-size: 64px;
-  line-height: 77px;
+  font-size: 32px;
+  line-height: 32px;
   letter-spacing: 0.02em;
   color: #1F1F1F; }
   .top-cart a {
@@ -36,7 +36,6 @@
     gap: 0 24px; }
     .your-cart .content .table {
       width: 100%;
-      max-width: 443px;
       margin: 0 auto 40px; }
       .your-cart .content .table .mobile-view {
         display: none;
