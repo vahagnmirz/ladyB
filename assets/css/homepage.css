@@ -259,6 +259,16 @@ main {
         main .home-section4 .shop-slider .slide.active {
           flex: 0 0 50%;
           width: 50%; }
+        main .home-section4 .shop-slider .slide p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: #1F1F1F;
+          margin-top: 16px;
+          margin-bottom: 8px; }
+        main .home-section4 .shop-slider .slide p.price {
+          font-weight: 600;
+          margin: 0; }
     main .home-section4 .information {
       width: 100%;
       padding: 60px 0;
@@ -354,7 +364,17 @@ main {
         width: 50%;
         flex: 0 0 50%; }
       main .home-section5 .row.right {
-        align-items: center; }
+        align-items: center;
+        justify-content: flex-end;
+        gap: 24px; }
+        main .home-section5 .row.right .lookbook-image {
+          max-width: 326px;
+          width: 100%;
+          height: 500px; }
+          main .home-section5 .row.right .lookbook-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
     main .home-section5 .content {
       align-items: flex-end; }
     main .home-section5 .left {

@@ -27,7 +27,7 @@ gsap.to('.image4', {
         start: "top 400px",
         end: 'bottom 100%',
         scrub: 1,
-        markers:true
+        // markers:true
     },
     maxWidth: '100vw',
     height: '813px',

@@ -90,7 +90,8 @@ header {
     justify-content: space-between;
     padding: 0 32px; }
     header .nav > .nav-header {
-      display: block; }
+      display: flex;
+      gap: 50px; }
       header .nav > .nav-header > .nav-title {
         width: 60px;
         height: 54px; }
@@ -98,27 +99,27 @@ header {
           width: 100%;
           height: 100%;
           object-fit: contain; }
-    header .nav > .nav-btn {
-      display: none; }
-    header .nav > .nav-links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px; }
-      header .nav > .nav-links > a {
+      header .nav > .nav-header > .nav-links {
         display: flex;
         align-items: center;
         justify-content: center;
-        text-decoration: none;
-        color: #1F1F1F;
-        font-size: 14px;
-        line-height: 16px;
-        font-weight: 400; }
-        header .nav > .nav-links > a.active {
-          font-weight: 600; }
-        header .nav > .nav-links > a img {
-          margin-bottom: 3px;
-          margin-left: 4px; }
+        gap: 40px; }
+        header .nav > .nav-header > .nav-links > a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: #1F1F1F;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 400; }
+          header .nav > .nav-header > .nav-links > a.active {
+            font-weight: 600; }
+          header .nav > .nav-header > .nav-links > a img {
+            margin-bottom: 3px;
+            margin-left: 4px; }
+    header .nav > .nav-btn {
+      display: none; }
     header .nav > #nav-check {
       display: none; }
     header .nav .nav-links-right {
@@ -508,7 +509,7 @@ header {
       padding: 0 24px; }
       header .nav .nav-links-right {
         flex-direction: row-reverse; }
-      header .nav .nav-links {
+      header .nav .nav-header .nav-links {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -523,12 +524,12 @@ header {
         left: 0;
         padding: 0 25px;
         gap: 0; }
-        header .nav .nav-links .sign-in a {
+        header .nav .nav-header .nav-links .sign-in a {
           text-decoration: none;
           color: #1A1515; }
-        header .nav .nav-links .sign-in p {
+        header .nav .nav-header .nav-links .sign-in p {
           margin: 0; }
-        header .nav .nav-links .sign-in .modal-window {
+        header .nav .nav-header .nav-links .sign-in .modal-window {
           position: fixed;
           background-color: rgba(0, 0, 0, 0.59);
           top: 0;
@@ -540,11 +541,11 @@ header {
           opacity: 0;
           pointer-events: none;
           transition: all 0.3s; }
-          header .nav .nav-links .sign-in .modal-window:target {
+          header .nav .nav-header .nav-links .sign-in .modal-window:target {
             visibility: visible;
             opacity: 1;
             pointer-events: auto; }
-          header .nav .nav-links .sign-in .modal-window > div {
+          header .nav .nav-header .nav-links .sign-in .modal-window > div {
             max-width: 724px;
             width: 100%;
             position: absolute;
@@ -553,7 +554,7 @@ header {
             transform: translate(-50%, -50%);
             padding: 100px 50px 50px;
             background: white; }
-          header .nav .nav-links .sign-in .modal-window h1 {
+          header .nav .nav-header .nav-links .sign-in .modal-window h1 {
             font-family: 'Canela-Trial';
             font-style: normal;
             font-weight: 100;
@@ -563,23 +564,23 @@ header {
             color: #1F1F1F;
             margin-top: 0;
             margin-bottom: 16px; }
-          header .nav .nav-links .sign-in .modal-window p {
+          header .nav .nav-header .nav-links .sign-in .modal-window p {
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
             color: #1F1F1F;
             margin-top: 0;
             margin-bottom: 24px; }
-            header .nav .nav-links .sign-in .modal-window p.desc {
+            header .nav .nav-header .nav-links .sign-in .modal-window p.desc {
               max-width: 310px;
               width: 100%; }
-          header .nav .nav-links .sign-in .modal-window .donthaveaccount {
+          header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount {
             display: flex;
             align-items: center;
             justify-content: center; }
-            header .nav .nav-links .sign-in .modal-window .donthaveaccount p {
+            header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount p {
               margin: 0 3px 0 0; }
-            header .nav .nav-links .sign-in .modal-window .donthaveaccount a {
+            header .nav .nav-header .nav-links .sign-in .modal-window .donthaveaccount a {
               width: fit-content;
               font-weight: bold;
               text-decoration: underline;
@@ -587,11 +588,11 @@ header {
               font-size: 12px;
               line-height: 15px;
               margin: 0; }
-          header .nav .nav-links .sign-in .modal-window form {
+          header .nav .nav-header .nav-links .sign-in .modal-window form {
             width: 100%;
             display: flex;
             flex-direction: column; }
-            header .nav .nav-links .sign-in .modal-window form input {
+            header .nav .nav-header .nav-links .sign-in .modal-window form input {
               padding: 18px 24px;
               box-shadow: none;
               outline: none;
@@ -600,9 +601,9 @@ header {
               font-size: 14px;
               line-height: 18px;
               margin-bottom: 16px; }
-              header .nav .nav-links .sign-in .modal-window form input::placeholder {
+              header .nav .nav-header .nav-links .sign-in .modal-window form input::placeholder {
                 color: #C5C5C5; }
-            header .nav .nav-links .sign-in .modal-window form button {
+            header .nav .nav-header .nav-links .sign-in .modal-window form button {
               background: #D2C6A5;
               padding: 16px 0;
               display: flex;
@@ -620,9 +621,9 @@ header {
               color: #1F1F1F;
               transition: all 300ms ease-in-out;
               margin-bottom: 24px; }
-              header .nav .nav-links .sign-in .modal-window form button:hover {
+              header .nav .nav-header .nav-links .sign-in .modal-window form button:hover {
                 font-size: 14px; }
-        header .nav .nav-links .sign-in .modal-close {
+        header .nav .nav-header .nav-links .sign-in .modal-close {
           position: absolute;
           right: 24px;
           justify-content: center;
@@ -636,27 +637,27 @@ header {
           border-radius: 50%;
           border: 1px solid #D2C6A5;
           text-decoration: none; }
-          header .nav .nav-links .sign-in .modal-close:hover {
+          header .nav .nav-header .nav-links .sign-in .modal-close:hover {
             color: black; }
-        header .nav .nav-links a {
+        header .nav .nav-header .nav-links a {
           display: block;
           width: 100%;
           font-weight: 300;
           font-size: 40px;
           line-height: 48px;
           margin-bottom: 32px; }
-          header .nav .nav-links a:nth-last-child(-n+2) {
+          header .nav .nav-header .nav-links a:nth-last-child(-n+2) {
             font-size: 24px;
             line-height: 29px;
             margin-bottom: 24px; }
-        header .nav .nav-links.opened {
+        header .nav .nav-header .nav-links.opened {
           height: calc(100vh - 82px);
           overflow-y: auto;
           background-image: url(../../assets/images/mobile-navbar-image.png);
           background-repeat: no-repeat;
           background-size: cover;
           background-color: #fff; }
-        header .nav .nav-links .header-shop img {
+        header .nav .nav-header .nav-links .header-shop img {
           transform: rotate(-90deg);
           height: 12px;
           width: 12px;
@@ -1026,6 +1027,16 @@ main {
         main .home-section4 .shop-slider .slide.active {
           flex: 0 0 50%;
           width: 50%; }
+        main .home-section4 .shop-slider .slide p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: #1F1F1F;
+          margin-top: 16px;
+          margin-bottom: 8px; }
+        main .home-section4 .shop-slider .slide p.price {
+          font-weight: 600;
+          margin: 0; }
     main .home-section4 .information {
       width: 100%;
       padding: 60px 0;
@@ -1121,7 +1132,17 @@ main {
         width: 50%;
         flex: 0 0 50%; }
       main .home-section5 .row.right {
-        align-items: center; }
+        align-items: center;
+        justify-content: flex-end;
+        gap: 24px; }
+        main .home-section5 .row.right .lookbook-image {
+          max-width: 326px;
+          width: 100%;
+          height: 500px; }
+          main .home-section5 .row.right .lookbook-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
     main .home-section5 .content {
       align-items: flex-end; }
     main .home-section5 .left {
@@ -1318,7 +1339,7 @@ main {
             height: 280px; } }
 
 .shop-page {
-  padding: 0 32px 80px; }
+  padding: 40px 32px 80px; }
   .shop-page .shop-page-filters-container {
     display: flex;
     align-items: center;
@@ -5707,7 +5728,9 @@ footer {
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
-      color: #1F1F1F; }
+      color: #1F1F1F;
+      margin-top: 0;
+      margin-bottom: 32px; }
     footer .footer .links ul {
       padding: 0;
       list-style-type: none;
