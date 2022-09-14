@@ -279,7 +279,7 @@ main {
 
   .home-section3 {
     padding: 56px 150px 100px;
-    background-color: #F3EAE4;
+    background-color: #EAE6D8;
     height: 720px;
 
     .title {
@@ -596,6 +596,7 @@ main {
 
 main {
   @media (max-width: 991px) {
+    margin-top: 104px;
     &.homepage{
       padding-top: 32px;
     }
@@ -724,7 +725,7 @@ main {
                 bottom: 60px;
                 left: 55%;
                 @media (max-width: 480px) {
-                  left: 51%;
+                  left: 51.5%;
                 }
               }
 
@@ -732,7 +733,7 @@ main {
                 bottom: 60px;
                 right: 55%;
                 @media (max-width: 480px) {
-                  right: 51%;
+                  right: 51.5%;
                 }
               }
             }
@@ -741,10 +742,10 @@ main {
       }
     }
     .home-section4{
-      padding: 64px 0 64px 24px;
+      padding: 64px 0 64px 12px;
       .shop-slider{
         overflow: hidden;
-        gap: 24px;
+        gap: 0;
         .slide{
           min-width: 326px;
           flex: unset;
@@ -757,6 +758,10 @@ main {
             height: 474px;
             object-fit: cover;
             object-position: center;
+          }
+          p.title{
+            font-weight: 300;
+            margin-bottom: 16px;
           }
         }
 
@@ -789,6 +794,14 @@ main {
           line-height: 48px;
         }
       }
+      .row{
+        &.right {
+          gap: 16px;
+          .lookbook-image{
+            height: 280px;
+          }
+        }
+      }
       .content{
         flex-direction: column-reverse;
         .column{
@@ -804,6 +817,15 @@ main {
                 width: 182px;
                 height: 280px;
               }
+            }
+          }
+          .left{
+            .title{
+              margin-top: 32px;
+              margin-bottom: 24px;
+            }
+            .description{
+              margin-bottom: 40px;
             }
           }
         }

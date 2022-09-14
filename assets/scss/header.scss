@@ -22,6 +22,7 @@ header {
       & > .nav-title {
         width: 60px;
         height: 54px;
+        z-index: 99;
 
         img {
           width: 100%;
@@ -411,7 +412,7 @@ header {
       &.opened {
         pointer-events: all;
         opacity: 1;
-        z-index: 1;
+        z-index: 999;
 
         .shop-dropdown-container {
           transform: translateY(0);
@@ -484,8 +485,8 @@ header {
                 height: 80px;
                 border-radius: 50%;
                 border: 1px solid #D2C6A5;
-                opacity: 0.3;
-                clip-path: ellipse(71px 80px at 10% 50%);
+                opacity: 1;
+                clip-path: ellipse(68px 80px at 10% 50%);
                 z-index: -1;
               }
             }
@@ -523,7 +524,7 @@ header {
                   text-transform: uppercase;
                   font-weight: 600;
                   font-size: 12px;
-                  line-height: 16px;
+                  line-height: 24px;
                   color: #1F1F1F;
                   margin: 0;
                 }
@@ -604,7 +605,8 @@ header {
 
   @media (max-width: 991px) {
     .nav {
-      padding: 0 24px;
+      padding: 40px 24px 0;
+      height: 104px;
 
       .nav-links-right {
         flex-direction: row-reverse;
@@ -622,10 +624,14 @@ header {
           height: 0;
           transition: all 0.3s ease-in;
           overflow-y: hidden;
-          top: 82px;
+          top: 0;
           left: 0;
           padding: 0 25px;
           gap: 0;
+          z-index: 10;
+          border-top: 104px solid #FFFFFF;
+          opacity: 0;
+          pointer-events: none;
           .sign-in, .profile {
             a{
               text-decoration: none;
@@ -793,12 +799,15 @@ header {
           }
 
           &.opened {
-            height: calc(100vh - 82px);
+            height: calc(100vh);
             overflow-y: auto;
             background-image: url(../../assets/images/mobile-navbar-image.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-color: #fff;
+            opacity: 1;
+            pointer-events: auto;
+            padding-top: 40px;
           }
 
 
@@ -823,6 +832,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 99;
 
         .menu-icon {
           display: block;
@@ -863,8 +873,9 @@ header {
       }
 
       .shop-dropdown-background{
-        max-height: calc(100vh - 82px);
+        max-height: calc(100vh - 104px);
         overflow-y: auto;
+        top: 104px;
         .shop-dropdown-container{
           padding-right: 24px;
           padding-left: 24px;
@@ -880,6 +891,7 @@ header {
               flex: 0 0 100%;
               padding-top: 90px;
               padding-bottom: 180px;
+              border-top: none;
               &>.row{
                 flex-wrap: wrap;
                 .column{
@@ -899,7 +911,7 @@ header {
                       left: -40px;
                       width: 64px;
                       height: 64px;
-                      opacity: 0.3;
+                      opacity: 1;
                       clip-path: ellipse(55px 71px at 10% 50%);
                     }
                   }

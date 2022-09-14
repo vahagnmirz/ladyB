@@ -137,7 +137,7 @@
       .shop-page .shop-grid .grid-item .price {
         font-weight: 600; }
       .shop-page .shop-grid .grid-item .name {
-        margin-bottom: 8px; }
+        margin-bottom: 16px; }
   .shop-page .shop-pagination {
     width: 100%;
     display: flex;
@@ -163,7 +163,7 @@
 
 @media (max-width: 991px) {
   .shop-page {
-    padding: 0 24px 64px; }
+    padding: 40px 24px 64px; }
     .shop-page .shop-page-filters-container .left-sorts {
       gap: 24px; }
     .shop-page .shop-grid {

@@ -5,8 +5,12 @@ let triggerButton = document.querySelector('.nav-btn');
 triggerButton.addEventListener('click', () => {
     if (document.querySelector('.nav-links').classList.contains('opened')) {
         document.querySelector('.nav-links').classList.remove('opened');
-        document.querySelector('.nav-links').removeChild(document.querySelector('.sign-in'))
-        document.querySelector('.nav-links').removeChild(document.querySelector('.profile'))
+        if(!!document.querySelector('.sign-in')){
+            document.querySelector('.sign-in').remove()
+        }
+        if(!!document.querySelector('.profile')){
+            document.querySelector('.profile').remove()
+        }
         document.querySelector('.menu-icon').classList.remove('opened')
         document.querySelector('.shop-dropdown-background').classList.remove('opened')
     } else {
@@ -20,8 +24,6 @@ triggerButton.addEventListener('click', () => {
             document.querySelector('.nav-links').appendChild(newTag);
         }else {
             let newTag = document.createElement("div");
-            // newTag.href = '#open-modal'
-            // newTag.innerHTML = 'Sign in';
             newTag.className = 'sign-in'
             newTag.innerHTML = '<a href="#open-modal">\n' +
                 '                    <p>Sign In</p>\n' +
@@ -46,7 +48,6 @@ triggerButton.addEventListener('click', () => {
             document.querySelector('.nav-links').appendChild(newTag);
         }
 
-        document.querySelector('.menu-icon').classList.add('opened')
     }
 })
 

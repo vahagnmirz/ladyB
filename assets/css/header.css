@@ -18,7 +18,8 @@ header {
       gap: 50px; }
       header .nav > .nav-header > .nav-title {
         width: 60px;
-        height: 54px; }
+        height: 54px;
+        z-index: 99; }
         header .nav > .nav-header > .nav-title img {
           width: 100%;
           height: 100%;
@@ -303,7 +304,7 @@ header {
       header .nav .shop-dropdown-background.opened {
         pointer-events: all;
         opacity: 1;
-        z-index: 1; }
+        z-index: 999; }
         header .nav .shop-dropdown-background.opened .shop-dropdown-container {
           transform: translateY(0); }
       header .nav .shop-dropdown-background .shop-dropdown-container {
@@ -360,8 +361,8 @@ header {
                 height: 80px;
                 border-radius: 50%;
                 border: 1px solid #D2C6A5;
-                opacity: 0.3;
-                clip-path: ellipse(71px 80px at 10% 50%);
+                opacity: 1;
+                clip-path: ellipse(68px 80px at 10% 50%);
                 z-index: -1; }
             header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part .column {
               width: 50%;
@@ -388,7 +389,7 @@ header {
                   text-transform: uppercase;
                   font-weight: 600;
                   font-size: 12px;
-                  line-height: 16px;
+                  line-height: 24px;
                   color: #1F1F1F;
                   margin: 0; }
                 header .nav .shop-dropdown-background .shop-dropdown-container .row .right-part ul li .text {
@@ -440,7 +441,8 @@ header {
       gap: 20px; } }
   @media (max-width: 991px) {
     header .nav {
-      padding: 0 24px; }
+      padding: 40px 24px 0;
+      height: 104px; }
       header .nav .nav-links-right {
         flex-direction: row-reverse; }
       header .nav .nav-header .nav-links {
@@ -454,10 +456,14 @@ header {
         height: 0;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 82px;
+        top: 0;
         left: 0;
         padding: 0 25px;
-        gap: 0; }
+        gap: 0;
+        z-index: 10;
+        border-top: 104px solid #FFFFFF;
+        opacity: 0;
+        pointer-events: none; }
         header .nav .nav-header .nav-links .sign-in a, header .nav .nav-header .nav-links .profile a {
           text-decoration: none;
           color: #1A1515; }
@@ -585,12 +591,15 @@ header {
             line-height: 29px;
             margin-bottom: 24px; }
         header .nav .nav-header .nav-links.opened {
-          height: calc(100vh - 82px);
+          height: calc(100vh);
           overflow-y: auto;
           background-image: url(../../assets/images/mobile-navbar-image.png);
           background-repeat: no-repeat;
           background-size: cover;
-          background-color: #fff; }
+          background-color: #fff;
+          opacity: 1;
+          pointer-events: auto;
+          padding-top: 40px; }
         header .nav .nav-header .nav-links .header-shop img {
           transform: rotate(-90deg);
           height: 12px;
@@ -603,7 +612,8 @@ header {
         border-radius: 50%;
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        z-index: 99; }
         header .nav .nav-btn .menu-icon {
           display: block;
           width: 40px;
@@ -627,8 +637,9 @@ header {
           header .nav .nav-btn .menu-icon.opened:after {
             transform: rotate(-45deg) translate3d(7px, -6.5px, 0); }
       header .nav .shop-dropdown-background {
-        max-height: calc(100vh - 82px);
-        overflow-y: auto; }
+        max-height: calc(100vh - 104px);
+        overflow-y: auto;
+        top: 104px; }
         header .nav .shop-dropdown-background .shop-dropdown-container {
           padding-right: 24px;
           padding-left: 24px;
@@ -641,7 +652,8 @@ header {
             width: 100%;
             flex: 0 0 100%;
             padding-top: 90px;
-            padding-bottom: 180px; }
+            padding-bottom: 180px;
+            border-top: none; }
             header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part > .row {
               flex-wrap: wrap; }
               header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part > .row .column {
@@ -660,7 +672,7 @@ header {
                     left: -40px;
                     width: 64px;
                     height: 64px;
-                    opacity: 0.3;
+                    opacity: 1;
                     clip-path: ellipse(55px 71px at 10% 50%); }
             header .nav .shop-dropdown-background .shop-dropdown-container > .row .right-part .close-button {
               position: absolute;

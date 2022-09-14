@@ -491,8 +491,7 @@
   .detail-section3 .testimonials .cart {
     padding: 32px;
     background: #F3EAE4;
-    border-bottom: 4px solid #D2C6A5;
-    box-shadow: 0 3px 6px -1px #1f1f1f7a; }
+    border-bottom: 4px solid #D2C6A5; }
     .detail-section3 .testimonials .cart .cart-number {
       font-family: 'Canela-Trial';
       font-style: normal;
@@ -504,10 +503,11 @@
       margin-top: 0;
       margin-bottom: 32px; }
     .detail-section3 .testimonials .cart .cart-description {
+      font-family: 'Canela Trial';
       font-weight: 300;
       font-size: 16px;
       line-height: 24px;
-      color: #1F1F1F;
+      color: #565656;
       margin-top: 0;
       margin-bottom: 68px; }
     .detail-section3 .testimonials .cart .cart-image {
@@ -540,7 +540,8 @@
           line-height: 16px;
           letter-spacing: 0.05em;
           text-transform: uppercase;
-          color: #1F1F1F; }
+          color: #1F1F1F;
+          margin: 0; }
     .detail-section3 .testimonials .cart .cart-footer {
       font-family: 'Canela-Trial';
       font-style: italic;
@@ -1071,7 +1072,7 @@
   .backToShop {
     margin-bottom: 32px; }
   .product-detail-page {
-    padding: 0 24px; }
+    padding: 0 24px 64px; }
     .product-detail-page .detail-section1 {
       margin: 0; }
       .product-detail-page .detail-section1 .row {
@@ -1097,31 +1098,28 @@
           padding: 0 8px; }
       .product-detail-page .detail-section1 .information .colors {
         margin-left: 4px; }
-  .detail-section2 .row .text-part h2 {
-    display: none; }
-  .detail-section2 .row .text-part .header-text {
-    display: none; }
-  .detail-section2 .row .text-part .mobile-title {
-    display: block; }
-  .detail-section2 .row .text-part .description {
-    margin: 0;
-    max-width: 100%; }
-  .detail-section2 .row .text-part .dicoverladyb:after {
-    top: -20px;
-    width: 64px;
-    height: 64px;
-    clip-path: ellipse(55px 80px at 10% 50%); }
-  .detail-section2 .row .col:last-child {
-    display: none; }
-  .detail-section2 .row .image {
-    margin-top: 200px;
-    width: 280px;
-    height: 421px; } }
-  @media (max-width: 991px) and (max-width: 500px) {
+  .detail-section2 {
+    padding: 8px 24px 40px; }
+    .detail-section2 .row .text-part h2 {
+      display: none; }
+    .detail-section2 .row .text-part .header-text {
+      display: none; }
+    .detail-section2 .row .text-part .mobile-title {
+      display: block; }
+    .detail-section2 .row .text-part .description {
+      margin: 0;
+      max-width: 100%; }
+    .detail-section2 .row .text-part .dicoverladyb:after {
+      top: -20px;
+      width: 64px;
+      height: 64px;
+      clip-path: ellipse(55px 80px at 10% 50%); }
+    .detail-section2 .row .col:last-child {
+      display: none; }
     .detail-section2 .row .image {
-      margin-top: 240px; } }
-
-@media (max-width: 991px) {
+      margin-top: 284px;
+      width: 280px;
+      height: 421px; }
   .detail-section3 .testimonials {
     padding: 64px 0 64px 24px; }
     .detail-section3 .testimonials .row {
@@ -1134,7 +1132,7 @@
       font-size: 40px;
       line-height: 48px; }
     .detail-section3 .testimonials .cart {
-      padding: 32px 24px; }
+      padding: 32px 24px 48px; }
       .detail-section3 .testimonials .cart .cart-number {
         font-weight: 100;
         font-size: 40px;
@@ -1143,6 +1141,9 @@
       .detail-section3 .testimonials .cart .cart-image {
         width: 100%;
         margin-bottom: 32px; }
+        .detail-section3 .testimonials .cart .cart-image .slashs {
+          width: 53px;
+          height: 33px; }
       .detail-section3 .testimonials .cart .cart-description {
         margin-bottom: 55px; }
       .detail-section3 .testimonials .cart .cart-footer {
