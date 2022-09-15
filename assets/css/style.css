@@ -4582,6 +4582,8 @@ main {
   .media-section2 .content .media-item {
     max-width: 440px;
     width: 100%; }
+    .media-section2 .content .media-item a {
+      text-decoration: none; }
     .media-section2 .content .media-item .media-item-content .media-image {
       position: relative;
       width: 100%;
@@ -4832,6 +4834,8 @@ main {
   .currentMedia-section4 .similar-media .media-item {
     max-width: 440px;
     width: 100%; }
+    .currentMedia-section4 .similar-media .media-item a {
+      text-decoration: none; }
     .currentMedia-section4 .similar-media .media-item .media-item-content .media-image {
       position: relative;
       width: 100%;
@@ -5684,7 +5688,7 @@ main {
           font-size: 12px;
           line-height: 15px;
           text-align: center;
-          color: #FFFFFF;
+          color: #1A1515;
           padding: 16px;
           width: 100%;
           background: #D2C6A5;

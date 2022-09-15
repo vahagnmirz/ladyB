@@ -147,6 +147,9 @@
       .media-item{
         max-width: 440px;
         width: 100%;
+        a{
+          text-decoration: none;
+        }
         .media-item-content{
           .media-image{
             position: relative;

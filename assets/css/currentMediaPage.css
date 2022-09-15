@@ -159,6 +159,8 @@
   .currentMedia-section4 .similar-media .media-item {
     max-width: 440px;
     width: 100%; }
+    .currentMedia-section4 .similar-media .media-item a {
+      text-decoration: none; }
     .currentMedia-section4 .similar-media .media-item .media-item-content .media-image {
       position: relative;
       width: 100%;

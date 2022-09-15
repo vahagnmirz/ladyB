@@ -116,6 +116,8 @@
   .media-section2 .content .media-item {
     max-width: 440px;
     width: 100%; }
+    .media-section2 .content .media-item a {
+      text-decoration: none; }
     .media-section2 .content .media-item .media-item-content .media-image {
       position: relative;
       width: 100%;
