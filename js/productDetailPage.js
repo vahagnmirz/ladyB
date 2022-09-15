@@ -176,10 +176,6 @@ window.onclick = e => {
 const town = document.querySelector(".town-modal");
 const townContent = document.querySelector(".town-modal-content");
 
-document.querySelector(".continue-btn").addEventListener("click", function() {
-    town.style.display = "block";
-    townContent.classList.add("show");
-});
 
 document.querySelector(".town-close").addEventListener("click", function() {
     town.style.display = "none";

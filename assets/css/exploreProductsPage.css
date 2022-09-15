@@ -131,12 +131,30 @@
       align-items: center;
       letter-spacing: 0.05em;
       color: #1F1F1F; }
-    .explore-section1 .scroll-to img {
+    .explore-section1 .scroll-to svg {
       width: 15px;
       height: 12px;
       margin-left: 9px;
       margin-top: 2px;
       transform: rotate(90deg); }
+      .explore-section1 .scroll-to svg line {
+        stroke: #1A1515; }
+      .explore-section1 .scroll-to svg path {
+        stroke: #1A1515; }
+    .explore-section1 .scroll-to:hover svg line {
+      stroke: #D2C6A5; }
+    .explore-section1 .scroll-to:hover svg path {
+      stroke: #D2C6A5; }
+    .explore-section1 .scroll-to:active span {
+      color: #D2C6A5; }
+    .explore-section1 .scroll-to.disabled span {
+      color: #C5C5C5; }
+    .explore-section1 .scroll-to.disabled svg line {
+      stroke: #C5C5C5; }
+    .explore-section1 .scroll-to.disabled svg path {
+      stroke: #C5C5C5; }
+    .explore-section1 .scroll-to.disabled:after {
+      border-color: #EFF2F4; }
   .explore-section1 .slider-wrapper {
     display: flex;
     align-items: flex-end;
@@ -400,6 +418,8 @@
           left: auto;
           right: 160px;
           width: 100px; }
+        .explore-section3 .row .slider-wrapper .big-slider .bigSwiper .swiper-slide a {
+          text-decoration: none; }
 
 .explore-section4 .testimonials {
   padding: 100px 32px; }

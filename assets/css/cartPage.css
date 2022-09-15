@@ -128,10 +128,17 @@
         font-size: 12px;
         line-height: 15px;
         text-align: center;
-        color: #FFFFFF;
+        color: #1A1515;
         cursor: pointer;
         text-decoration: none;
         margin-top: 25px; }
+        .your-cart .content .table a:hover {
+          background: #EAE6D8; }
+        .your-cart .content .table a:active {
+          color: #D2C6A5; }
+        .your-cart .content .table a.disabled {
+          background: #EFF2F4;
+          color: #C5C5C5; }
     .your-cart .content .right-part {
       max-width: 443px;
       width: 100%; }
@@ -185,21 +192,8 @@
           .your-cart .content .right-part .cart-wrapper .coupon:focus {
             border: 1px solid #D2C6A5; }
         .your-cart .content .right-part .cart-wrapper .apply-coupon {
-          padding: 13px 0;
-          font-weight: 700;
-          font-size: 12px;
-          line-height: 15px;
-          color: #1F1F1F;
-          text-align: center;
-          background: #FFFFFF;
-          border: 1px solid #D2C6A5;
           width: 100%;
-          cursor: pointer;
           margin-bottom: 24px; }
-          .your-cart .content .right-part .cart-wrapper .apply-coupon:hover {
-            color: #D2C6A5; }
-          .your-cart .content .right-part .cart-wrapper .apply-coupon:active {
-            background-color: #EAE6D8; }
         .your-cart .content .right-part .cart-wrapper .total {
           width: 100%;
           display: flex;
@@ -228,6 +222,13 @@
           cursor: pointer;
           text-decoration: none;
           display: block; }
+          .your-cart .content .right-part .cart-wrapper .checkout:hover {
+            background: #EAE6D8; }
+          .your-cart .content .right-part .cart-wrapper .checkout:active {
+            color: #D2C6A5; }
+          .your-cart .content .right-part .cart-wrapper .checkout.disabled {
+            background: #EFF2F4;
+            color: #C5C5C5; }
       .your-cart .content .right-part .delivery-part {
         background: #EDF6F9;
         padding: 26px 0;
@@ -427,16 +428,6 @@
             transform: scale(1); }
         .your-cart .content.checkout .checkout-fields .personal-details .place-order {
           width: 100%;
-          background: #D2C6A5;
-          padding: 16px 0;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          font-weight: 700;
-          font-size: 12px;
-          line-height: 15px;
-          text-align: center;
-          color: #FFFFFF;
           margin-top: 60px; }
         .your-cart .content.checkout .checkout-fields .dropdown {
           width: 100%;

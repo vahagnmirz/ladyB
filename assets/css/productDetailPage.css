@@ -461,11 +461,29 @@
           align-items: center;
           letter-spacing: 0.05em;
           color: #1F1F1F; }
-        .detail-section2 .row .text-part .dicoverladyb img {
+        .detail-section2 .row .text-part .dicoverladyb svg {
           width: 15px;
           height: 12px;
           margin-left: 9px;
           margin-top: 2px; }
+          .detail-section2 .row .text-part .dicoverladyb svg line {
+            stroke: #1A1515; }
+          .detail-section2 .row .text-part .dicoverladyb svg path {
+            stroke: #1A1515; }
+        .detail-section2 .row .text-part .dicoverladyb:hover svg line {
+          stroke: #D2C6A5; }
+        .detail-section2 .row .text-part .dicoverladyb:hover svg path {
+          stroke: #D2C6A5; }
+        .detail-section2 .row .text-part .dicoverladyb:active span {
+          color: #D2C6A5; }
+        .detail-section2 .row .text-part .dicoverladyb.disabled svg line {
+          stroke: #C5C5C5; }
+        .detail-section2 .row .text-part .dicoverladyb.disabled svg path {
+          stroke: #C5C5C5; }
+        .detail-section2 .row .text-part .dicoverladyb.disabled span {
+          color: #C5C5C5; }
+        .detail-section2 .row .text-part .dicoverladyb.disabled:after {
+          border-color: #EFF2F4; }
 
 .detail-section3 .testimonials {
   padding: 100px 32px; }
@@ -571,6 +589,8 @@
       margin: 0 auto;
       width: 100%;
       height: 100%; }
+      .detail-section4 .slider-content .swiper a {
+        text-decoration: none; }
       .detail-section4 .slider-content .swiper .swiper-button-prev, .detail-section4 .slider-content .swiper .swiper-button-next {
         width: 56px;
         height: 56px;

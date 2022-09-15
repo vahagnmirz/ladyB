@@ -114,12 +114,49 @@
             letter-spacing: 0.05em;
             color: #1F1F1F;
           }
-          img{
+          svg{
             width: 15px;
             height: 12px;
             margin-left: 9px;
             margin-top: 2px;
             transform: rotate(90deg);
+            line{
+              stroke: #1A1515;
+            }
+            path{
+              stroke: #1A1515;
+            }
+          }
+          &:hover{
+            svg{
+              line{
+                stroke: #D2C6A5;
+              }
+              path{
+                stroke: #D2C6A5;
+              }
+            }
+          }
+          &:active{
+            span{
+              color: #D2C6A5;
+            }
+          }
+          &.disabled{
+            span{
+              color: #C5C5C5;
+            }
+            svg{
+              line{
+                stroke: #C5C5C5;
+              }
+              path{
+                stroke: #C5C5C5;
+              }
+            }
+            &:after{
+              border-color: #EFF2F4;
+            }
           }
         }
       }
@@ -245,39 +282,139 @@
     }
   }
 }
-.aboutUs-section4{
-  width: 100%;
-  height: 693px;
-  position: relative;
-  .video{
-    background: #1F1F1F;
+.aboutUs-section3-mobile{
+  display: none;
+  padding: 0 24px;
+  .title{
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 12px;
   }
-  .play-btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    border: 1px solid rgba(255,255,255, 0.69);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    transition: all 300ms ease-in-out;
-    opacity: 1;
-    img{
-      width: 24px;
-      height: 24px;
+  .description{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F1F1F;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  .images{
+    margin-bottom: 24px;
+    .first-image{
+      width: 100%;
+      height: 266px;
+      margin-bottom: 16px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .row{
+      display: flex;
+      margin: 0 -8px;
+      .column{
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding: 0 8px;
+        .image{
+            width: 100%;
+            height: 376px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+      }
     }
   }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .gold-text{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #D2C6A5;
+    margin-top: 0;
+    margin-bottom: 74px;
+  }
+}
+.aboutUs-section4{
+  width: 100%;
+  position: relative;
+  background: #F3EAE4;
+  padding: 141px 32px 118px;
+  .title{
+    font-family: 'Canela Trial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 136px;
+    line-height: 163px;
+    letter-spacing: 0.02em;
+    color: #282828;
+    position: absolute;
+    top: -90px;
+    left: 0;
+    margin: 0;
+  }
+  .content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .col{
+      width: 50%;
+      flex: 0 0 50%;
+      .right-image{
+        max-width: 700px;
+        width: 100%;
+        height: 434px;
+        margin-left: auto;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .left{
+        margin-left: 118px;
+        .user-image{
+          position: relative;
+          width: 93px;
+          height: 112px;
+          margin-bottom: 77px;
+          svg{
+            width: 61px;
+            height: 38px;
+            position: absolute;
+            top: 0;
+            left: -37px;
+          }
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .text{
+          max-width: 442px;
+          width: 100%;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          color: #565656;
+          margin: 0;
+        }
+      }
+    }
   }
 }
 .aboutUs-section5{
@@ -444,6 +581,7 @@
     }
   }
   .aboutUs-section3{
+    display: none;
     padding: 0 24px 30px;
     .section-row{
       .title{
@@ -466,14 +604,46 @@
       }
     }
   }
+  .aboutUs-section3-mobile{
+    display: block;
+  }
   .aboutUs-section4{
-    height: 400px;
-    .video{
-      height: 400px;
+    padding: 107px 24px 40px;
+    .title{
+      font-size: 64px;
+      line-height: 61px;
+      max-width: 312px;
+      top: -70px;
+      left: 28px;
     }
-    .play-btn{
-      width: 64px;
-      height: 64px;
+    .content{
+      flex-wrap: wrap-reverse;
+      .col{
+        width: 100%;
+        flex: 0 0 100%;
+        .right-image{
+          max-width: 100%;
+          margin-bottom: 60px;
+          height: 272px;
+        }
+        .left{
+          margin-left: 50px;
+          .user-image{
+            width: 83px;
+            height: 100px;
+            margin-bottom: 52px;
+            svg{
+              width: 34px;
+              height: 21px;
+              top: -6px;
+              left: -28px;
+            }
+          }
+          .text{
+            max-width: 380px;
+          }
+        }
+      }
     }
   }
   .aboutUs-section5{

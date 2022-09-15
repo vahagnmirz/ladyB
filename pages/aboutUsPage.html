@@ -111,7 +111,7 @@
             <form action="">
               <input type="text" placeholder="Username">
               <input type="password" placeholder="Password">
-              <button type="submit" class="sign-in-btn">SIGN IN</button>
+              <button type="submit" class="sign-in-btn button">SIGN IN</button>
             </form>
             <div class="donthaveaccount"><p>Don’t have account? </p> <a href="./authorization.html"> Register</a></div>
           </div>
@@ -171,7 +171,11 @@
               </div>
               <div class="more-about-btn">
                 <span>Scroll For More</span>
-                <img src="../assets/images/icons/arrow-left-black.svg" alt="icon" width="15" height="12">
+                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="4.37114e-08" y1="5.98218" x2="14" y2="5.98218"/>
+                  <path d="M9.94714 1C9.94714 1 10.7775 2.83032 11.9471 4C12.9471 5 14.9471 6 14.9471 6"/>
+                  <path d="M9.94714 11C9.94714 11 10.7775 9.16968 11.9471 8C12.9471 7 14.9471 6 14.9471 6"/>
+                </svg>
               </div>
             </div>
             <div class="img-wrapper">
@@ -219,23 +223,60 @@
         </div>
     </div>
   </section>
-  <section class="aboutUs-section4" >
-    <div class="play-btn">
-      <img src="../assets/images/icons/play-icon.svg" alt="" width="24px" height="24px">
+  <section class="aboutUs-section3-mobile">
+    <p class="title">More Than Just <br>
+      Sock Brand</p>
+    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="images">
+      <div class="first-image">
+        <img src="../assets/images/about1.png" alt="">
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="image">
+            <img src="../assets/images/about2.png" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="image">
+            <img src="../assets/images/detailpage1.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
-    <video width="100%" height="650px" class="video" poster="../assets/images/video-image.png">
+    <p class="gold-text">Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat
+      nulla pariatur.</p>
+  </section>
+  <section class="aboutUs-section4">
+    <div class="container">
+      <p class="title">Get To Know Us</p>
+      <div class="content">
+        <div class="col">
+          <div class="left">
+            <div class="user-image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="62" height="40" viewBox="0 0 62 40" fill="none">
+                <path d="M4.16671 39.1673H15.6667L23.3334 23.834V0.833984H0.333374V23.834H11.8334L4.16671 39.1673ZM42.5 39.1673H54L61.6667 23.834V0.833984H38.6667V23.834H50.1667L42.5 39.1673Z" fill="#1F1F1F"/>
+              </svg>
+              <img src="../assets/images/testimonial1.png" alt="">
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="right-image">
+            <img src="../assets/images/get-to-know-us.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <source src="../assets/videos/video.mp4"
-              type="video/mp4">
-
-      Sorry, your browser doesn't support embedded videos.
-    </video>
   </section>
   <section class="aboutUs-section5">
     <div class="container">
       <h2 class="title">Our Guiding Principles</h2>
       <div class="row">
-        <div data-aos="fade-down-right" class="col">
+        <div class="col">
           <div class="cart">
             <div class="image">
               <img src="../assets/images/guide1.png" alt="">
@@ -247,7 +288,7 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-down" class="col">
+        <div class="col">
           <div class="cart">
             <div class="image">
               <img src="../assets/images/guide2.png" alt="">
@@ -259,7 +300,7 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-down-left" class="col">
+        <div class="col">
           <div class="cart">
             <div class="image">
               <img src="../assets/images/guide3.png" alt="">

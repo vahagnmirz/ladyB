@@ -621,11 +621,48 @@
           letter-spacing: 0.05em;
           color: #1F1F1F;
         }
-        img{
+        svg{
           width: 15px;
           height: 12px;
           margin-left: 9px;
           margin-top: 2px;
+          line{
+            stroke: #1A1515;
+          }
+          path{
+            stroke: #1A1515;
+          };
+        }
+        &:hover{
+          svg{
+            line{
+              stroke: #D2C6A5;
+            }
+            path{
+              stroke: #D2C6A5;
+            };
+          }
+        }
+        &:active{
+          span{
+            color: #D2C6A5;
+          }
+        }
+        &.disabled{
+          svg{
+            line{
+              stroke: #C5C5C5;
+            }
+            path{
+              stroke: #C5C5C5;
+            };
+          }
+          span{
+            color: #C5C5C5;
+          }
+          &:after{
+            border-color: #EFF2F4;
+          }
         }
       }
     }
@@ -755,6 +792,9 @@
       margin: 0 auto;
       width: 100%;
       height: 100%;
+      a{
+        text-decoration: none;
+      }
       .swiper-button-prev, .swiper-button-next{
         width: 56px;
         height: 56px;

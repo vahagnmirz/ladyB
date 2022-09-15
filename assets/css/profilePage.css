@@ -157,19 +157,9 @@
             right: 0;
             cursor: pointer; }
       .profilePage .row .right-side form button {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 16px 0;
-        background: #D2C6A5;
         width: 100%;
         min-width: 320px;
-        max-width: 374px;
-        border: none;
-        outline: none;
-        cursor: pointer; }
+        max-width: 374px; }
     .profilePage .row .right-side table {
       border-spacing: 0;
       width: 100%; }
@@ -228,9 +218,11 @@
     flex-direction: column;
     justify-content: center; }
     .profilePage .row .left-side {
-      max-width: 100%; }
+      max-width: calc(100% - 100px);
+      margin: 0 auto; }
     .profilePage .row .right-side {
-      margin-top: 76px; }
+      margin-top: 76px;
+      padding: 0; }
       .profilePage .row .right-side form {
         flex-direction: column;
         gap: 32px; }

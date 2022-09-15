@@ -56,6 +56,53 @@
       -webkit-animation: waves 10s infinite;
       -moz-animation: waves 10s infinite;
       animation: waves 10s infinite; }
+  .lookbook-wrapper .lookbook-image-wrapper-mobile {
+    display: none;
+    flex-direction: column;
+    padding: 32px 24px 64px;
+    gap: 32px; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile .img {
+      width: 100%; }
+      .lookbook-wrapper .lookbook-image-wrapper-mobile .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile .first-image {
+      max-width: 380px;
+      height: 253px;
+      margin: 0 auto; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile .second-image {
+      max-width: 281px;
+      height: 377px;
+      margin-left: 16px; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile .third-image {
+      max-width: 282px;
+      height: 408px;
+      margin-left: auto;
+      margin-right: 33px; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile .forth-image {
+      max-width: 281px;
+      height: 405px;
+      margin: 0 auto; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile .fifth-img {
+      display: flex;
+      gap: 16px;
+      margin: 0 auto; }
+      .lookbook-wrapper .lookbook-image-wrapper-mobile .fifth-img .fifth-image {
+        max-width: 133px;
+        height: 178px; }
+      .lookbook-wrapper .lookbook-image-wrapper-mobile .fifth-img .sixth-image {
+        max-width: 231px;
+        height: 337px;
+        margin-top: 32px; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile .seventh-image {
+      max-width: 380px;
+      height: 253px;
+      margin: 0 auto; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile .eight-image {
+      max-width: 379px;
+      height: 549px;
+      margin: 0 auto; }
 
 @-webkit-keyframes waves {
   0% {
@@ -84,8 +131,12 @@
 @media (max-width: 768px) {
   .lookbook-wrapper {
     flex-direction: column;
-    padding: 20px 0 40px;
-    gap: 32px; }
+    padding: 20px 0 0;
+    gap: 0; }
     .lookbook-wrapper .left {
       max-width: 100%;
-      padding: 64px 0; } }
+      padding: 64px 0 0; }
+    .lookbook-wrapper .lookbook-image-wrapper {
+      display: none; }
+    .lookbook-wrapper .lookbook-image-wrapper-mobile {
+      display: flex; } }
